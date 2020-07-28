@@ -1,0 +1,2956 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <soapenv:Header>
+    <h:EIB_header xmlns:h="http://www.axa-equitable.com/schemas/EIB_header">
+      <h:Transaction Trans_name="EvaluateSuitability" />
+      <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+
+        <wsse:BinarySecurityToken>
+        55AVeFxFZNh6GipVRCF4Fu7mdFQ.*AAJTSQACMDIAAlNLABwzVGplcWRJYUpLcWJ2NS9WQlBHYTdITlBFVHc9AAJTMQACMDM.*</wsse:BinarySecurityToken>
+      </wsse:Security>
+    </h:EIB_header>
+  </soapenv:Header>
+  <soapenv:Body>
+    <TXLife xmlns="http://ACORD.org/Standards/Life/2">
+      <UserAuthRequest>
+        <UserLoginName>A2SUIT</UserLoginName>
+        <UserPswd>
+          <CryptType>NONE</CryptType>
+          <Pswd>APSUIT</Pswd>
+        </UserPswd>
+        <UserDate>2019-11-21</UserDate>
+        <UserTime>13:49:16</UserTime>
+        <VendorApp>
+          <VendorName VendorCode="05">CSC</VendorName>
+          <AppName>nbA_Life</AppName>
+          <AppVer>1.0</AppVer>
+        </VendorApp>
+      </UserAuthRequest>
+      <TXLifeRequest>
+        <TransRefGUID>47bbb7ba-dd15-02ac-1103-79f0e128eb2d</TransRefGUID>
+        <TransType tc="103">New Business Submission</TransType>
+        <TransSubType tc="100500023">Suitability Check</TransSubType>
+        <TransExeDate>2019-11-21</TransExeDate>
+        <TransExeTime>13:49:16</TransExeTime>
+        <TransMode tc="2">Original</TransMode>
+        <OLifE Version="2.9.03">
+          <SourceInfo>
+            <CreationDate>2019-06-19</CreationDate>
+            <CreationTime>02:24:30</CreationTime>
+            <SourceInfoName>nbA_Life</SourceInfoName>
+            <FileControlID>L70</FileControlID>
+          </SourceInfo>
+          <Holding id="Holding_1">
+            <HoldingTypeCode tc="2">Policy</HoldingTypeCode>
+            <LastFinActivityDate>2019-06-24</LastFinActivityDate>
+            <HoldingForm tc="1">Individual</HoldingForm>
+            <AssignmentCode tc="1">Not Assigned</AssignmentCode>
+            <RestrictionCode tc="1">None</RestrictionCode>
+            <Policy id="Policy_3">
+              <CarrierAdminSystem>L70</CarrierAdminSystem>
+              <PolNumber>569352698</PolNumber>
+              <LineOfBusiness tc="1">Life</LineOfBusiness>
+              <ProductType tc="5">Indexed Universal Life</ProductType>
+              <ProductCode>FWM107</ProductCode>
+              <CarrierCode>BA</CarrierCode>
+              <PlanName>BrightLife Grow, Series 159</PlanName>
+              <PolicyStatus tc="8">Pending Issue</PolicyStatus>
+              <IssueType tc="1">Full Underwriting</IssueType>
+              <Jurisdiction tc="12">Florida</Jurisdiction>
+              <ReplacementType tc="1">None</ReplacementType>
+              <EffDate>2019-06-24</EffDate>
+              <IssueDate>2019-06-24</IssueDate>
+              <PaidToDate>2019-06-24</PaidToDate>
+              <BilledToDate>2019-06-24</BilledToDate>
+              <PaymentMode tc="1">Annual</PaymentMode>
+              <PaymentAmt>1000</PaymentAmt>
+              <AnnualPaymentAmt>1000</AnnualPaymentAmt>
+              <PaymentMethod tc="2">Regular Billing</PaymentMethod>
+              <PaymentDraftDay>0</PaymentDraftDay>
+              <PaymentDueDate>2019-06-24</PaymentDueDate>
+              <BeneficiaryInd tc="1">True</BeneficiaryInd>
+              <EndorsementInd tc="0">False</EndorsementInd>
+              <OtherInsuredInd tc="0">False</OtherInsuredInd>
+              <RatedInd tc="0">False</RatedInd>
+              <ContestabilityEndDate>2019-06-24</ContestabilityEndDate>
+              <MinPremiumInitialAmt>726.8</MinPremiumInitialAmt>
+              <Life id="Life_1">
+                <InitialPremAmt>1000</InitialPremAmt>
+                <FaceAmt>1000000</FaceAmt>
+                <FaceUnits>1000</FaceUnits>
+                <Coverage id="Coverage_1">
+                  <CoverageKey>1</CoverageKey>
+                  <PlanName>BrightLife Grow, Series 159</PlanName>
+                  <ProductCode>FWM107</ProductCode>
+                  <LifeCovStatus tc="1">Active</LifeCovStatus>
+                  <LifeCovTypeCode tc="10">Indexed Universal Life</LifeCovTypeCode>
+                  <IndicatorCode tc="1">Base</IndicatorCode>
+                  <LivesType tc="1">Single life</LivesType>
+                  <DeathBenefitOptType tc="1">Level (DB = Face)</DeathBenefitOptType>
+                  <CurrentAmt>1000000</CurrentAmt>
+                  <InitCovAmt>1000000</InitCovAmt>
+                  <IntialNumberOfUnits>1000</IntialNumberOfUnits>
+                  <CurrentNumberOfUnits>1000</CurrentNumberOfUnits>
+                  <ValuePerUnit>1000</ValuePerUnit>
+                  <EffDate>2019-06-24</EffDate>
+                  <IssuedAsAppliedInd tc="1">True</IssuedAsAppliedInd>
+                  <CovOption id="CovOption_1">
+                    <CovOptionKey>1</CovOptionKey>
+                    <ShortName>No Lapse Guarantee Rider</ShortName>
+                    <PlanName>No Lapse Guarantee Rider</PlanName>
+                    <ProductCode>0NLW10</ProductCode>
+                    <CovOptionStatus tc="1">Active</CovOptionStatus>
+                    <LifeCovOptTypeCode tc="9">No Lapse Guarantee Option</LifeCovOptTypeCode>
+                    <LivesType tc="1">Single life</LivesType>
+                    <OptionAmt>1000000</OptionAmt>
+                    <OptionNumberOfUnits>1000</OptionNumberOfUnits>
+                    <EffDate>2019-06-24</EffDate>
+                    <TermDate>2029-06-24</TermDate>
+                    <OLifEExtension ExtensionCode="CovOption 2.9.03" VendorCode="05">
+                      <CovOptionExtension>
+                        <MinPremAmt>2913.6</MinPremAmt>
+                        <SelectionRule tc="12">Inherent, No Premium</SelectionRule>
+                      </CovOptionExtension>
+                    </OLifEExtension>
+                  </CovOption>
+                  <CovOption id="CovOption_2">
+                    <CovOptionKey>1</CovOptionKey>
+                    <ShortName>Alternate Loan Endorsement</ShortName>
+                    <PlanName>Alternate Loan Endorsement</PlanName>
+                    <ProductCode>ALTLOAN</ProductCode>
+                    <CovOptionStatus tc="1">Active</CovOptionStatus>
+                    <LifeCovOptTypeCode tc="1009800010" />
+                    <LivesType tc="1">Single life</LivesType>
+                    <OptionAmt>1000000</OptionAmt>
+                    <OptionNumberOfUnits>1000</OptionNumberOfUnits>
+                    <EffDate>2019-06-24</EffDate>
+                    <OLifEExtension ExtensionCode="CovOption 2.9.03" VendorCode="05">
+                      <CovOptionExtension>
+                        <SelectionRule tc="12">Inherent, No Premium</SelectionRule>
+                      </CovOptionExtension>
+                    </OLifEExtension>
+                  </CovOption>
+                  <CovOption id="CovOption_3">
+                    <CovOptionKey>1</CovOptionKey>
+                    <ShortName>Living Benefit Rider</ShortName>
+                    <PlanName>Living Benefit Rider</PlanName>
+                    <ProductCode>LBR</ProductCode>
+                    <CovOptionStatus tc="1">Active</CovOptionStatus>
+                    <LifeCovOptTypeCode tc="1">Accelerated Benefit</LifeCovOptTypeCode>
+                    <LivesType tc="1">Single life</LivesType>
+                    <OptionAmt>1000000</OptionAmt>
+                    <OptionNumberOfUnits>1000</OptionNumberOfUnits>
+                    <EffDate>2019-06-24</EffDate>
+                    <TermDate>2107-06-24</TermDate>
+                    <OLifEExtension ExtensionCode="CovOption 2.9.03" VendorCode="05">
+                      <CovOptionExtension>
+                        <SelectionRule tc="12">Inherent, No Premium</SelectionRule>
+                      </CovOptionExtension>
+                    </OLifEExtension>
+                  </CovOption>
+                  <LifeParticipant PartyID="Party_032_01" id="LifeParticipant_1">
+                    <ParticipantName>Dolajunmjys Nickjunmjys</ParticipantName>
+                    <LifeParticipantRoleCode tc="1">Primary Insured</LifeParticipantRoleCode>
+                    <IssueAge>33</IssueAge>
+                    <IssueGender tc="2">Female</IssueGender>
+                    <SmokerStat tc="1">Never Used Tobacco</SmokerStat>
+                    <TobaccoPremiumBasis tc="1">Non Smoker</TobaccoPremiumBasis>
+                    <UnderwritingClass tc="1009800010">Preferred Elite</UnderwritingClass>
+                    <OLifEExtension ExtensionCode="LifeParticipant 2.9.03" VendorCode="05">
+                      <LifeParticipantExtension>
+                        <ProposedTobaccoPremiumBasis tc="1">Non
+                        Smoker</ProposedTobaccoPremiumBasis>
+                        <ProposedUnderwritingClass tc="2">Preferred
+                        risk</ProposedUnderwritingClass>
+                      </LifeParticipantExtension>
+                    </OLifEExtension>
+                  </LifeParticipant>
+                  <OLifEExtension ExtensionCode="Coverage 2.9.03" VendorCode="05">
+                    <CoverageExtension>
+                      <PayUpDate>2019-06-24</PayUpDate>
+                      <DBOChangeReminderInd tc="0">False</DBOChangeReminderInd>
+                      <DBOChangeReminderYear>0</DBOChangeReminderYear>
+                    </CoverageExtension>
+                  </OLifEExtension>
+                </Coverage>
+                <LifeUSA>
+                  <DefLifeInsMethod tc="5">DEFRA cash value accumulation test</DefLifeInsMethod>
+                  <MECInd tc="0">False</MECInd>
+                  <SevenPayPrem>23059.58</SevenPayPrem>
+                  <MEC1035 tc="0">False</MEC1035>
+                  <AccumValue1035>0</AccumValue1035>
+                  <OLifEExtension ExtensionCode="LifeUSA 2.9.03" VendorCode="05">
+                    <LifeUSAExtension>
+                      <Exch1035IndCode tc="0">Unknown</Exch1035IndCode>
+                      <Exch1035LoanCarryoverInd tc="0">False</Exch1035LoanCarryoverInd>
+                      <Exchange1035Ind tc="0">False</Exchange1035Ind>
+                      <SevenPayNetCost>0</SevenPayNetCost>
+                      <LoanCarryoverInd tc="0">False</LoanCarryoverInd>
+                    </LifeUSAExtension>
+                  </OLifEExtension>
+                </LifeUSA>
+                <OLifEExtension ExtensionCode="Life 2.9.03" VendorCode="05">
+                  <LifeExtension>
+                    <PremType tc="2">Flexible</PremType>
+                    <PremLoadTargetAmt>7340</PremLoadTargetAmt>
+                    <UnisexRateInd tc="0">False</UnisexRateInd>
+                    <DeferredSalesExpPremAmt>15520</DeferredSalesExpPremAmt>
+                    <DeferredSalesSurrChgLimitAmt>0</DeferredSalesSurrChgLimitAmt>
+                    <DeferredAdminLoadExpPremAmt>0</DeferredAdminLoadExpPremAmt>
+                    <DeferredAdminSurrChgLimitAmt>0</DeferredAdminSurrChgLimitAmt>
+                  </LifeExtension>
+                </OLifEExtension>
+              </Life>
+              <ApplicationInfo>
+                <HOAppFormNumber>AXA-TCONV-2011FL</HOAppFormNumber>
+                <ApplicationType tc="4">Convert, New Contract</ApplicationType>
+                <ApplicationJurisdiction tc="12">Florida</ApplicationJurisdiction>
+                <FormalAppInd tc="1">True</FormalAppInd>
+                <SignedDate>2019-06-24</SignedDate>
+                <SubmissionDate>2019-06-19</SubmissionDate>
+                <CarrierInputDate>2019-06-26</CarrierInputDate>
+                <PlacementEndDate>2019-09-17</PlacementEndDate>
+                <CWAAmt>0</CWAAmt>
+                <PremBalDue>726.8</PremBalDue>
+                <NBContactName>UCMR18NL</NBContactName>
+                <HOUnderwriterName>UW30NL</HOUnderwriterName>
+                <ReplacementInd tc="0">False</ReplacementInd>
+                <AgentRelatedInd tc="0">False</AgentRelatedInd>
+                <SignatureInfo SignaturePartyID="Party_032_01" id="SignatureInfo_1">
+                  <SignatureCode>LifeApp</SignatureCode>
+                  <SignatureRoleCode tc="18">Owner</SignatureRoleCode>
+                  <SignatureDate>2019-06-24</SignatureDate>
+                  <SignatureCity>lee</SignatureCity>
+                  <SignatureState tc="12">Florida</SignatureState>
+                  <SignaturePurpose tc="7">Application Signature</SignaturePurpose>
+                  <OLifEExtension ExtensionCode="SignatureInfo 2.9.03" VendorCode="05">
+                    <SignatureInfoExtension>
+                      <SignatureType tc="1009800001">Wet Signature</SignatureType>
+                      <TitleInd tc="0">False</TitleInd>
+                    </SignatureInfoExtension>
+                  </OLifEExtension>
+                </SignatureInfo>
+                <SignatureInfo SignaturePartyID="Party_4" id="SignatureInfo_2">
+                  <SignatureCode>LifeApp</SignatureCode>
+                  <SignatureRoleCode tc="15">Primary Agent</SignatureRoleCode>
+                  <SignatureDate>2019-06-24</SignatureDate>
+                  <SignaturePurpose tc="3">Producer Application Signature</SignaturePurpose>
+                  <OLifEExtension ExtensionCode="SignatureInfo 2.9.03" VendorCode="05">
+                    <SignatureInfoExtension>
+                      <SignatureType tc="1009800001">Wet Signature</SignatureType>
+                      <SignatureOKIndCode tc="1">Yes</SignatureOKIndCode>
+                      <TitleInd tc="0">False</TitleInd>
+                    </SignatureInfoExtension>
+                  </OLifEExtension>
+                </SignatureInfo>
+                <SignatureInfo SignaturePartyID="Party_4" id="SignatureInfo_3">
+                  <SignatureCode>LifeApp</SignatureCode>
+                  <SignatureRoleCode tc="15">Primary Agent</SignatureRoleCode>
+                  <SignatureDate>2019-06-24</SignatureDate>
+                  <SignaturePurpose tc="1009800002">Producer Client Profile
+                  Signature</SignaturePurpose>
+                  <OLifEExtension ExtensionCode="SignatureInfo 2.9.03" VendorCode="05">
+                    <SignatureInfoExtension>
+                      <SignatureType tc="1009800001">Wet Signature</SignatureType>
+                      <TitleInd tc="0">False</TitleInd>
+                    </SignatureInfoExtension>
+                  </OLifEExtension>
+                </SignatureInfo>
+                <SignatureInfo SignaturePartyID="Party_032_01" id="SignatureInfo_4">
+                  <SignatureCode>LifeApp</SignatureCode>
+                  <SignatureRoleCode tc="1">Primary Insured</SignatureRoleCode>
+                  <SignatureDate>2019-06-24</SignatureDate>
+                  <SignatureCity>lee</SignatureCity>
+                  <SignatureState tc="12">Florida</SignatureState>
+                  <SignaturePurpose tc="7">Application Signature</SignaturePurpose>
+                  <OLifEExtension ExtensionCode="SignatureInfo 2.9.03" VendorCode="05">
+                    <SignatureInfoExtension>
+                      <SignatureType tc="1009800001">Wet Signature</SignatureType>
+                      <TitleInd tc="0">False</TitleInd>
+                    </SignatureInfoExtension>
+                  </OLifEExtension>
+                </SignatureInfo>
+                <OLifEExtension ExtensionCode="ApplicationInfo 2.9.03" VendorCode="05">
+                  <ApplicationInfoExtension>
+                    <ApplicationOrigin tc="1">Formal</ApplicationOrigin>
+                    <SubmissionType tc="1">Mail</SubmissionType>
+                    <TermConvPurchOptInd tc="0">False</TermConvPurchOptInd>
+                    <SpecialInstructionInd tc="0">False</SpecialInstructionInd>
+                    <LBRRequestedIndCode tc="3">Unknown</LBRRequestedIndCode>
+                    <ScanStation>01</ScanStation>
+                    <DeliveryPlacementDate>2019-09-02</DeliveryPlacementDate>
+                    <AgtConfirmReplIndCode tc="3">Unknown</AgtConfirmReplIndCode>
+                    <ClosureType>Incomplete</ClosureType>
+                    <ClosureInd>0</ClosureInd>
+                    <ClosureOverrideInd>0</ClosureOverrideInd>
+                    <ProducerNotifyDate>2019-09-02</ProducerNotifyDate>
+                    <NIGOInd tc="0">False</NIGOInd>
+                    <AddlCoveragePlanInd tc="0">False</AddlCoveragePlanInd>
+                    <InternationalUWProgInd tc="0">False</InternationalUWProgInd>
+                    <IUPOverrideInd tc="0">False</IUPOverrideInd>
+                    <ProposedInsuredInd tc="0">False</ProposedInsuredInd>
+                    <LastSuitabilityRunDate>2019-11-21</LastSuitabilityRunDate>
+                    <LastSuitabilityRunTime>13:34:00</LastSuitabilityRunTime>
+                    <ReadyForSuitabilityInd tc="1">True</ReadyForSuitabilityInd>
+                    <PriorSuitabilityIGOStatusInd tc="1">True</PriorSuitabilityIGOStatusInd>
+                    <QualifyForSuitabilityInd tc="1">True</QualifyForSuitabilityInd>
+                    <ChkInTransitInd tc="0">False</ChkInTransitInd>
+                    <LevelizedCommissionInd tc="0">False</LevelizedCommissionInd>
+                    <VarProdDisclosureInd tc="0">False</VarProdDisclosureInd>
+                    <SystematicPaymentPlanSetUpInd tc="0">False</SystematicPaymentPlanSetUpInd>
+                    <JointInsuredSameAsOwnerIndCode tc="3">Unknown</JointInsuredSameAsOwnerIndCode>
+                    <SubFirmIndicator tc="0">False</SubFirmIndicator>
+                    <PredOverrideInd tc="0">False</PredOverrideInd>
+                    <ReqPolicyDeliverMethod tc="1">Regular Mail</ReqPolicyDeliverMethod>
+                    <JointInsuredInd tc="0">False</JointInsuredInd>
+                    <InitialReviewCode tc="1000980002">No</InitialReviewCode>
+                    <InitialReviewEndDate>2019-07-01 08:33:23:896</InitialReviewEndDate>
+                    <BICSignedAndDated tc="0">False</BICSignedAndDated>
+                    <BICDataRequired tc="0">False</BICDataRequired>
+                    <BICOnFileRight tc="0">False</BICOnFileRight>
+                    <DOLQualifiedPlan tc="0">False</DOLQualifiedPlan>
+                    <LastRequirementInd tc="3">Incomplete</LastRequirementInd>
+                  </ApplicationInfoExtension>
+                </OLifEExtension>
+              </ApplicationInfo>
+              <RequirementInfo AppliesToPartyID="Party_032_01" id="RequirementInfo_1">
+                <ReqCode tc="5">Urine Specimen</ReqCode>
+                <RequirementInfoUniqueID>05-BA_569352698_5_1</RequirementInfoUniqueID>
+                <Sequence>0</Sequence>
+                <RestrictIssueCode tc="5" />
+                <ReqStatus tc="23">Add</ReqStatus>
+                <UserCode>A2REQDET</UserCode>
+                <FormRecievedWithAppInd tc="0">False</FormRecievedWithAppInd>
+                <StatusDate>2019-06-26</StatusDate>
+                <OLifEExtension ExtensionCode="RequirementInfo 2.9.03" VendorCode="05">
+                  <RequirementInfoExtension>
+                    <MedicalIndicator tc="1">True</MedicalIndicator>
+                    <FollowUpRequestNumber>0</FollowUpRequestNumber>
+                    <FollowUpFreq>10</FollowUpFreq>
+                    <AutoOrderIndicator tc="1">True</AutoOrderIndicator>
+                    <TrackingInfo id="TrackingInfo_1">
+                      <TrackingServiceProvider>PRDC</TrackingServiceProvider>
+                      <FollowUpServiceProvider>PRDC</FollowUpServiceProvider>
+                    </TrackingInfo>
+                    <WorkitemID>2019-06-26-07.33.32.956500T01</WorkitemID>
+                    <ReviewCode>1</ReviewCode>
+                    <CreatedDate>2019-06-26</CreatedDate>
+                    <FollowUpDate>2019-12-01</FollowUpDate>
+                    <UWRequirementsInd tc="1">True</UWRequirementsInd>
+                    <ReqBundleInd tc="1">True</ReqBundleInd>
+                    <RevokedFormInd tc="0">False</RevokedFormInd>
+                    <MvrReturnCount>-1</MvrReturnCount>
+                  </RequirementInfoExtension>
+                </OLifEExtension>
+              </RequirementInfo>
+              <RequirementInfo AppliesToPartyID="Party_032_01" id="RequirementInfo_10">
+                <ReqCode tc="1009800030">Notice &amp; Consent Form</ReqCode>
+                <RequirementInfoUniqueID>05-BA_569352698_1009800030_10</RequirementInfoUniqueID>
+                <Sequence>0</Sequence>
+                <FormNo>180-317A-(10/07)</FormNo>
+                <RestrictIssueCode tc="5" />
+                <ReqStatus tc="23">Add</ReqStatus>
+                <UserCode>A2REQDET</UserCode>
+                <FormRecievedWithAppInd tc="0">False</FormRecievedWithAppInd>
+                <StatusDate>2019-06-26</StatusDate>
+                <OLifEExtension ExtensionCode="RequirementInfo 2.9.03" VendorCode="05">
+                  <RequirementInfoExtension>
+                    <MedicalIndicator tc="0">False</MedicalIndicator>
+                    <FollowUpRequestNumber>0</FollowUpRequestNumber>
+                    <FollowUpFreq>10</FollowUpFreq>
+                    <AutoOrderIndicator tc="1">True</AutoOrderIndicator>
+                    <TrackingInfo id="TrackingInfo_10">
+                      <TrackingServiceProvider>PRDC</TrackingServiceProvider>
+                      <FollowUpServiceProvider>PRDC</FollowUpServiceProvider>
+                    </TrackingInfo>
+                    <WorkitemID>2019-06-26-07.33.40.204500T01</WorkitemID>
+                    <ReviewCode>0</ReviewCode>
+                    <CreatedDate>2019-06-26</CreatedDate>
+                    <FollowUpDate>2019-12-01</FollowUpDate>
+                    <UWRequirementsInd tc="0">False</UWRequirementsInd>
+                    <RevokedFormInd tc="0">False</RevokedFormInd>
+                    <MvrReturnCount>-1</MvrReturnCount>
+                  </RequirementInfoExtension>
+                </OLifEExtension>
+              </RequirementInfo>
+              <RequirementInfo AppliesToPartyID="Party_032_01" id="RequirementInfo_11">
+                <ReqCode tc="10">Paramed Exam</ReqCode>
+                <RequirementInfoUniqueID>05-BA_569352698_10_11</RequirementInfoUniqueID>
+                <Sequence>0</Sequence>
+                <FormNo>AXA-PARAMED-2016FL</FormNo>
+                <RestrictIssueCode tc="5" />
+                <ReqStatus tc="23">Add</ReqStatus>
+                <UserCode>A2REQDET</UserCode>
+                <FormRecievedWithAppInd tc="0">False</FormRecievedWithAppInd>
+                <StatusDate>2019-06-26</StatusDate>
+                <OLifEExtension ExtensionCode="RequirementInfo 2.9.03" VendorCode="05">
+                  <RequirementInfoExtension>
+                    <MedicalIndicator tc="1">True</MedicalIndicator>
+                    <FollowUpRequestNumber>0</FollowUpRequestNumber>
+                    <FollowUpFreq>10</FollowUpFreq>
+                    <AutoOrderIndicator tc="1">True</AutoOrderIndicator>
+                    <TrackingInfo id="TrackingInfo_11">
+                      <TrackingServiceProvider>PRDC</TrackingServiceProvider>
+                      <FollowUpServiceProvider>PRDC</FollowUpServiceProvider>
+                    </TrackingInfo>
+                    <WorkitemID>2019-06-26-07.33.40.683500T01</WorkitemID>
+                    <ReviewCode>2</ReviewCode>
+                    <CreatedDate>2019-06-26</CreatedDate>
+                    <FollowUpDate>2019-12-01</FollowUpDate>
+                    <UWRequirementsInd tc="1">True</UWRequirementsInd>
+                    <RevokedFormInd tc="0">False</RevokedFormInd>
+                    <MvrReturnCount>-1</MvrReturnCount>
+                  </RequirementInfoExtension>
+                </OLifEExtension>
+              </RequirementInfo>
+              <RequirementInfo AppliesToPartyID="Party_032_01" id="RequirementInfo_12">
+                <ReqCode tc="1009800130">BLG Questionnaire (Section B)</ReqCode>
+                <RequirementInfoUniqueID>05-BA_569352698_1009800130_12</RequirementInfoUniqueID>
+                <Sequence>0</Sequence>
+                <FormNo>AXA-AIUL-2011(BLG)</FormNo>
+                <RestrictIssueCode tc="5" />
+                <ReqStatus tc="7">Received</ReqStatus>
+                <FulfilledDate>2019-06-19</FulfilledDate>
+                <ReceivedDate>2019-06-19</ReceivedDate>
+                <UserCode>A2ORDER8</UserCode>
+                <FormRecievedWithAppInd tc="1">True</FormRecievedWithAppInd>
+                <StatusDate>2019-06-26</StatusDate>
+                <OLifEExtension ExtensionCode="RequirementInfo 2.9.03" VendorCode="05">
+                  <RequirementInfoExtension>
+                    <MedicalIndicator tc="1">True</MedicalIndicator>
+                    <FollowUpRequestNumber>0</FollowUpRequestNumber>
+                    <FollowUpFreq>10</FollowUpFreq>
+                    <AutoOrderIndicator tc="1">True</AutoOrderIndicator>
+                    <TrackingInfo id="TrackingInfo_1">
+                      <TrackingServiceProvider>PRDC</TrackingServiceProvider>
+                      <FollowUpServiceProvider>MANL</FollowUpServiceProvider>
+                    </TrackingInfo>
+                    <WorkitemID>2019-06-26-07.38.25.399500T01</WorkitemID>
+                    <ReviewCode>2</ReviewCode>
+                    <CreatedDate>2019-06-26</CreatedDate>
+                    <DisplayImagesInd tc="1">True</DisplayImagesInd>
+                    <PremiumDueCarrierReceiptDate>2019-06-19</PremiumDueCarrierReceiptDate>
+                    <MatchedCriteria>[WorkTypeLOB, PolicyNumberLOB]</MatchedCriteria>
+                    <UWRequirementsInd tc="1">True</UWRequirementsInd>
+                    <ReceivedDateTime>2019-06-19 12:00:00</ReceivedDateTime>
+                    <RevokedFormInd tc="0">False</RevokedFormInd>
+                    <MvrReturnCount>-1</MvrReturnCount>
+                  </RequirementInfoExtension>
+                </OLifEExtension>
+              </RequirementInfo>
+              <RequirementInfo AppliesToPartyID="Party_032_01" id="RequirementInfo_13">
+                <ReqCode tc="103">Avocation Questionnaire (Section C)</ReqCode>
+                <RequirementInfoUniqueID>05-BA_569352698_103_13</RequirementInfoUniqueID>
+                <Sequence>0</Sequence>
+                <RestrictIssueCode tc="5" />
+                <ReqStatus tc="7">Received</ReqStatus>
+                <FulfilledDate>2019-06-19</FulfilledDate>
+                <ReceivedDate>2019-06-19</ReceivedDate>
+                <UserCode>A2ORDER8</UserCode>
+                <FormRecievedWithAppInd tc="1">True</FormRecievedWithAppInd>
+                <StatusDate>2019-06-26</StatusDate>
+                <OLifEExtension ExtensionCode="RequirementInfo 2.9.03" VendorCode="05">
+                  <RequirementInfoExtension>
+                    <MedicalIndicator tc="1">True</MedicalIndicator>
+                    <FollowUpRequestNumber>0</FollowUpRequestNumber>
+                    <FollowUpFreq>10</FollowUpFreq>
+                    <AutoOrderIndicator tc="1">True</AutoOrderIndicator>
+                    <TrackingInfo id="TrackingInfo_1">
+                      <TrackingServiceProvider>PRDC</TrackingServiceProvider>
+                      <FollowUpServiceProvider>PRDC</FollowUpServiceProvider>
+                    </TrackingInfo>
+                    <WorkitemID>2019-06-26-07.43.38.851500T01</WorkitemID>
+                    <ReviewCode>2</ReviewCode>
+                    <CreatedDate>2019-06-26</CreatedDate>
+                    <DisplayImagesInd tc="1">True</DisplayImagesInd>
+                    <PremiumDueCarrierReceiptDate>2019-06-19</PremiumDueCarrierReceiptDate>
+                    <MatchedCriteria>[WorkTypeLOB, PolicyNumberLOB]</MatchedCriteria>
+                    <UWRequirementsInd tc="1">True</UWRequirementsInd>
+                    <ReceivedDateTime>2019-06-19 12:00:00</ReceivedDateTime>
+                    <RevokedFormInd tc="0">False</RevokedFormInd>
+                    <MvrReturnCount>-1</MvrReturnCount>
+                  </RequirementInfoExtension>
+                </OLifEExtension>
+              </RequirementInfo>
+              <RequirementInfo AppliesToPartyID="Party_032_01" id="RequirementInfo_14">
+                <ReqCode tc="102">Aviation Questionnaire (Section C)</ReqCode>
+                <RequirementInfoUniqueID>05-BA_569352698_102_14</RequirementInfoUniqueID>
+                <Sequence>0</Sequence>
+                <RestrictIssueCode tc="5" />
+                <ReqStatus tc="7">Received</ReqStatus>
+                <FulfilledDate>2019-06-19</FulfilledDate>
+                <ReceivedDate>2019-06-19</ReceivedDate>
+                <UserCode>A2ORDER5</UserCode>
+                <FormRecievedWithAppInd tc="1">True</FormRecievedWithAppInd>
+                <StatusDate>2019-06-26</StatusDate>
+                <OLifEExtension ExtensionCode="RequirementInfo 2.9.03" VendorCode="05">
+                  <RequirementInfoExtension>
+                    <MedicalIndicator tc="1">True</MedicalIndicator>
+                    <FollowUpRequestNumber>0</FollowUpRequestNumber>
+                    <FollowUpFreq>10</FollowUpFreq>
+                    <AutoOrderIndicator tc="1">True</AutoOrderIndicator>
+                    <TrackingInfo id="TrackingInfo_1">
+                      <TrackingServiceProvider>PRDC</TrackingServiceProvider>
+                      <FollowUpServiceProvider>PRDC</FollowUpServiceProvider>
+                    </TrackingInfo>
+                    <WorkitemID>2019-06-26-07.49.07.038520T01</WorkitemID>
+                    <ReviewCode>2</ReviewCode>
+                    <CreatedDate>2019-06-26</CreatedDate>
+                    <DisplayImagesInd tc="1">True</DisplayImagesInd>
+                    <PremiumDueCarrierReceiptDate>2019-06-19</PremiumDueCarrierReceiptDate>
+                    <MatchedCriteria>[WorkTypeLOB, PolicyNumberLOB]</MatchedCriteria>
+                    <UWRequirementsInd tc="1">True</UWRequirementsInd>
+                    <ReceivedDateTime>2019-06-19 12:00:00</ReceivedDateTime>
+                    <RevokedFormInd tc="0">False</RevokedFormInd>
+                    <MvrReturnCount>-1</MvrReturnCount>
+                  </RequirementInfoExtension>
+                </OLifEExtension>
+              </RequirementInfo>
+              <RequirementInfo AppliesToPartyID="Party_032_01" id="RequirementInfo_2">
+                <ReqCode tc="2">Blood Profile</ReqCode>
+                <RequirementInfoUniqueID>05-BA_569352698_2_2</RequirementInfoUniqueID>
+                <Sequence>0</Sequence>
+                <RestrictIssueCode tc="5" />
+                <ReqStatus tc="23">Add</ReqStatus>
+                <UserCode>A2REQDET</UserCode>
+                <FormRecievedWithAppInd tc="0">False</FormRecievedWithAppInd>
+                <StatusDate>2019-06-26</StatusDate>
+                <OLifEExtension ExtensionCode="RequirementInfo 2.9.03" VendorCode="05">
+                  <RequirementInfoExtension>
+                    <MedicalIndicator tc="1">True</MedicalIndicator>
+                    <FollowUpRequestNumber>0</FollowUpRequestNumber>
+                    <FollowUpFreq>10</FollowUpFreq>
+                    <AutoOrderIndicator tc="1">True</AutoOrderIndicator>
+                    <TrackingInfo id="TrackingInfo_2">
+                      <TrackingServiceProvider>PRDC</TrackingServiceProvider>
+                      <FollowUpServiceProvider>PRDC</FollowUpServiceProvider>
+                    </TrackingInfo>
+                    <WorkitemID>2019-06-26-07.33.33.493500T01</WorkitemID>
+                    <ReviewCode>1</ReviewCode>
+                    <CreatedDate>2019-06-26</CreatedDate>
+                    <FollowUpDate>2019-12-01</FollowUpDate>
+                    <UWRequirementsInd tc="1">True</UWRequirementsInd>
+                    <ReqBundleInd tc="1">True</ReqBundleInd>
+                    <RevokedFormInd tc="0">False</RevokedFormInd>
+                    <MvrReturnCount>-1</MvrReturnCount>
+                  </RequirementInfoExtension>
+                </OLifEExtension>
+              </RequirementInfo>
+              <RequirementInfo AppliesToPartyID="Party_032_01" id="RequirementInfo_3">
+                <ReqCode tc="21">MIB Check</ReqCode>
+                <RequirementInfoUniqueID>05-BA_569352698_21_3</RequirementInfoUniqueID>
+                <Sequence>0</Sequence>
+                <RestrictIssueCode tc="5" />
+                <ReqStatus tc="7">Received</ReqStatus>
+                <RequestedDate>2019-06-26</RequestedDate>
+                <FulfilledDate>2019-06-26</FulfilledDate>
+                <ReceivedDate>2019-06-26</ReceivedDate>
+                <UserCode>A2REQDET</UserCode>
+                <FormRecievedWithAppInd tc="0">False</FormRecievedWithAppInd>
+                <StatusDate>2019-06-26</StatusDate>
+                <Attachment id="Attachment_6">
+                  <AttachmentBasicType tc="1">Text Only</AttachmentBasicType>
+                  <AttachmentData>&lt;?xml version="1.0" encoding="UTF-8"?&gt; &lt;TXLife
+                  xmlns="http://ACORD.org/Standards/Life/2" Version="2.34.00"&gt;
+                  &lt;UserAuthRequest&gt; &lt;UserLoginName&gt;&lt;/UserLoginName&gt;
+                  &lt;UserPswd&gt; &lt;CryptType&gt;NONE&lt;/CryptType&gt;
+                  &lt;Pswd&gt;&lt;/Pswd&gt; &lt;/UserPswd&gt;
+                  &lt;UserDate&gt;2019-06-26&lt;/UserDate&gt;
+                  &lt;UserTime&gt;08:43:33&lt;/UserTime&gt; &lt;VendorApp&gt; &lt;VendorName
+                  VendorCode="05"&gt;CSC&lt;/VendorName&gt; &lt;AppName&gt;nbA_Life&lt;/AppName&gt;
+                  &lt;AppVer&gt;1.0&lt;/AppVer&gt; &lt;/VendorApp&gt; &lt;/UserAuthRequest&gt;
+                  &lt;TXLifeRequest PrimaryObjectID="Holding_1"&gt;
+                  &lt;TransRefGUID&gt;47bb4477-8ca6-efac-1105-b57cc6641671&lt;/TransRefGUID&gt;
+                  &lt;TransType tc="401"&gt;MIB Inquiry&lt;/TransType&gt;
+                  &lt;TransExeDate&gt;2019-06-26&lt;/TransExeDate&gt;
+                  &lt;TransExeTime&gt;08:43:33&lt;/TransExeTime&gt; &lt;TransMode
+                  tc="2"&gt;Original&lt;/TransMode&gt; &lt;PendingResponseOK
+                  tc="0"&gt;False&lt;/PendingResponseOK&gt; &lt;TestIndicator
+                  tc="1"&gt;True&lt;/TestIndicator&gt; &lt;MIBRequest&gt; &lt;MIBPriority
+                  tc="1"&gt;Standard&lt;/MIBPriority&gt; &lt;MIBSearchDepth
+                  tc="1"&gt;Standard&lt;/MIBSearchDepth&gt; &lt;MIBServiceDescriptor&gt;
+                  &lt;MIBService tc="1"&gt;Checking Service&lt;/MIBService&gt;
+                  &lt;MIBServiceOptions&gt; &lt;MIBFollowUpInd
+                  tc="1"&gt;True&lt;/MIBFollowUpInd&gt; &lt;/MIBServiceOptions&gt;
+                  &lt;/MIBServiceDescriptor&gt; &lt;MIBServiceDescriptor&gt; &lt;MIBService
+                  tc="3"&gt;IAI&lt;/MIBService&gt; &lt;MIBServiceOptions&gt; &lt;MIBFollowUpInd
+                  tc="0"&gt;False&lt;/MIBFollowUpInd&gt; &lt;/MIBServiceOptions&gt;
+                  &lt;/MIBServiceDescriptor&gt; &lt;/MIBRequest&gt; &lt;OLifE Version="2.34.00"&gt;
+                  &lt;SourceInfo&gt; &lt;CreationDate&gt;2019-06-26&lt;/CreationDate&gt;
+                  &lt;CreationTime&gt;08:43:33&lt;/CreationTime&gt;
+                  &lt;SourceInfoName&gt;nbA_Life&lt;/SourceInfoName&gt;
+                  &lt;FileControlID&gt;L70&lt;/FileControlID&gt; &lt;/SourceInfo&gt;
+                  &lt;CurrentLanguage tc="9"&gt;English&lt;/CurrentLanguage&gt; &lt;Holding
+                  id="Holding_1"&gt; &lt;HoldingTypeCode tc="2"&gt;Policy&lt;/HoldingTypeCode&gt;
+                  &lt;HoldingStatus tc="3"&gt;Proposed&lt;/HoldingStatus&gt; &lt;CurrencyTypeCode
+                  tc="840"&gt;USD (United States Dollar)&lt;/CurrencyTypeCode&gt; &lt;HoldingForm
+                  tc="1"&gt;Individual&lt;/HoldingForm&gt; &lt;Policy CarrierPartyID="Party_7"&gt;
+                  &lt;PolNumber&gt;BA-L70-569352698&lt;/PolNumber&gt; &lt;LineOfBusiness
+                  tc="1"&gt;Life&lt;/LineOfBusiness&gt; &lt;ProductType tc="5"&gt;Indexed Universal
+                  Life&lt;/ProductType&gt; &lt;ProductCode&gt;FWM107&lt;/ProductCode&gt;
+                  &lt;CarrierCode&gt;BA&lt;/CarrierCode&gt; &lt;PolicyStatus tc="8"&gt;Pending
+                  Issue&lt;/PolicyStatus&gt; &lt;Life id="Life_4"&gt;
+                  &lt;FaceAmt&gt;1000000&lt;/FaceAmt&gt; &lt;Coverage&gt; &lt;LifeParticipant
+                  PartyID="Party_5"&gt; &lt;LifeParticipantRoleCode tc="1"&gt;Primary
+                  Insured&lt;/LifeParticipantRoleCode&gt; &lt;/LifeParticipant&gt;
+                  &lt;/Coverage&gt; &lt;/Life&gt; &lt;ApplicationInfo&gt;
+                  &lt;TrackingID&gt;05-BA_569352698_21_3&lt;/TrackingID&gt;
+                  &lt;/ApplicationInfo&gt; &lt;RequirementInfo id="RequirementInfo_13"
+                  AppliesToPartyID="Party_5" RequesterPartyID="Party_7"&gt; &lt;ReqCode
+                  tc="21"&gt;MIB Check&lt;/ReqCode&gt;
+                  &lt;RequirementInfoUniqueID&gt;05-BA_569352698_21_3&lt;/RequirementInfoUniqueID&gt;
+                  &lt;ReqStatus tc="2"&gt;Submitted&lt;/ReqStatus&gt;
+                  &lt;RequestedDate&gt;2019-06-26&lt;/RequestedDate&gt; &lt;MIBInquiryReason
+                  tc="1"&gt;New Business&lt;/MIBInquiryReason&gt; &lt;/RequirementInfo&gt;
+                  &lt;/Policy&gt; &lt;/Holding&gt; &lt;Party id="Party_5"&gt;
+                  &lt;GovtID&gt;667244286&lt;/GovtID&gt; &lt;GovtIDTC tc="1"&gt;Social Security
+                  Number US&lt;/GovtIDTC&gt; &lt;ResidenceState
+                  tc="12"&gt;Florida&lt;/ResidenceState&gt; &lt;ResidenceCountry tc="1"&gt;United
+                  States of America&lt;/ResidenceCountry&gt;
+                  &lt;ResidenceZip&gt;32059&lt;/ResidenceZip&gt; &lt;Person&gt;
+                  &lt;FirstName&gt;Dolajunmjys&lt;/FirstName&gt;
+                  &lt;MiddleName&gt;&lt;/MiddleName&gt;
+                  &lt;LastName&gt;Nickjunmjys&lt;/LastName&gt;
+                  &lt;Occupation&gt;UNKNOWN&lt;/Occupation&gt; &lt;Gender
+                  tc="2"&gt;Female&lt;/Gender&gt; &lt;BirthDate&gt;1986-08-23&lt;/BirthDate&gt;
+                  &lt;BirthCountry tc="0"&gt;Unknown&lt;/BirthCountry&gt; &lt;BirthJurisdictionTC
+                  tc="0"&gt;Unknown&lt;/BirthJurisdictionTC&gt; &lt;/Person&gt; &lt;/Party&gt;
+                  &lt;Party id="Party_6"&gt; &lt;Organization /&gt; &lt;Producer&gt;
+                  &lt;CarrierAppointment&gt; &lt;CarrierApptTypeCode
+                  tc="1"&gt;Agent&lt;/CarrierApptTypeCode&gt; &lt;/CarrierAppointment&gt;
+                  &lt;/Producer&gt; &lt;/Party&gt; &lt;Party id="Party_7"&gt; &lt;Organization
+                  /&gt; &lt;Carrier&gt; &lt;CarrierCode&gt;O31&lt;/CarrierCode&gt; &lt;CarrierForm
+                  tc="1"&gt;Direct Carrier&lt;/CarrierForm&gt; &lt;/Carrier&gt; &lt;/Party&gt;
+                  &lt;Relation id="Relation_1" OriginatingObjectID="Holding_1"
+                  RelatedObjectID="Party_5"&gt; &lt;OriginatingObjectType
+                  tc="4"&gt;Holding&lt;/OriginatingObjectType&gt; &lt;RelatedObjectType
+                  tc="6"&gt;Party&lt;/RelatedObjectType&gt; &lt;RelationRoleCode
+                  tc="32"&gt;Insured&lt;/RelationRoleCode&gt; &lt;/Relation&gt; &lt;Relation
+                  id="Relation_2" OriginatingObjectID="Holding_1" RelatedObjectID="Party_6"&gt;
+                  &lt;OriginatingObjectType tc="4"&gt;Holding&lt;/OriginatingObjectType&gt;
+                  &lt;RelatedObjectType tc="6"&gt;Party&lt;/RelatedObjectType&gt;
+                  &lt;RelationRoleCode tc="37"&gt;Primary Writing Agent&lt;/RelationRoleCode&gt;
+                  &lt;/Relation&gt; &lt;Relation id="Relation_3" OriginatingObjectID="Holding_1"
+                  RelatedObjectID="Party_7"&gt; &lt;OriginatingObjectType
+                  tc="4"&gt;Holding&lt;/OriginatingObjectType&gt; &lt;RelatedObjectType
+                  tc="6"&gt;Party&lt;/RelatedObjectType&gt; &lt;RelationRoleCode
+                  tc="97"&gt;Requestor&lt;/RelationRoleCode&gt; &lt;/Relation&gt; &lt;/OLifE&gt;
+                  &lt;/TXLifeRequest&gt; &lt;/TXLife&gt;</AttachmentData>
+                  <AttachmentType tc="247">MIB 401</AttachmentType>
+                </Attachment>
+                <Attachment id="Attachment_7">
+                  <DateCreated>2019-06-26</DateCreated>
+                  <AttachmentBasicType tc="1">Text Only</AttachmentBasicType>
+                  <AttachmentData>&lt;?xml version="1.0" encoding="UTF-8"?&gt; &lt;TXLife
+                  xmlns="http://ACORD.org/Standards/Life/2" Version="2.15.02"&gt;
+                  &lt;TXLifeResponse PrimaryObjectID="Holding_1_1"&gt;
+                  &lt;TransRefGUID&gt;47bb1393-9538-ef14-9477-90d4fa7b594c&lt;/TransRefGUID&gt;
+                  &lt;TransType tc="401"&gt;MIB Inquiry&lt;/TransType&gt;
+                  &lt;TransExeDate&gt;2019-04-16&lt;/TransExeDate&gt;
+                  &lt;TransExeTime&gt;14:26:30&lt;/TransExeTime&gt; &lt;TransMode
+                  tc="2"&gt;Original&lt;/TransMode&gt; &lt;TestIndicator
+                  tc="0"&gt;False&lt;/TestIndicator&gt; &lt;MIBRequest&gt; &lt;MIBPriority
+                  tc="1"&gt;Standard&lt;/MIBPriority&gt; &lt;MIBSearchDepth
+                  tc="1"&gt;Standard&lt;/MIBSearchDepth&gt; &lt;MIBServiceDescriptor&gt;
+                  &lt;MIBService tc="1"&gt;Checking Service&lt;/MIBService&gt;
+                  &lt;MIBServiceOptions&gt; &lt;MIBFollowUpInd
+                  tc="1"&gt;True&lt;/MIBFollowUpInd&gt; &lt;/MIBServiceOptions&gt;
+                  &lt;/MIBServiceDescriptor&gt; &lt;MIBServiceDescriptor&gt; &lt;MIBService
+                  tc="3"&gt;IAI&lt;/MIBService&gt; &lt;MIBServiceOptions&gt; &lt;MIBFollowUpInd
+                  tc="0"&gt;False&lt;/MIBFollowUpInd&gt; &lt;/MIBServiceOptions&gt;
+                  &lt;/MIBServiceDescriptor&gt; &lt;/MIBRequest&gt; &lt;TransResult&gt;
+                  &lt;ResultCode tc="1"&gt;Success&lt;/ResultCode&gt;
+                  &lt;RecordsFound&gt;3&lt;/RecordsFound&gt; &lt;/TransResult&gt; &lt;OLifE
+                  Version="2.34.00"&gt; &lt;Holding id="Holding_1_1"&gt; &lt;Policy&gt;
+                  &lt;PolNumber&gt;EQC-CAPS-119350862&lt;/PolNumber&gt; &lt;ApplicationInfo&gt;
+                  &lt;HOAssignedAppNumber&gt;&lt;/HOAssignedAppNumber&gt;
+                  &lt;TrackingID&gt;05-EQC_119350862_21_16&lt;/TrackingID&gt;
+                  &lt;/ApplicationInfo&gt; &lt;RequirementInfo AppliesToPartyID="Person_1_1"&gt;
+                  &lt;ReqCode tc="21"&gt;MIB Check&lt;/ReqCode&gt;
+                  &lt;RequirementInfoUniqueID&gt;05-EQC_119350862_21_16&lt;/RequirementInfoUniqueID&gt;
+                  &lt;ReqStatus tc="20"&gt;Published&lt;/ReqStatus&gt; &lt;MIBInquiryReason
+                  tc="1"&gt;New Business&lt;/MIBInquiryReason&gt; &lt;ReqSubStatus
+                  tc="3"&gt;Included in Transaction&lt;/ReqSubStatus&gt; &lt;/RequirementInfo&gt;
+                  &lt;/Policy&gt; &lt;/Holding&gt; &lt;Holding id="IAI_Holding_1_1_1_1"&gt;
+                  &lt;HoldingTypeCode tc="2"&gt;Policy&lt;/HoldingTypeCode&gt; &lt;HoldingStatus
+                  tc="0"&gt;Unknown&lt;/HoldingStatus&gt; &lt;CurrencyTypeCode tc="840"&gt;USD
+                  (United States Dollar)&lt;/CurrencyTypeCode&gt; &lt;HoldingForm
+                  tc="1"&gt;Individual&lt;/HoldingForm&gt; &lt;Policy&gt; &lt;LineOfBusiness
+                  tc="1"&gt;Life&lt;/LineOfBusiness&gt; &lt;Life&gt;
+                  &lt;FaceAmt&gt;40000000&lt;/FaceAmt&gt; &lt;/Life&gt; &lt;RequirementInfo&gt;
+                  &lt;MIBInquiryReason tc="1"&gt;New Business&lt;/MIBInquiryReason&gt;
+                  &lt;/RequirementInfo&gt; &lt;/Policy&gt; &lt;/Holding&gt; &lt;Holding
+                  id="IAI_Holding_1_1_1_2"&gt; &lt;HoldingTypeCode
+                  tc="2"&gt;Policy&lt;/HoldingTypeCode&gt; &lt;HoldingStatus
+                  tc="0"&gt;Unknown&lt;/HoldingStatus&gt; &lt;CurrencyTypeCode tc="840"&gt;USD
+                  (United States Dollar)&lt;/CurrencyTypeCode&gt; &lt;HoldingForm
+                  tc="1"&gt;Individual&lt;/HoldingForm&gt; &lt;Policy&gt; &lt;LineOfBusiness
+                  tc="1"&gt;Life&lt;/LineOfBusiness&gt; &lt;Life&gt;
+                  &lt;FaceAmt&gt;40000000&lt;/FaceAmt&gt; &lt;/Life&gt; &lt;RequirementInfo&gt;
+                  &lt;MIBInquiryReason tc="1"&gt;New Business&lt;/MIBInquiryReason&gt;
+                  &lt;/RequirementInfo&gt; &lt;/Policy&gt; &lt;/Holding&gt; &lt;Holding
+                  id="IAI_Holding_1_1_2_1"&gt; &lt;HoldingTypeCode
+                  tc="2"&gt;Policy&lt;/HoldingTypeCode&gt; &lt;HoldingStatus
+                  tc="0"&gt;Unknown&lt;/HoldingStatus&gt; &lt;CurrencyTypeCode tc="840"&gt;USD
+                  (United States Dollar)&lt;/CurrencyTypeCode&gt; &lt;HoldingForm
+                  tc="1"&gt;Individual&lt;/HoldingForm&gt; &lt;Policy&gt; &lt;LineOfBusiness
+                  tc="1"&gt;Life&lt;/LineOfBusiness&gt; &lt;Life&gt;
+                  &lt;FaceAmt&gt;40000000&lt;/FaceAmt&gt; &lt;/Life&gt; &lt;RequirementInfo&gt;
+                  &lt;MIBInquiryReason tc="1"&gt;New Business&lt;/MIBInquiryReason&gt;
+                  &lt;/RequirementInfo&gt; &lt;/Policy&gt; &lt;/Holding&gt; &lt;Holding
+                  id="IAI_Holding_1_1_2_2"&gt; &lt;HoldingTypeCode
+                  tc="2"&gt;Policy&lt;/HoldingTypeCode&gt; &lt;HoldingStatus
+                  tc="0"&gt;Unknown&lt;/HoldingStatus&gt; &lt;CurrencyTypeCode tc="840"&gt;USD
+                  (United States Dollar)&lt;/CurrencyTypeCode&gt; &lt;HoldingForm
+                  tc="1"&gt;Individual&lt;/HoldingForm&gt; &lt;Policy&gt; &lt;LineOfBusiness
+                  tc="1"&gt;Life&lt;/LineOfBusiness&gt; &lt;Life&gt;
+                  &lt;FaceAmt&gt;2000000&lt;/FaceAmt&gt; &lt;/Life&gt; &lt;RequirementInfo&gt;
+                  &lt;MIBInquiryReason tc="1"&gt;New Business&lt;/MIBInquiryReason&gt;
+                  &lt;/RequirementInfo&gt; &lt;/Policy&gt; &lt;/Holding&gt; &lt;Holding
+                  id="IAI_Holding_1_1_3_1"&gt; &lt;HoldingTypeCode
+                  tc="2"&gt;Policy&lt;/HoldingTypeCode&gt; &lt;HoldingStatus
+                  tc="0"&gt;Unknown&lt;/HoldingStatus&gt; &lt;HoldingForm
+                  tc="1"&gt;Individual&lt;/HoldingForm&gt; &lt;Policy&gt; &lt;LineOfBusiness
+                  tc="0"&gt;Unknown&lt;/LineOfBusiness&gt; &lt;RequirementInfo&gt;
+                  &lt;MIBInquiryReason tc="1"&gt;New Business&lt;/MIBInquiryReason&gt;
+                  &lt;/RequirementInfo&gt; &lt;/Policy&gt; &lt;/Holding&gt; &lt;Party
+                  id="Person_1_1"&gt; &lt;PartyKey&gt;&lt;/PartyKey&gt; &lt;Person /&gt;
+                  &lt;/Party&gt; &lt;Party id="Person_1_1_1"&gt; &lt;GovtID&gt;&lt;/GovtID&gt;
+                  &lt;ResidenceState tc="4"&gt;Arizona&lt;/ResidenceState&gt; &lt;ResidenceCountry
+                  tc="1"&gt;United States of America&lt;/ResidenceCountry&gt;
+                  &lt;ResidenceZip&gt;&lt;/ResidenceZip&gt; &lt;Person&gt;
+                  &lt;FirstName&gt;FNAME&lt;/FirstName&gt; &lt;MiddleName&gt;E&lt;/MiddleName&gt;
+                  &lt;LastName&gt;LNAME&lt;/LastName&gt; &lt;Prefix&gt;&lt;/Prefix&gt;
+                  &lt;Suffix&gt;&lt;/Suffix&gt; &lt;Occupation&gt;PRO ATHLETE&lt;/Occupation&gt;
+                  &lt;Gender tc="1"&gt;Male&lt;/Gender&gt;
+                  &lt;BirthDate&gt;1997-09-10&lt;/BirthDate&gt; &lt;OccupClass
+                  tc="0"&gt;Unknown&lt;/OccupClass&gt; &lt;BirthCountry tc="1"&gt;United States of
+                  America&lt;/BirthCountry&gt; &lt;BirthJurisdictionTC
+                  tc="9"&gt;Delaware&lt;/BirthJurisdictionTC&gt; &lt;/Person&gt; &lt;KeyedValue
+                  tc="8"&gt; &lt;KeyName&gt;MIBTerritory&lt;/KeyName&gt;
+                  &lt;VendorCode&gt;12&lt;/VendorCode&gt; &lt;KeyValue&gt;M&lt;/KeyValue&gt;
+                  &lt;/KeyedValue&gt; &lt;/Party&gt; &lt;Party
+                  id="Producer_IAI_Party_1_1_1_1_1"&gt; &lt;Person /&gt; &lt;Producer&gt;
+                  &lt;CarrierAppointment&gt; &lt;CarrierApptTypeCode
+                  tc="2"&gt;Broker&lt;/CarrierApptTypeCode&gt; &lt;/CarrierAppointment&gt;
+                  &lt;/Producer&gt; &lt;/Party&gt; &lt;Party id="IAI_Party_1_1_1_1_1"&gt;
+                  &lt;PartyTypeCode tc="2"&gt;Organization&lt;/PartyTypeCode&gt; &lt;Organization
+                  /&gt; &lt;Carrier&gt; &lt;CarrierCode&gt;6E&lt;/CarrierCode&gt; &lt;CarrierForm
+                  tc="1"&gt;Direct Carrier&lt;/CarrierForm&gt; &lt;/Carrier&gt; &lt;/Party&gt;
+                  &lt;Party id="Producer_IAI_Party_1_1_1_1_2"&gt; &lt;Person /&gt; &lt;Producer&gt;
+                  &lt;CarrierAppointment&gt; &lt;CarrierApptTypeCode
+                  tc="0"&gt;Unknown&lt;/CarrierApptTypeCode&gt; &lt;/CarrierAppointment&gt;
+                  &lt;/Producer&gt; &lt;/Party&gt; &lt;Party id="IAI_Party_1_1_1_1_2"&gt;
+                  &lt;PartyTypeCode tc="2"&gt;Organization&lt;/PartyTypeCode&gt; &lt;Organization
+                  /&gt; &lt;Carrier&gt; &lt;CarrierCode&gt;(H123)&lt;/CarrierCode&gt;
+                  &lt;CarrierForm tc="2"&gt;Reinsurer&lt;/CarrierForm&gt; &lt;/Carrier&gt;
+                  &lt;/Party&gt; &lt;Party id="Person_1_1_2"&gt; &lt;GovtID&gt;&lt;/GovtID&gt;
+                  &lt;ResidenceState tc="4"&gt;Arizona&lt;/ResidenceState&gt; &lt;ResidenceCountry
+                  tc="1"&gt;United States of America&lt;/ResidenceCountry&gt;
+                  &lt;ResidenceZip&gt;&lt;/ResidenceZip&gt; &lt;Person&gt;
+                  &lt;FirstName&gt;FNAME&lt;/FirstName&gt; &lt;MiddleName&gt;&lt;/MiddleName&gt;
+                  &lt;LastName&gt;LNAME&lt;/LastName&gt; &lt;Prefix&gt;&lt;/Prefix&gt;
+                  &lt;Suffix&gt;&lt;/Suffix&gt; &lt;Occupation&gt;&lt;/Occupation&gt; &lt;Gender
+                  tc="1"&gt;Male&lt;/Gender&gt; &lt;BirthDate&gt;1987-09-10&lt;/BirthDate&gt;
+                  &lt;OccupClass tc="0"&gt;Unknown&lt;/OccupClass&gt; &lt;BirthCountry
+                  tc="1"&gt;United States of America&lt;/BirthCountry&gt; &lt;BirthJurisdictionTC
+                  tc="9"&gt;Delaware&lt;/BirthJurisdictionTC&gt; &lt;/Person&gt; &lt;KeyedValue
+                  tc="8"&gt; &lt;KeyName&gt;MIBTerritory&lt;/KeyName&gt;
+                  &lt;VendorCode&gt;12&lt;/VendorCode&gt; &lt;KeyValue&gt;M&lt;/KeyValue&gt;
+                  &lt;/KeyedValue&gt; &lt;/Party&gt; &lt;Party
+                  id="Producer_IAI_Party_1_1_2_1_1"&gt; &lt;Person /&gt; &lt;Producer&gt;
+                  &lt;CarrierAppointment&gt; &lt;CarrierApptTypeCode
+                  tc="4"&gt;Agency&lt;/CarrierApptTypeCode&gt; &lt;/CarrierAppointment&gt;
+                  &lt;/Producer&gt; &lt;/Party&gt; &lt;Party id="IAI_Party_1_1_2_1_1"&gt;
+                  &lt;PartyTypeCode tc="2"&gt;Organization&lt;/PartyTypeCode&gt; &lt;Organization
+                  /&gt; &lt;Carrier&gt; &lt;CarrierCode&gt;YW&lt;/CarrierCode&gt; &lt;CarrierForm
+                  tc="2"&gt;Reinsurer&lt;/CarrierForm&gt; &lt;/Carrier&gt; &lt;/Party&gt; &lt;Party
+                  id="Producer_IAI_Party_1_1_2_1_2"&gt; &lt;Person /&gt; &lt;Producer&gt;
+                  &lt;CarrierAppointment&gt; &lt;CarrierApptTypeCode
+                  tc="2"&gt;Broker&lt;/CarrierApptTypeCode&gt; &lt;/CarrierAppointment&gt;
+                  &lt;/Producer&gt; &lt;/Party&gt; &lt;Party id="IAI_Party_1_1_2_1_2"&gt;
+                  &lt;PartyTypeCode tc="2"&gt;Organization&lt;/PartyTypeCode&gt; &lt;Organization
+                  /&gt; &lt;Carrier&gt; &lt;CarrierCode&gt;(ECB)&lt;/CarrierCode&gt;
+                  &lt;CarrierForm tc="1"&gt;Direct Carrier&lt;/CarrierForm&gt; &lt;/Carrier&gt;
+                  &lt;/Party&gt; &lt;Party id="Person_1_1_3"&gt; &lt;GovtID&gt;&lt;/GovtID&gt;
+                  &lt;ResidenceState tc="4"&gt;Arizona&lt;/ResidenceState&gt; &lt;ResidenceCountry
+                  tc="1"&gt;United States of America&lt;/ResidenceCountry&gt;
+                  &lt;ResidenceZip&gt;&lt;/ResidenceZip&gt; &lt;Person&gt;
+                  &lt;FirstName&gt;FNAME&lt;/FirstName&gt; &lt;MiddleName&gt;&lt;/MiddleName&gt;
+                  &lt;LastName&gt;LNAME&lt;/LastName&gt; &lt;Prefix&gt;&lt;/Prefix&gt;
+                  &lt;Suffix&gt;&lt;/Suffix&gt; &lt;Occupation&gt;&lt;/Occupation&gt; &lt;Gender
+                  tc="1"&gt;Male&lt;/Gender&gt; &lt;BirthDate&gt;1997-09-10&lt;/BirthDate&gt;
+                  &lt;OccupClass tc="0"&gt;Unknown&lt;/OccupClass&gt; &lt;BirthCountry
+                  tc="1"&gt;United States of America&lt;/BirthCountry&gt; &lt;BirthJurisdictionTC
+                  tc="9"&gt;Delaware&lt;/BirthJurisdictionTC&gt; &lt;/Person&gt; &lt;KeyedValue
+                  tc="8"&gt; &lt;KeyName&gt;MIBTerritory&lt;/KeyName&gt;
+                  &lt;VendorCode&gt;12&lt;/VendorCode&gt; &lt;KeyValue&gt;M&lt;/KeyValue&gt;
+                  &lt;/KeyedValue&gt; &lt;/Party&gt; &lt;Party
+                  id="Producer_IAI_Party_1_1_3_1_1"&gt; &lt;Person /&gt; &lt;Producer&gt;
+                  &lt;CarrierAppointment&gt; &lt;CarrierApptTypeCode
+                  tc="0"&gt;Unknown&lt;/CarrierApptTypeCode&gt; &lt;/CarrierAppointment&gt;
+                  &lt;/Producer&gt; &lt;/Party&gt; &lt;Party id="IAI_Party_1_1_3_1_1"&gt;
+                  &lt;PartyTypeCode tc="2"&gt;Organization&lt;/PartyTypeCode&gt; &lt;Organization
+                  /&gt; &lt;Carrier&gt; &lt;CarrierCode&gt;H123&lt;/CarrierCode&gt; &lt;CarrierForm
+                  tc="2"&gt;Reinsurer&lt;/CarrierForm&gt; &lt;/Carrier&gt; &lt;/Party&gt;
+                  &lt;Relation id="Relation_1_1_1_1" OriginatingObjectID="Person_1_1"
+                  RelatedObjectID="Person_1_1_1"&gt; &lt;RelationRoleCode
+                  tc="1002"&gt;&lt;/RelationRoleCode&gt; &lt;/Relation&gt; &lt;Relation
+                  id="Producer_IAI_Relation_1_1_1_1_1" OriginatingObjectID="IAI_Holding_1_1_1_1"
+                  RelatedObjectID="Producer_IAI_Party_1_1_1_1_1"&gt; &lt;RelationRoleCode
+                  tc="11"&gt;Agent&lt;/RelationRoleCode&gt; &lt;/Relation&gt; &lt;Relation
+                  id="IAI_Relation_1_1_1_1_1" OriginatingObjectID="IAI_FormInstance_1_1_1_1_1"
+                  RelatedObjectID="Person_1_1_1"&gt; &lt;RelationRoleCode tc="107"&gt;Indicating
+                  which person the form is filled out for.&lt;/RelationRoleCode&gt;
+                  &lt;/Relation&gt; &lt;Relation id="Producer_IAI_Relation_1_1_1_1_2"
+                  OriginatingObjectID="IAI_Holding_1_1_1_2"
+                  RelatedObjectID="Producer_IAI_Party_1_1_1_1_2"&gt; &lt;RelationRoleCode
+                  tc="11"&gt;Agent&lt;/RelationRoleCode&gt; &lt;/Relation&gt; &lt;Relation
+                  id="IAI_Relation_1_1_1_1_2" OriginatingObjectID="IAI_FormInstance_1_1_1_1_2"
+                  RelatedObjectID="Person_1_1_1"&gt; &lt;RelationRoleCode tc="107"&gt;Indicating
+                  which person the form is filled out for.&lt;/RelationRoleCode&gt;
+                  &lt;/Relation&gt; &lt;Relation id="Relation_1_1_2_1"
+                  OriginatingObjectID="Person_1_1" RelatedObjectID="Person_1_1_2"&gt;
+                  &lt;RelationRoleCode tc="1002"&gt;&lt;/RelationRoleCode&gt; &lt;/Relation&gt;
+                  &lt;Relation id="Producer_IAI_Relation_1_1_2_1_1"
+                  OriginatingObjectID="IAI_Holding_1_1_2_1"
+                  RelatedObjectID="Producer_IAI_Party_1_1_2_1_1"&gt; &lt;RelationRoleCode
+                  tc="11"&gt;Agent&lt;/RelationRoleCode&gt; &lt;/Relation&gt; &lt;Relation
+                  id="IAI_Relation_1_1_2_1_1" OriginatingObjectID="IAI_FormInstance_1_1_2_1_1"
+                  RelatedObjectID="Person_1_1_2"&gt; &lt;RelationRoleCode tc="107"&gt;Indicating
+                  which person the form is filled out for.&lt;/RelationRoleCode&gt;
+                  &lt;/Relation&gt; &lt;Relation id="Producer_IAI_Relation_1_1_2_1_2"
+                  OriginatingObjectID="IAI_Holding_1_1_2_2"
+                  RelatedObjectID="Producer_IAI_Party_1_1_2_1_2"&gt; &lt;RelationRoleCode
+                  tc="11"&gt;Agent&lt;/RelationRoleCode&gt; &lt;/Relation&gt; &lt;Relation
+                  id="IAI_Relation_1_1_2_1_2" OriginatingObjectID="IAI_FormInstance_1_1_2_1_2"
+                  RelatedObjectID="Person_1_1_2"&gt; &lt;RelationRoleCode tc="107"&gt;Indicating
+                  which person the form is filled out for.&lt;/RelationRoleCode&gt;
+                  &lt;/Relation&gt; &lt;Relation id="Relation_1_1_3_1"
+                  OriginatingObjectID="Person_1_1" RelatedObjectID="Person_1_1_3"&gt;
+                  &lt;RelationRoleCode tc="1002"&gt;&lt;/RelationRoleCode&gt; &lt;/Relation&gt;
+                  &lt;Relation id="Producer_IAI_Relation_1_1_3_1_1"
+                  OriginatingObjectID="IAI_Holding_1_1_3_1"
+                  RelatedObjectID="Producer_IAI_Party_1_1_3_1_1"&gt; &lt;RelationRoleCode
+                  tc="11"&gt;Agent&lt;/RelationRoleCode&gt; &lt;/Relation&gt; &lt;Relation
+                  id="IAI_Relation_1_1_3_1_1" OriginatingObjectID="IAI_FormInstance_1_1_3_1_1"
+                  RelatedObjectID="Person_1_1_3"&gt; &lt;RelationRoleCode tc="107"&gt;Indicating
+                  which person the form is filled out for.&lt;/RelationRoleCode&gt;
+                  &lt;/Relation&gt; &lt;FormInstance id="IAI_FormInstance_1_1_1_1_1"
+                  ProviderPartyID="IAI_Party_1_1_1_1_1"&gt;
+                  &lt;FormName&gt;MIB/IAI&lt;/FormName&gt;
+                  &lt;SubmitDate&gt;2019-03-28&lt;/SubmitDate&gt; &lt;FormResponse&gt;
+                  &lt;ResponseData&gt;155 GE#&lt;/ResponseData&gt; &lt;/FormResponse&gt;
+                  &lt;KeyedValue tc="10"&gt; &lt;KeyName&gt;MIBPlaceResidence&lt;/KeyName&gt;
+                  &lt;VendorCode&gt;12&lt;/VendorCode&gt; &lt;KeyValue&gt;1&lt;/KeyValue&gt;
+                  &lt;KeyValue&gt;4&lt;/KeyValue&gt; &lt;/KeyedValue&gt; &lt;OLifEExtension
+                  VendorCode="05" ExtensionCode="FormInstance 2.9.03"&gt;
+                  &lt;FormInstanceExtension&gt; &lt;MIBResolutionType tc="1"&gt;Same
+                  As&lt;/MIBResolutionType&gt; &lt;/FormInstanceExtension&gt;
+                  &lt;/OLifEExtension&gt; &lt;/FormInstance&gt; &lt;FormInstance
+                  id="IAI_FormInstance_1_1_1_1_2" ProviderPartyID="IAI_Party_1_1_1_1_2"&gt;
+                  &lt;FormName&gt;MIB/IAI&lt;/FormName&gt;
+                  &lt;SubmitDate&gt;2019-03-28&lt;/SubmitDate&gt; &lt;FormResponse&gt;
+                  &lt;ResponseData&gt;807GZN&lt;/ResponseData&gt; &lt;/FormResponse&gt;
+                  &lt;KeyedValue tc="10"&gt; &lt;KeyName&gt;MIBPlaceResidence&lt;/KeyName&gt;
+                  &lt;VendorCode&gt;12&lt;/VendorCode&gt; &lt;KeyValue&gt;1&lt;/KeyValue&gt;
+                  &lt;KeyValue&gt;4&lt;/KeyValue&gt; &lt;/KeyedValue&gt; &lt;OLifEExtension
+                  VendorCode="05" ExtensionCode="FormInstance 2.9.03"&gt;
+                  &lt;FormInstanceExtension&gt; &lt;MIBResolutionType tc="1"&gt;Same
+                  As&lt;/MIBResolutionType&gt; &lt;/FormInstanceExtension&gt;
+                  &lt;/OLifEExtension&gt; &lt;/FormInstance&gt; &lt;FormInstance
+                  id="IAI_FormInstance_1_1_2_1_1" ProviderPartyID="IAI_Party_1_1_2_1_1"&gt;
+                  &lt;FormName&gt;MIB/IAI&lt;/FormName&gt;
+                  &lt;SubmitDate&gt;2019-03-29&lt;/SubmitDate&gt; &lt;FormResponse&gt;
+                  &lt;ResponseData&gt;105MEN&lt;/ResponseData&gt; &lt;/FormResponse&gt;
+                  &lt;KeyedValue tc="10"&gt; &lt;KeyName&gt;MIBPlaceResidence&lt;/KeyName&gt;
+                  &lt;VendorCode&gt;12&lt;/VendorCode&gt; &lt;KeyValue&gt;1&lt;/KeyValue&gt;
+                  &lt;KeyValue&gt;4&lt;/KeyValue&gt; &lt;/KeyedValue&gt; &lt;OLifEExtension
+                  VendorCode="05" ExtensionCode="FormInstance 2.9.03"&gt;
+                  &lt;FormInstanceExtension&gt; &lt;MIBResolutionType tc="1"&gt;Same
+                  As&lt;/MIBResolutionType&gt; &lt;/FormInstanceExtension&gt;
+                  &lt;/OLifEExtension&gt; &lt;/FormInstance&gt; &lt;FormInstance
+                  id="IAI_FormInstance_1_1_2_1_2" ProviderPartyID="IAI_Party_1_1_2_1_2"&gt;
+                  &lt;FormName&gt;MIB/IAI&lt;/FormName&gt;
+                  &lt;SubmitDate&gt;2019-04-10&lt;/SubmitDate&gt; &lt;FormResponse&gt;
+                  &lt;ResponseData&gt;294TED&lt;/ResponseData&gt; &lt;/FormResponse&gt;
+                  &lt;KeyedValue tc="10"&gt; &lt;KeyName&gt;MIBPlaceResidence&lt;/KeyName&gt;
+                  &lt;VendorCode&gt;12&lt;/VendorCode&gt; &lt;KeyValue&gt;1&lt;/KeyValue&gt;
+                  &lt;KeyValue&gt;4&lt;/KeyValue&gt; &lt;/KeyedValue&gt; &lt;OLifEExtension
+                  VendorCode="05" ExtensionCode="FormInstance 2.9.03"&gt;
+                  &lt;FormInstanceExtension&gt; &lt;MIBResolutionType tc="1"&gt;Same
+                  As&lt;/MIBResolutionType&gt; &lt;/FormInstanceExtension&gt;
+                  &lt;/OLifEExtension&gt; &lt;/FormInstance&gt; &lt;FormInstance
+                  id="IAI_FormInstance_1_1_3_1_1" ProviderPartyID="IAI_Party_1_1_3_1_1"&gt;
+                  &lt;FormName&gt;MIB/IAI&lt;/FormName&gt;
+                  &lt;SubmitDate&gt;2019-03-29&lt;/SubmitDate&gt; &lt;FormResponse&gt;
+                  &lt;ResponseData&gt;298WZL&lt;/ResponseData&gt; &lt;/FormResponse&gt;
+                  &lt;KeyedValue tc="10"&gt; &lt;KeyName&gt;MIBPlaceResidence&lt;/KeyName&gt;
+                  &lt;VendorCode&gt;12&lt;/VendorCode&gt; &lt;KeyValue&gt;1&lt;/KeyValue&gt;
+                  &lt;KeyValue&gt;4&lt;/KeyValue&gt; &lt;/KeyedValue&gt; &lt;OLifEExtension
+                  VendorCode="05" ExtensionCode="FormInstance 2.9.03"&gt;
+                  &lt;FormInstanceExtension&gt; &lt;MIBResolutionType tc="1"&gt;Same
+                  As&lt;/MIBResolutionType&gt; &lt;/FormInstanceExtension&gt;
+                  &lt;/OLifEExtension&gt; &lt;/FormInstance&gt; &lt;FormInstance
+                  id="IAI_FormInstance_1_1_4_1_1" ProviderPartyID="IAI_Party_1_1_3_1_1"&gt;
+                  &lt;FormName&gt;MIB/IAI&lt;/FormName&gt;
+                  &lt;SubmitDate&gt;2019-03-29&lt;/SubmitDate&gt; &lt;FormResponse&gt;
+                  &lt;ResponseData&gt;813MEN&lt;/ResponseData&gt; &lt;/FormResponse&gt;
+                  &lt;KeyedValue tc="10"&gt; &lt;KeyName&gt;MIBPlaceResidence&lt;/KeyName&gt;
+                  &lt;VendorCode&gt;12&lt;/VendorCode&gt; &lt;KeyValue&gt;1&lt;/KeyValue&gt;
+                  &lt;KeyValue&gt;4&lt;/KeyValue&gt; &lt;/KeyedValue&gt; &lt;OLifEExtension
+                  VendorCode="05" ExtensionCode="FormInstance 2.9.03"&gt;
+                  &lt;FormInstanceExtension&gt; &lt;MIBResolutionType tc="1"&gt;Same
+                  As&lt;/MIBResolutionType&gt; &lt;/FormInstanceExtension&gt;
+                  &lt;/OLifEExtension&gt; &lt;/FormInstance&gt; &lt;FormInstance
+                  id="IAI_FormInstance_1_1_5_1_1" ProviderPartyID="IAI_Party_1_1_3_1_1"&gt;
+                  &lt;FormName&gt;MIB/IAI&lt;/FormName&gt;
+                  &lt;SubmitDate&gt;2019-03-29&lt;/SubmitDate&gt; &lt;FormResponse&gt;
+                  &lt;ResponseData&gt;418SZC&lt;/ResponseData&gt; &lt;/FormResponse&gt;
+                  &lt;KeyedValue tc="10"&gt; &lt;KeyName&gt;MIBPlaceResidence&lt;/KeyName&gt;
+                  &lt;VendorCode&gt;12&lt;/VendorCode&gt; &lt;KeyValue&gt;1&lt;/KeyValue&gt;
+                  &lt;KeyValue&gt;4&lt;/KeyValue&gt; &lt;/KeyedValue&gt; &lt;OLifEExtension
+                  VendorCode="05" ExtensionCode="FormInstance 2.9.03"&gt;
+                  &lt;FormInstanceExtension&gt; &lt;MIBResolutionType tc="1"&gt;Same
+                  As&lt;/MIBResolutionType&gt; &lt;/FormInstanceExtension&gt;
+                  &lt;/OLifEExtension&gt; &lt;/FormInstance&gt; &lt;FormInstance
+                  id="IAI_FormInstance_1_1_6_1_1" ProviderPartyID="IAI_Party_1_1_3_1_1"&gt;
+                  &lt;FormName&gt;MIB/IAI&lt;/FormName&gt;
+                  &lt;SubmitDate&gt;2019-03-29&lt;/SubmitDate&gt; &lt;FormResponse&gt;
+                  &lt;ResponseData&gt;5.9.210#X#(40)&lt;/ResponseData&gt; &lt;/FormResponse&gt;
+                  &lt;KeyedValue tc="10"&gt; &lt;KeyName&gt;MIBPlaceResidence&lt;/KeyName&gt;
+                  &lt;VendorCode&gt;12&lt;/VendorCode&gt; &lt;KeyValue&gt;1&lt;/KeyValue&gt;
+                  &lt;KeyValue&gt;4&lt;/KeyValue&gt; &lt;/KeyedValue&gt; &lt;OLifEExtension
+                  VendorCode="05" ExtensionCode="FormInstance 2.9.03"&gt;
+                  &lt;FormInstanceExtension&gt; &lt;MIBResolutionType tc="1"&gt;Same
+                  As&lt;/MIBResolutionType&gt; &lt;/FormInstanceExtension&gt;
+                  &lt;/OLifEExtension&gt; &lt;/FormInstance&gt; &lt;/OLifE&gt;
+                  &lt;/TXLifeResponse&gt; &lt;/TXLife&gt;</AttachmentData>
+                  <AttachmentType tc="19">MIB Search</AttachmentType>
+                </Attachment>
+                <OLifEExtension ExtensionCode="RequirementInfo 2.9.03" VendorCode="05">
+                  <RequirementInfoExtension>
+                    <MedicalIndicator tc="1">True</MedicalIndicator>
+                    <FollowUpRequestNumber>0</FollowUpRequestNumber>
+                    <FollowUpFreq>1</FollowUpFreq>
+                    <AutoOrderIndicator tc="1">True</AutoOrderIndicator>
+                    <TrackingInfo id="TrackingInfo_3">
+                      <TrackingNum>05-EQC_119350862_21_16</TrackingNum>
+                      <TrackingServiceProvider>MIB</TrackingServiceProvider>
+                      <FollowUpServiceProvider>MANL</FollowUpServiceProvider>
+                    </TrackingInfo>
+                    <ReviewedInd tc="1">True</ReviewedInd>
+                    <ReviewDate>2019-06-26</ReviewDate>
+                    <ReviewID>A2RQEVAL</ReviewID>
+                    <WorkitemID>2019-06-26-07.33.34.136500T01</WorkitemID>
+                    <ReviewCode>1</ReviewCode>
+                    <CreatedDate>2019-06-26</CreatedDate>
+                    <PremiumDueCarrierReceiptDate>2019-06-26</PremiumDueCarrierReceiptDate>
+                    <MatchedCriteria>[QueueLOB, WorkTypeLOB, ReqTypeLOB, PolicyNumberLOB,
+                    SsnTinLOB]</MatchedCriteria>
+                    <UWRequirementsInd tc="1">True</UWRequirementsInd>
+                    <ReceivedDateTime>2019-06-26 08:45:02</ReceivedDateTime>
+                    <RevokedFormInd tc="0">False</RevokedFormInd>
+                    <MvrReturnCount>-1</MvrReturnCount>
+                  </RequirementInfoExtension>
+                </OLifEExtension>
+              </RequirementInfo>
+              <RequirementInfo AppliesToPartyID="Party_032_01" id="RequirementInfo_4">
+                <ReqCode tc="348">Pharmaceutical Profile Request</ReqCode>
+                <RequirementInfoUniqueID>05-BA_569352698_348_4</RequirementInfoUniqueID>
+                <Sequence>0</Sequence>
+                <RestrictIssueCode tc="5" />
+                <ReqStatus tc="22">Order</ReqStatus>
+                <UserCode>A2REQDET</UserCode>
+                <FormRecievedWithAppInd tc="0">False</FormRecievedWithAppInd>
+                <StatusDate>2019-06-26</StatusDate>
+                <OLifEExtension ExtensionCode="RequirementInfo 2.9.03" VendorCode="05">
+                  <RequirementInfoExtension>
+                    <MedicalIndicator tc="1">True</MedicalIndicator>
+                    <FollowUpRequestNumber>0</FollowUpRequestNumber>
+                    <FollowUpFreq>1</FollowUpFreq>
+                    <AutoOrderIndicator tc="1">True</AutoOrderIndicator>
+                    <TrackingInfo id="TrackingInfo_4">
+                      <TrackingServiceProvider>CRL</TrackingServiceProvider>
+                      <FollowUpServiceProvider>MANL</FollowUpServiceProvider>
+                    </TrackingInfo>
+                    <WorkitemID>2019-06-26-07.33.34.559500T01</WorkitemID>
+                    <ReviewCode>1</ReviewCode>
+                    <CreatedDate>2019-06-26</CreatedDate>
+                    <UWRequirementsInd tc="1">True</UWRequirementsInd>
+                    <ReqBundleInd tc="1">True</ReqBundleInd>
+                    <RevokedFormInd tc="0">False</RevokedFormInd>
+                    <MvrReturnCount>-1</MvrReturnCount>
+                  </RequirementInfoExtension>
+                </OLifEExtension>
+              </RequirementInfo>
+              <RequirementInfo AppliesToPartyID="Party_032_01" id="RequirementInfo_5">
+                <ReqCode tc="133">Signed Conforming Illustration</ReqCode>
+                <RequirementInfoUniqueID>05-BA_569352698_133_5</RequirementInfoUniqueID>
+                <Sequence>0</Sequence>
+                <RequirementDetails>Illustration Needed</RequirementDetails>
+                <RestrictIssueCode tc="1000500001">Allows Approval, Prohibits Contract
+                Print</RestrictIssueCode>
+                <ReqStatus tc="7">Received</ReqStatus>
+                <ReceivedDate>2019-06-26</ReceivedDate>
+                <UserCode>A2REQDET</UserCode>
+                <FormRecievedWithAppInd tc="1">True</FormRecievedWithAppInd>
+                <StatusDate>2019-06-26</StatusDate>
+                <OLifEExtension ExtensionCode="RequirementInfo 2.9.03" VendorCode="05">
+                  <RequirementInfoExtension>
+                    <MedicalIndicator tc="0">False</MedicalIndicator>
+                    <FollowUpRequestNumber>0</FollowUpRequestNumber>
+                    <FollowUpFreq>7</FollowUpFreq>
+                    <AutoOrderIndicator tc="1">True</AutoOrderIndicator>
+                    <TrackingInfo id="TrackingInfo_5">
+                      <TrackingServiceProvider>PRDC</TrackingServiceProvider>
+                      <FollowUpServiceProvider>PRDC</FollowUpServiceProvider>
+                    </TrackingInfo>
+                    <WorkitemID>2019-06-26-07.33.35.008500T01</WorkitemID>
+                    <ReviewCode>0</ReviewCode>
+                    <CreatedDate>2019-06-26</CreatedDate>
+                    <DisplayImagesInd tc="1">True</DisplayImagesInd>
+                    <PremiumDueCarrierReceiptDate>2019-06-26</PremiumDueCarrierReceiptDate>
+                    <UWRequirementsInd tc="0">False</UWRequirementsInd>
+                    <ReceivedDateTime>2019-06-26 08:33:27</ReceivedDateTime>
+                    <RevokedFormInd tc="0">False</RevokedFormInd>
+                    <MvrReturnCount>-1</MvrReturnCount>
+                  </RequirementInfoExtension>
+                </OLifEExtension>
+              </RequirementInfo>
+              <RequirementInfo AppliesToPartyID="Party_032_01" id="RequirementInfo_6">
+                <ReqCode tc="165">Signed Application</ReqCode>
+                <RequirementInfoUniqueID>05-BA_569352698_165_6</RequirementInfoUniqueID>
+                <Sequence>0</Sequence>
+                <FormNo>AXA-TCONV-2011FL</FormNo>
+                <RequirementDetails>Submit fully completed signed and dated application for
+                FL-Florida.</RequirementDetails>
+                <RestrictIssueCode tc="5" />
+                <ReqStatus tc="7">Received</ReqStatus>
+                <ReceivedDate>2019-06-26</ReceivedDate>
+                <UserCode>A2REQDET</UserCode>
+                <FormRecievedWithAppInd tc="1">True</FormRecievedWithAppInd>
+                <StatusDate>2019-06-26</StatusDate>
+                <OLifEExtension ExtensionCode="RequirementInfo 2.9.03" VendorCode="05">
+                  <RequirementInfoExtension>
+                    <MedicalIndicator tc="1">True</MedicalIndicator>
+                    <FollowUpRequestNumber>0</FollowUpRequestNumber>
+                    <FollowUpFreq>10</FollowUpFreq>
+                    <AutoOrderIndicator tc="1">True</AutoOrderIndicator>
+                    <TrackingInfo id="TrackingInfo_6">
+                      <TrackingServiceProvider>PRDC</TrackingServiceProvider>
+                      <FollowUpServiceProvider>PRDC</FollowUpServiceProvider>
+                    </TrackingInfo>
+                    <WorkitemID>2019-06-26-07.33.37.391500T01</WorkitemID>
+                    <ReviewCode>2</ReviewCode>
+                    <CreatedDate>2019-06-26</CreatedDate>
+                    <DisplayImagesInd tc="1">True</DisplayImagesInd>
+                    <PremiumDueCarrierReceiptDate>2019-06-26</PremiumDueCarrierReceiptDate>
+                    <UWRequirementsInd tc="1">True</UWRequirementsInd>
+                    <ReceivedDateTime>2019-06-26 08:33:27</ReceivedDateTime>
+                    <RevokedFormInd tc="0">False</RevokedFormInd>
+                    <MvrReturnCount>-1</MvrReturnCount>
+                  </RequirementInfoExtension>
+                </OLifEExtension>
+              </RequirementInfo>
+              <RequirementInfo AppliesToPartyID="Party_032_01" id="RequirementInfo_7">
+                <ReqCode tc="1009800207">LNRC</ReqCode>
+                <RequirementInfoUniqueID>05-BA_569352698_1009800207_7</RequirementInfoUniqueID>
+                <Sequence>0</Sequence>
+                <RestrictIssueCode tc="5" />
+                <ReqStatus tc="2">Submitted</ReqStatus>
+                <RequestedDate>2019-06-26</RequestedDate>
+                <UserCode>A2REQDET</UserCode>
+                <FormRecievedWithAppInd tc="0">False</FormRecievedWithAppInd>
+                <StatusDate>2019-06-26</StatusDate>
+                <Attachment id="Attachment_5">
+                  <AttachmentBasicType tc="1">Text Only</AttachmentBasicType>
+                  <AttachmentData>&lt;?xml version="1.0" encoding="UTF-8"?&gt; &lt;TXLife
+                  xmlns="http://ACORD.org/Standards/Life/2"&gt; &lt;UserAuthRequest&gt;
+                  &lt;UserLoginName&gt;A2ORDREQ&lt;/UserLoginName&gt; &lt;UserPswd&gt;
+                  &lt;CryptType&gt;NONE&lt;/CryptType&gt; &lt;Pswd&gt;&lt;/Pswd&gt;
+                  &lt;/UserPswd&gt; &lt;UserDate&gt;2019-06-26&lt;/UserDate&gt;
+                  &lt;UserTime&gt;08:36:14&lt;/UserTime&gt; &lt;VendorApp&gt; &lt;VendorName
+                  VendorCode="05"&gt;Lexis Nexis&lt;/VendorName&gt;
+                  &lt;AppName&gt;nbA_Life&lt;/AppName&gt; &lt;AppVer&gt;1.0&lt;/AppVer&gt;
+                  &lt;/VendorApp&gt; &lt;/UserAuthRequest&gt; &lt;TXLifeRequest&gt;
+                  &lt;TransRefGUID&gt;47bb4477-81ad-c5ac-1105-d94d36576b9e&lt;/TransRefGUID&gt;
+                  &lt;TransType tc="121"&gt;General Requirement Order Request&lt;/TransType&gt;
+                  &lt;TransExeDate&gt;2019-06-26&lt;/TransExeDate&gt;
+                  &lt;TransExeTime&gt;08:36:14&lt;/TransExeTime&gt; &lt;TransMode
+                  tc="2"&gt;Original&lt;/TransMode&gt; &lt;TestIndicator
+                  tc="1"&gt;True&lt;/TestIndicator&gt; &lt;OLifE Version="2.9.03"&gt;
+                  &lt;SourceInfo&gt; &lt;CreationDate&gt;2019-06-26&lt;/CreationDate&gt;
+                  &lt;CreationTime&gt;08:36:14&lt;/CreationTime&gt;
+                  &lt;SourceInfoName&gt;nbA_Life&lt;/SourceInfoName&gt;
+                  &lt;FileControlID&gt;L70&lt;/FileControlID&gt; &lt;/SourceInfo&gt; &lt;Holding
+                  id="Holding_1"&gt; &lt;HoldingTypeCode tc="2"&gt;Policy&lt;/HoldingTypeCode&gt;
+                  &lt;HoldingForm tc="1"&gt;Individual&lt;/HoldingForm&gt; &lt;Policy
+                  id="Policy_1"&gt; &lt;PolNumber&gt;569352698&lt;/PolNumber&gt; &lt;LineOfBusiness
+                  tc="1"&gt;Life&lt;/LineOfBusiness&gt; &lt;ProductType tc="5"&gt;Indexed Universal
+                  Life&lt;/ProductType&gt; &lt;ProductCode&gt;FWM107&lt;/ProductCode&gt;
+                  &lt;CarrierCode&gt;BA&lt;/CarrierCode&gt; &lt;PolicyStatus tc="8"&gt;Pending
+                  Issue&lt;/PolicyStatus&gt; &lt;Life id="Life_1"&gt;
+                  &lt;FaceAmt&gt;1000000&lt;/FaceAmt&gt; &lt;/Life&gt; &lt;ApplicationInfo&gt;
+                  &lt;TrackingID&gt;05-BA_569352698_1009800207_7&lt;/TrackingID&gt;
+                  &lt;ApplicationJurisdiction tc="12"&gt;Florida&lt;/ApplicationJurisdiction&gt;
+                  &lt;SignedDate&gt;2019-06-24&lt;/SignedDate&gt;
+                  &lt;NBContactName&gt;UCMR18NL&lt;/NBContactName&gt; &lt;/ApplicationInfo&gt;
+                  &lt;RequirementInfo id="RequirementInfo_1" AppliesToPartyID="Party_1"
+                  RequesterPartyID="Party_2" FulfillerPartyID="Party_5"
+                  RequestorContactPartyID="Party_6"&gt; &lt;ReqCode
+                  tc="1009800207"&gt;LNRC&lt;/ReqCode&gt;
+                  &lt;RequirementInfoUniqueID&gt;05-BA_569352698_1009800207_7&lt;/RequirementInfoUniqueID&gt;
+                  &lt;RequestedDate&gt;2019-06-26&lt;/RequestedDate&gt;
+                  &lt;UserCode&gt;A2REQDET&lt;/UserCode&gt;
+                  &lt;RequirementAcctNum&gt;ZOOM&lt;/RequirementAcctNum&gt; &lt;OLifEExtension
+                  VendorCode="05" ExtensionCode="RequirementInfo 2.9.03"&gt;
+                  &lt;RequirementInfoExtension&gt; &lt;TrackingInfo id="TrackingInfo_1"&gt;
+                  &lt;TrackingServiceProvider&gt;LEXISNEXIS&lt;/TrackingServiceProvider&gt;
+                  &lt;/TrackingInfo&gt; &lt;/RequirementInfoExtension&gt; &lt;/OLifEExtension&gt;
+                  &lt;/RequirementInfo&gt; &lt;/Policy&gt; &lt;Attachment id="Attachment_1"&gt;
+                  &lt;AttachmentData&gt;&lt;/AttachmentData&gt; &lt;AttachmentType
+                  tc="2"&gt;Comment&lt;/AttachmentType&gt; &lt;/Attachment&gt; &lt;/Holding&gt;
+                  &lt;Party id="Party_1"&gt; &lt;PartyTypeCode
+                  tc="1"&gt;Person&lt;/PartyTypeCode&gt; &lt;FullName&gt;Dolajunmjys
+                  Nickjunmjys&lt;/FullName&gt; &lt;GovtID&gt;667244286&lt;/GovtID&gt;
+                  &lt;ResidenceState tc="12"&gt;Florida&lt;/ResidenceState&gt; &lt;ResidenceCountry
+                  tc="1"&gt;United States of America&lt;/ResidenceCountry&gt; &lt;Person&gt;
+                  &lt;FirstName&gt;Dolajunmjys&lt;/FirstName&gt;
+                  &lt;LastName&gt;Nickjunmjys&lt;/LastName&gt; &lt;MarStat
+                  tc="1"&gt;Married&lt;/MarStat&gt; &lt;Gender tc="2"&gt;Female&lt;/Gender&gt;
+                  &lt;BirthDate&gt;1986-08-23&lt;/BirthDate&gt; &lt;Age&gt;32&lt;/Age&gt;
+                  &lt;SmokerStat tc="1"&gt;Never Used Tobacco&lt;/SmokerStat&gt; &lt;OLifEExtension
+                  VendorCode="05" ExtensionCode="Person 2.9.03"&gt; &lt;PersonExtension /&gt;
+                  &lt;/OLifEExtension&gt; &lt;/Person&gt; &lt;Address id="Address_1"&gt;
+                  &lt;AddressTypeCode tc="1"&gt;Residence&lt;/AddressTypeCode&gt;
+                  &lt;Line1&gt;main&lt;/Line1&gt; &lt;Line2&gt;road&lt;/Line2&gt;
+                  &lt;City&gt;lee&lt;/City&gt; &lt;AddressState&gt;FL&lt;/AddressState&gt;
+                  &lt;AddressStateTC tc="12"&gt;Florida&lt;/AddressStateTC&gt;
+                  &lt;Zip&gt;32059&lt;/Zip&gt; &lt;PrefAddr tc="0"&gt;False&lt;/PrefAddr&gt;
+                  &lt;/Address&gt; &lt;Client&gt; &lt;PrefLanguage
+                  tc="9"&gt;English&lt;/PrefLanguage&gt; &lt;OLifEExtension&gt; &lt;ClientExtension
+                  /&gt; &lt;/OLifEExtension&gt; &lt;/Client&gt; &lt;/Party&gt; &lt;Party
+                  id="Party_2"&gt; &lt;PartyTypeCode tc="2"&gt;Organization&lt;/PartyTypeCode&gt;
+                  &lt;Organization&gt; &lt;OrganizationKey&gt;MONY Life Insurance
+                  Universal-Variable&lt;/OrganizationKey&gt; &lt;OrgForm tc="23"&gt;Corporation
+                  (general)&lt;/OrgForm&gt; &lt;OrgCode&gt;BA&lt;/OrgCode&gt;
+                  &lt;DTCCMemberCode&gt;98&lt;/DTCCMemberCode&gt; &lt;/Organization&gt;
+                  &lt;/Party&gt; &lt;Party id="Party_3"&gt; &lt;PartyTypeCode
+                  tc="1"&gt;Person&lt;/PartyTypeCode&gt; &lt;FullName&gt;L LEE SMITH, CHFC,
+                  CLU&lt;/FullName&gt; &lt;GovtIDTC tc="1"&gt;Social Security Number
+                  US&lt;/GovtIDTC&gt; &lt;Person&gt; &lt;FirstName&gt;L LEE&lt;/FirstName&gt;
+                  &lt;LastName&gt;SMITH, CHFC, CLU&lt;/LastName&gt; &lt;OLifEExtension
+                  VendorCode="05" ExtensionCode="Person 2.9.03"&gt; &lt;PersonExtension&gt;
+                  &lt;USCitizenInd tc="0"&gt;False&lt;/USCitizenInd&gt;
+                  &lt;DriversLicenseStatusIndCode
+                  tc="3"&gt;Unknown&lt;/DriversLicenseStatusIndCode&gt; &lt;USCitizenIndCode
+                  tc="3"&gt;Unknown&lt;/USCitizenIndCode&gt; &lt;PermanantResidentInd
+                  tc="0"&gt;False&lt;/PermanantResidentInd&gt; &lt;ForeignGovRelation
+                  tc="0"&gt;False&lt;/ForeignGovRelation&gt; &lt;GovtIDStatusIndCode
+                  tc="3"&gt;Unknown&lt;/GovtIDStatusIndCode&gt; &lt;/PersonExtension&gt;
+                  &lt;/OLifEExtension&gt; &lt;/Person&gt; &lt;Address id="Address_2"&gt;
+                  &lt;AddressTypeCode tc="2"&gt;Business&lt;/AddressTypeCode&gt; &lt;Line1&gt;5151
+                  EAST BROADWAY&lt;/Line1&gt; &lt;City&gt;TUCSON&lt;/City&gt;
+                  &lt;AddressState&gt;AZ&lt;/AddressState&gt; &lt;AddressStateTC
+                  tc="4"&gt;Arizona&lt;/AddressStateTC&gt; &lt;Zip&gt;85711&lt;/Zip&gt;
+                  &lt;AddressCountryTC tc="1"&gt;United States of America&lt;/AddressCountryTC&gt;
+                  &lt;OLifEExtension VendorCode="05" ExtensionCode="Address 2.9.03"&gt;
+                  &lt;AddressExtension /&gt; &lt;/OLifEExtension&gt; &lt;/Address&gt; &lt;Address
+                  id="Address_3"&gt; &lt;AddressTypeCode
+                  tc="1"&gt;Residence&lt;/AddressTypeCode&gt; &lt;Line1&gt;8952 E BAKER
+                  ST&lt;/Line1&gt; &lt;City&gt;TUCSON&lt;/City&gt;
+                  &lt;AddressState&gt;AZ&lt;/AddressState&gt; &lt;AddressStateTC
+                  tc="4"&gt;Arizona&lt;/AddressStateTC&gt; &lt;Zip&gt;85710&lt;/Zip&gt;
+                  &lt;AddressCountryTC tc="1"&gt;United States of America&lt;/AddressCountryTC&gt;
+                  &lt;/Address&gt; &lt;Phone id="Phone_1"&gt; &lt;PhoneTypeCode
+                  tc="2"&gt;Business&lt;/PhoneTypeCode&gt; &lt;AreaCode&gt;520&lt;/AreaCode&gt;
+                  &lt;DialNumber&gt;5125935&lt;/DialNumber&gt; &lt;PrefPhone
+                  tc="0"&gt;False&lt;/PrefPhone&gt; &lt;BestDayToCallCC /&gt; &lt;OLifEExtension
+                  VendorCode="05" ExtensionCode="Phone 2.9.03"&gt; &lt;PhoneExtension /&gt;
+                  &lt;/OLifEExtension&gt; &lt;/Phone&gt; &lt;Phone id="Phone_2"&gt;
+                  &lt;PhoneTypeCode tc="1"&gt;Home&lt;/PhoneTypeCode&gt;
+                  &lt;AreaCode&gt;520&lt;/AreaCode&gt; &lt;DialNumber&gt;5125935&lt;/DialNumber&gt;
+                  &lt;BestDayToCallCC /&gt; &lt;/Phone&gt; &lt;Producer&gt; &lt;CarrierAppointment
+                  id="CarrierAppointment_1"&gt;
+                  &lt;CompanyProducerID&gt;011928&lt;/CompanyProducerID&gt;
+                  &lt;CarrierCode&gt;BA&lt;/CarrierCode&gt; &lt;CarrierApptTypeCode
+                  tc="1"&gt;Agent&lt;/CarrierApptTypeCode&gt; &lt;CarrierApptStatus
+                  tc="1"&gt;Active&lt;/CarrierApptStatus&gt; &lt;DistributionChannelCC /&gt;
+                  &lt;DistributionAgreementInfo id="DistributionAgreementInfo_1"&gt;
+                  &lt;AdvancingAllowedInd tc="0"&gt;False&lt;/AdvancingAllowedInd&gt;
+                  &lt;OLifEExtension VendorCode="05" ExtensionCode="DistributionAgreementInfo
+                  2.9.03"&gt; &lt;DistributionAgreementInfoExtension&gt; &lt;PrepaymentIndCode
+                  tc="1"&gt;True&lt;/PrepaymentIndCode&gt; &lt;AdvancingAllowedIndCode
+                  tc="2"&gt;No&lt;/AdvancingAllowedIndCode&gt; &lt;InformalSuspendInd
+                  tc="0"&gt;False&lt;/InformalSuspendInd&gt;
+                  &lt;/DistributionAgreementInfoExtension&gt; &lt;/OLifEExtension&gt;
+                  &lt;/DistributionAgreementInfo&gt; &lt;DistributionChannelInfo
+                  id="DistributionChannelInfo_1"&gt; &lt;DistributionChannel tc="10"&gt;Captive
+                  Market&lt;/DistributionChannel&gt; &lt;/DistributionChannelInfo&gt;
+                  &lt;OLifEExtension VendorCode="05" ExtensionCode="CarrierAppointment 2.9.03"&gt;
+                  &lt;CarrierAppointmentExtension&gt; &lt;ASUCode&gt;PXB&lt;/ASUCode&gt;
+                  &lt;ForeignUWAllowedInd tc="0"&gt;False&lt;/ForeignUWAllowedInd&gt;
+                  &lt;SelectAgentInd tc="0"&gt;False&lt;/SelectAgentInd&gt; &lt;EARCInd
+                  tc="0"&gt;False&lt;/EARCInd&gt; &lt;ASUCodeNum&gt;474&lt;/ASUCodeNum&gt;
+                  &lt;BGATier&gt;011928&lt;/BGATier&gt; &lt;AgentRank&gt;1&lt;/AgentRank&gt;
+                  &lt;ContractCode&gt;74&lt;/ContractCode&gt;
+                  &lt;DistrictCode&gt;06&lt;/DistrictCode&gt;
+                  &lt;AgencyBranchCode&gt;660&lt;/AgencyBranchCode&gt; &lt;HVTInd
+                  tc="0"&gt;False&lt;/HVTInd&gt; &lt;PolToWAgentInd
+                  tc="0"&gt;False&lt;/PolToWAgentInd&gt; &lt;/CarrierAppointmentExtension&gt;
+                  &lt;/OLifEExtension&gt; &lt;/CarrierAppointment&gt; &lt;/Producer&gt;
+                  &lt;EMailAddress id="EMailAddress_1"&gt; &lt;EMailType
+                  tc="1"&gt;Business&lt;/EMailType&gt;
+                  &lt;AddrLine&gt;lee.smith@axa-advisors.com&lt;/AddrLine&gt; &lt;/EMailAddress&gt;
+                  &lt;OLifEExtension VendorCode="05" ExtensionCode="Party 2.9.03"&gt;
+                  &lt;PartyExtension&gt; &lt;InsHasPowerOfAttorneyInd
+                  tc="0"&gt;False&lt;/InsHasPowerOfAttorneyInd&gt; &lt;TransAuthInd
+                  tc="0"&gt;False&lt;/TransAuthInd&gt; &lt;LastRequirementIndForParty
+                  tc="2"&gt;Complete&lt;/LastRequirementIndForParty&gt; &lt;PayerTypePartCorpLLCInd
+                  tc="0"&gt;False&lt;/PayerTypePartCorpLLCInd&gt; &lt;BenOwnerSameAsCtrlPersonInd
+                  tc="0"&gt;False&lt;/BenOwnerSameAsCtrlPersonInd&gt; &lt;EntityNameMismatchInd
+                  tc="0"&gt;False&lt;/EntityNameMismatchInd&gt; &lt;TrustedContactDeclineInd
+                  tc="0"&gt;False&lt;/TrustedContactDeclineInd&gt;
+                  &lt;TrustedContactPrimaryOwnerInd
+                  tc="0"&gt;False&lt;/TrustedContactPrimaryOwnerInd&gt; &lt;/PartyExtension&gt;
+                  &lt;/OLifEExtension&gt; &lt;/Party&gt; &lt;Party id="Party_4"&gt;
+                  &lt;PartyTypeCode tc="2"&gt;Organization&lt;/PartyTypeCode&gt; &lt;Organization
+                  /&gt; &lt;Producer&gt; &lt;CarrierAppointment id="CarrierAppointment_2"&gt;
+                  &lt;CompanyProducerID&gt;PXB&lt;/CompanyProducerID&gt;
+                  &lt;/CarrierAppointment&gt; &lt;/Producer&gt; &lt;/Party&gt; &lt;Party
+                  id="Party_5"&gt; &lt;PartyTypeCode tc="2"&gt;Organization&lt;/PartyTypeCode&gt;
+                  &lt;Organization&gt; &lt;OrganizationKey&gt;Lexis Nexis&lt;/OrganizationKey&gt;
+                  &lt;OrgForm tc="23"&gt;Corporation (general)&lt;/OrgForm&gt;
+                  &lt;OrgCode&gt;LN&lt;/OrgCode&gt; &lt;DTCCMemberCode&gt;05&lt;/DTCCMemberCode&gt;
+                  &lt;/Organization&gt; &lt;/Party&gt; &lt;Party id="Party_6"&gt; &lt;PartyTypeCode
+                  tc="1"&gt;Person&lt;/PartyTypeCode&gt;
+                  &lt;IDReferenceNo&gt;UCMR18NL&lt;/IDReferenceNo&gt; &lt;IDReferenceType
+                  tc="1009800001"&gt;Contact User ID&lt;/IDReferenceType&gt; &lt;Person /&gt;
+                  &lt;/Party&gt; &lt;Relation id="Relation_1" OriginatingObjectID="Holding_1"
+                  RelatedObjectID="Party_1"&gt; &lt;OriginatingObjectType
+                  tc="4"&gt;Holding&lt;/OriginatingObjectType&gt; &lt;RelatedObjectType
+                  tc="6"&gt;Party&lt;/RelatedObjectType&gt; &lt;RelationRoleCode
+                  tc="32"&gt;Insured&lt;/RelationRoleCode&gt; &lt;RelatedRefIDType tc="1"&gt;Cert.
+                  of Addition of Name&lt;/RelatedRefIDType&gt; &lt;/Relation&gt; &lt;Relation
+                  id="Relation_2" OriginatingObjectID="Holding_1" RelatedObjectID="Party_2"&gt;
+                  &lt;OriginatingObjectType tc="4"&gt;Holding&lt;/OriginatingObjectType&gt;
+                  &lt;RelatedObjectType tc="6"&gt;Party&lt;/RelatedObjectType&gt;
+                  &lt;RelationRoleCode tc="97"&gt;Requestor&lt;/RelationRoleCode&gt;
+                  &lt;RelatedRefIDType tc="1"&gt;Cert. of Addition of Name&lt;/RelatedRefIDType&gt;
+                  &lt;/Relation&gt; &lt;Relation id="Relation_3"
+                  OriginatingObjectID="RequirementInfo_1" RelatedObjectID="Party_1"&gt;
+                  &lt;OriginatingObjectType tc="57"&gt;Requirement
+                  Information&lt;/OriginatingObjectType&gt; &lt;RelatedObjectType
+                  tc="6"&gt;Party&lt;/RelatedObjectType&gt; &lt;RelationRoleCode
+                  tc="107"&gt;Indicating which person the form is filled out
+                  for.&lt;/RelationRoleCode&gt; &lt;RelatedRefIDType tc="1"&gt;Cert. of Addition of
+                  Name&lt;/RelatedRefIDType&gt; &lt;/Relation&gt; &lt;Relation id="Relation_4"
+                  OriginatingObjectID="Holding_1" RelatedObjectID="Party_3"&gt;
+                  &lt;OriginatingObjectType tc="4"&gt;Holding&lt;/OriginatingObjectType&gt;
+                  &lt;RelatedObjectType tc="6"&gt;Party&lt;/RelatedObjectType&gt;
+                  &lt;RelationRoleCode tc="37"&gt;Primary Writing Agent&lt;/RelationRoleCode&gt;
+                  &lt;RelatedRefIDType tc="1"&gt;Cert. of Addition of Name&lt;/RelatedRefIDType&gt;
+                  &lt;/Relation&gt; &lt;Relation id="Relation_5" OriginatingObjectID="Holding_1"
+                  RelatedObjectID="Party_4"&gt; &lt;OriginatingObjectType
+                  tc="4"&gt;Holding&lt;/OriginatingObjectType&gt; &lt;RelatedObjectType
+                  tc="6"&gt;Party&lt;/RelatedObjectType&gt; &lt;RelationRoleCode
+                  tc="154"&gt;Servicing Firm&lt;/RelationRoleCode&gt; &lt;RelatedRefIDType
+                  tc="1"&gt;Cert. of Addition of Name&lt;/RelatedRefIDType&gt; &lt;/Relation&gt;
+                  &lt;Relation id="Relation_6" OriginatingObjectID="Holding_1"
+                  RelatedObjectID="Party_5"&gt; &lt;OriginatingObjectType
+                  tc="4"&gt;Holding&lt;/OriginatingObjectType&gt; &lt;RelatedObjectType
+                  tc="6"&gt;Party&lt;/RelatedObjectType&gt; &lt;RelationRoleCode
+                  tc="99"&gt;Fulfills&lt;/RelationRoleCode&gt; &lt;RelatedRefIDType tc="1"&gt;Cert.
+                  of Addition of Name&lt;/RelatedRefIDType&gt; &lt;/Relation&gt; &lt;Relation
+                  id="Relation_7" OriginatingObjectID="Holding_1" RelatedObjectID="Party_6"&gt;
+                  &lt;OriginatingObjectType tc="4"&gt;Holding&lt;/OriginatingObjectType&gt;
+                  &lt;RelatedObjectType tc="6"&gt;Party&lt;/RelatedObjectType&gt;
+                  &lt;RelationRoleCode tc="1009800010"&gt;Underwriter Case
+                  Manager&lt;/RelationRoleCode&gt; &lt;RelatedRefIDType tc="1"&gt;Cert. of Addition
+                  of Name&lt;/RelatedRefIDType&gt; &lt;/Relation&gt; &lt;/OLifE&gt;
+                  &lt;/TXLifeRequest&gt; &lt;/TXLife&gt;</AttachmentData>
+                  <AttachmentType tc="245">Requirement Request</AttachmentType>
+                </Attachment>
+                <OLifEExtension ExtensionCode="RequirementInfo 2.9.03" VendorCode="05">
+                  <RequirementInfoExtension>
+                    <MedicalIndicator tc="0">False</MedicalIndicator>
+                    <FollowUpRequestNumber>0</FollowUpRequestNumber>
+                    <FollowUpFreq>99</FollowUpFreq>
+                    <AutoOrderIndicator tc="1">True</AutoOrderIndicator>
+                    <TrackingInfo id="TrackingInfo_7">
+                      <TrackingServiceProvider>LN</TrackingServiceProvider>
+                      <FollowUpServiceProvider>MANL</FollowUpServiceProvider>
+                    </TrackingInfo>
+                    <WorkitemID>2019-06-26-07.33.38.816500T01</WorkitemID>
+                    <ReviewCode>1</ReviewCode>
+                    <CreatedDate>2019-06-26</CreatedDate>
+                    <FollowUpDate>2020-02-18</FollowUpDate>
+                    <UWRequirementsInd tc="1">True</UWRequirementsInd>
+                    <RevokedFormInd tc="0">False</RevokedFormInd>
+                    <MvrReturnCount>-1</MvrReturnCount>
+                  </RequirementInfoExtension>
+                </OLifEExtension>
+              </RequirementInfo>
+              <RequirementInfo AppliesToPartyID="Party_032_01" id="RequirementInfo_8">
+                <ReqCode tc="165">Signed Application</ReqCode>
+                <RequirementInfoUniqueID>05-BA_569352698_165_8</RequirementInfoUniqueID>
+                <Sequence>1</Sequence>
+                <FormNo>AXA-LIFE-2011FL(11/11)</FormNo>
+                <RequirementDetails>Submit fully completed signed and dated application for
+                FL-Florida.</RequirementDetails>
+                <RestrictIssueCode tc="5" />
+                <ReqStatus tc="23">Add</ReqStatus>
+                <UserCode>A2REQDET</UserCode>
+                <FormRecievedWithAppInd tc="0">False</FormRecievedWithAppInd>
+                <StatusDate>2019-06-26</StatusDate>
+                <OLifEExtension ExtensionCode="RequirementInfo 2.9.03" VendorCode="05">
+                  <RequirementInfoExtension>
+                    <MedicalIndicator tc="1">True</MedicalIndicator>
+                    <FollowUpRequestNumber>0</FollowUpRequestNumber>
+                    <FollowUpFreq>10</FollowUpFreq>
+                    <AutoOrderIndicator tc="1">True</AutoOrderIndicator>
+                    <TrackingInfo id="TrackingInfo_8">
+                      <TrackingServiceProvider>PRDC</TrackingServiceProvider>
+                      <FollowUpServiceProvider>PRDC</FollowUpServiceProvider>
+                    </TrackingInfo>
+                    <WorkitemID>2019-06-26-07.33.39.264500T01</WorkitemID>
+                    <ReviewCode>2</ReviewCode>
+                    <CreatedDate>2019-06-26</CreatedDate>
+                    <FollowUpDate>2019-12-01</FollowUpDate>
+                    <UWRequirementsInd tc="1">True</UWRequirementsInd>
+                    <RevokedFormInd tc="0">False</RevokedFormInd>
+                    <MvrReturnCount>-1</MvrReturnCount>
+                  </RequirementInfoExtension>
+                </OLifEExtension>
+              </RequirementInfo>
+              <RequirementInfo AppliesToPartyID="Party_032_01" id="RequirementInfo_9">
+                <ReqCode tc="1009800109">Beneficiary Supplemental Form</ReqCode>
+                <RequirementInfoUniqueID>05-BA_569352698_1009800109_9</RequirementInfoUniqueID>
+                <Sequence>0</Sequence>
+                <FormNo>BEN2012</FormNo>
+                <RestrictIssueCode tc="1">No Restrictions</RestrictIssueCode>
+                <ReqStatus tc="23">Add</ReqStatus>
+                <UserCode>A2REQDET</UserCode>
+                <FormRecievedWithAppInd tc="0">False</FormRecievedWithAppInd>
+                <StatusDate>2019-06-26</StatusDate>
+                <OLifEExtension ExtensionCode="RequirementInfo 2.9.03" VendorCode="05">
+                  <RequirementInfoExtension>
+                    <MedicalIndicator tc="0">False</MedicalIndicator>
+                    <FollowUpRequestNumber>0</FollowUpRequestNumber>
+                    <FollowUpFreq>99</FollowUpFreq>
+                    <AutoOrderIndicator tc="1">True</AutoOrderIndicator>
+                    <TrackingInfo id="TrackingInfo_9">
+                      <TrackingServiceProvider>PRDC</TrackingServiceProvider>
+                      <FollowUpServiceProvider>PRDC</FollowUpServiceProvider>
+                    </TrackingInfo>
+                    <WorkitemID>2019-06-26-07.33.39.712500T01</WorkitemID>
+                    <ReviewCode>0</ReviewCode>
+                    <CreatedDate>2019-06-26</CreatedDate>
+                    <FollowUpDate>2020-02-18</FollowUpDate>
+                    <UWRequirementsInd tc="0">False</UWRequirementsInd>
+                    <RevokedFormInd tc="0">False</RevokedFormInd>
+                    <MvrReturnCount>-1</MvrReturnCount>
+                  </RequirementInfoExtension>
+                </OLifEExtension>
+              </RequirementInfo>
+              <OLifEExtension ExtensionCode="Policy 2.9.03" VendorCode="05">
+                <PolicyExtension>
+                  <PendingContractStatus tc="0000">Pending</PendingContractStatus>
+                  <OtherInsuredInd tc="0">False</OtherInsuredInd>
+                  <BeneficiaryInd tc="1">True</BeneficiaryInd>
+                  <RatedInd tc="0">False</RatedInd>
+                  <AgentErrorsInd tc="0">False</AgentErrorsInd>
+                  <ContractChangeType tc="1">New Business Not Paid For</ContractChangeType>
+                  <NonStandardBillAmt>1000</NonStandardBillAmt>
+                  <DistributionChannel tc="10">Captive Market</DistributionChannel>
+                  <NewUnitInd tc="0">False</NewUnitInd>
+                  <ReplacementIndCode tc="3">Unknown</ReplacementIndCode>
+                  <ExpCommCompensationPremAmt>7340</ExpCommCompensationPremAmt>
+                  <CaseCreateDate>2019-06-19</CaseCreateDate>
+                  <TermConvTableRatingInd tc="0">False</TermConvTableRatingInd>
+                  <TermConvFlatExtraInd tc="0">False</TermConvFlatExtraInd>
+                  <TermConvReinsuranceInd tc="0">False</TermConvReinsuranceInd>
+                  <RemoveTermConvExclRdrInd tc="0">False</RemoveTermConvExclRdrInd>
+                  <TermConvRatingReductionInd tc="0">False</TermConvRatingReductionInd>
+                  <TermConvIncreaseUWReqrdInd tc="0">False</TermConvIncreaseUWReqrdInd>
+                  <TermConvRiderAddUWReqrdInd tc="0">False</TermConvRiderAddUWReqrdInd>
+                  <TermConvBenefitAddUWReqrdInd tc="0">False</TermConvBenefitAddUWReqrdInd>
+                  <TemporaryAdvAllowedInd tc="0">False</TemporaryAdvAllowedInd>
+                  <NonInsuredOwnerInd tc="0">False</NonInsuredOwnerInd>
+                  <OptionOffSchedule tc="0">False</OptionOffSchedule>
+                  <NonInsuredOwnerIndCode tc="3">Unknown</NonInsuredOwnerIndCode>
+                  <ConciergeCaseInd tc="0">False</ConciergeCaseInd>
+                  <TeamUnit>RET1</TeamUnit>
+                  <CommissionSchedule tc="1">Applied GHCP</CommissionSchedule>
+                  <PrintTogetherIND tc="0">False</PrintTogetherIND>
+                  <MDRConsentIND tc="0">False</MDRConsentIND>
+                  <OptionalBenefits tc="0">False</OptionalBenefits>
+                  <YearIssuedInd tc="0">False</YearIssuedInd>
+                  <PolicySubStatus tc="8">Underwriting in Progress</PolicySubStatus>
+                  <LumpSumPaymentInd tc="0">False</LumpSumPaymentInd>
+                  <PartialWithdrawalInd tc="0">False</PartialWithdrawalInd>
+                  <LoanActionInd tc="0">False</LoanActionInd>
+                  <BenefitReductionInd tc="0">False</BenefitReductionInd>
+                  <PolicyFundedByDividendsInd tc="0">False</PolicyFundedByDividendsInd>
+                  <ClientRefundedDividendsInd tc="0">False</ClientRefundedDividendsInd>
+                  <PremiumStoppageInd tc="0">False</PremiumStoppageInd>
+                  <ReplOtherActionInd tc="0">False</ReplOtherActionInd>
+                  <GoldenTicketInd tc="0">False</GoldenTicketInd>
+                  <BusinessStrategiesInd tc="0">False</BusinessStrategiesInd>
+                  <Page3Ind tc="0">False</Page3Ind>
+                  <MdmRetriggerInd tc="0">False</MdmRetriggerInd>
+                </PolicyExtension>
+              </OLifEExtension>
+            </Policy>
+            <Investment id="Investment_9">
+              <SubAccount id="SubAccount_5">
+                <ProductCode>W01</ProductCode>
+                <ProductFullName>Guaranteed Interest Account</ProductFullName>
+              </SubAccount>
+            </Investment>
+            <Attachment id="Attachment_2">
+              <DateCreated>2019-06-26</DateCreated>
+              <UserCode>A2AUUND</UserCode>
+              <AttachmentData tc="8">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+              &lt;SecureComment&gt; &lt;Comment&gt;Impairment or Requirement requires underwriter
+              review&lt;/Comment&gt; &lt;UserNameEntered&gt;A2AUUND&lt;/UserNameEntered&gt;
+              &lt;AutoInd&gt;true&lt;/AutoInd&gt; &lt;/SecureComment&gt;</AttachmentData>
+              <AttachmentType tc="12">Underwriting Note</AttachmentType>
+            </Attachment>
+            <Attachment id="Attachment_3">
+              <DateCreated>2019-06-26</DateCreated>
+              <UserCode>A2AUUND</UserCode>
+              <AttachmentData tc="8">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+              &lt;SecureComment&gt; &lt;Comment&gt;Requirement needs UW Review-Prevents Auto
+              Approval&lt;/Comment&gt; &lt;UserNameEntered&gt;A2AUUND&lt;/UserNameEntered&gt;
+              &lt;AutoInd&gt;true&lt;/AutoInd&gt; &lt;/SecureComment&gt;</AttachmentData>
+              <AttachmentType tc="12">Underwriting Note</AttachmentType>
+            </Attachment>
+            <Attachment id="Attachment_4">
+              <DateCreated>2019-06-26</DateCreated>
+              <UserCode>A2AUUND</UserCode>
+              <AttachmentData tc="8">&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+              &lt;SecureComment&gt; &lt;Comment&gt;Exceeds Automatic Approval Limits for
+              Age/Amount&lt;/Comment&gt; &lt;UserNameEntered&gt;A2AUUND&lt;/UserNameEntered&gt;
+              &lt;AutoInd&gt;true&lt;/AutoInd&gt; &lt;/SecureComment&gt;</AttachmentData>
+              <AttachmentType tc="12">Underwriting Note</AttachmentType>
+            </Attachment>
+            <Intent PartyID="Party_032_01" id="Intent_1">
+              <OLifEExtension ExtensionCode="Intent 2.9.03" VendorCode="05">
+                <IntentExtension>
+                  <IntentCategory tc="4">Personal</IntentCategory>
+                  <ExpenseNeedTypeCodeCC>
+                    <ExpenseNeedTypeCode tc="8">Gifting</ExpenseNeedTypeCode>
+                  </ExpenseNeedTypeCodeCC>
+                </IntentExtension>
+              </OLifEExtension>
+            </Intent>
+            <Arrangement id="Arrangement_1">
+              <ProductCode>PA</ProductCode>
+              <ArrType tc="37">Standing Allocation</ArrType>
+              <StartDate>2019-06-24</StartDate>
+              <ArrDestination SubAcctID="SubAccount_5" id="ArrDestination_1">
+                <TransferAmtType tc="3">Percentage</TransferAmtType>
+                <TransferPct>100</TransferPct>
+              </ArrDestination>
+            </Arrangement>
+            <SystemMessage RelatedObjectID="Policy_3" id="SystemMessage_292">
+              <MessageCode>6700</MessageCode>
+              <Sequence>0</Sequence>
+              <MessageSeverityCode tc="1">Informational</MessageSeverityCode>
+              <MessageStartDate>2019-11-21</MessageStartDate>
+              <OLifEExtension ExtensionCode="SystemMessage 2.9.03" VendorCode="05">
+                <SystemMessageExtension>
+                  <MsgOverrideInd tc="0">False</MsgOverrideInd>
+                  <MsgValidationType tc="6">Miscellaneous</MsgValidationType>
+                  <MsgRestrictCode tc="7">Prevent Call to PAL Interface</MsgRestrictCode>
+                </SystemMessageExtension>
+              </OLifEExtension>
+            </SystemMessage>
+            <SystemMessage RelatedObjectID="Relation_034_01" id="SystemMessage_293">
+              <MessageCode>6991</MessageCode>
+              <Sequence>0</Sequence>
+              <MessageDescription>DOB rernt, meilmeril</MessageDescription>
+              <MessageSeverityCode tc="1">Informational</MessageSeverityCode>
+              <MessageStartDate>2019-11-21</MessageStartDate>
+              <OLifEExtension ExtensionCode="SystemMessage 2.9.03" VendorCode="05">
+                <SystemMessageExtension>
+                  <MsgOverrideInd tc="0">False</MsgOverrideInd>
+                  <MsgValidationType tc="6">Miscellaneous</MsgValidationType>
+                </SystemMessageExtension>
+              </OLifEExtension>
+            </SystemMessage>
+            <SystemMessage RelatedObjectID="Relation_034_01" id="SystemMessage_294">
+              <MessageCode>6991</MessageCode>
+              <Sequence>0</Sequence>
+              <MessageDescription>Address rernt, meilmeril</MessageDescription>
+              <MessageSeverityCode tc="1">Informational</MessageSeverityCode>
+              <MessageStartDate>2019-11-21</MessageStartDate>
+              <OLifEExtension ExtensionCode="SystemMessage 2.9.03" VendorCode="05">
+                <SystemMessageExtension>
+                  <MsgOverrideInd tc="0">False</MsgOverrideInd>
+                  <MsgValidationType tc="6">Miscellaneous</MsgValidationType>
+                </SystemMessageExtension>
+              </OLifEExtension>
+            </SystemMessage>
+            <SystemMessage RelatedObjectID="Party_034_01" id="SystemMessage_295">
+              <MessageCode>6991</MessageCode>
+              <Sequence>0</Sequence>
+              <MessageDescription>SSN/TIN/ITIN# rernt, meilmeril</MessageDescription>
+              <MessageSeverityCode tc="1">Informational</MessageSeverityCode>
+              <MessageStartDate>2019-11-21</MessageStartDate>
+              <OLifEExtension ExtensionCode="SystemMessage 2.9.03" VendorCode="05">
+                <SystemMessageExtension>
+                  <MsgOverrideInd tc="0">False</MsgOverrideInd>
+                  <MsgValidationType tc="6">Miscellaneous</MsgValidationType>
+                </SystemMessageExtension>
+              </OLifEExtension>
+            </SystemMessage>
+            <SystemMessage RelatedObjectID="Party_032_01" id="SystemMessage_44">
+              <MessageCode>90001</MessageCode>
+              <Sequence>0</Sequence>
+              <MessageDescription>Severe error in client net amount at risk.</MessageDescription>
+              <MessageSeverityCode tc="4">Overridable</MessageSeverityCode>
+              <MessageStartDate>2019-06-26</MessageStartDate>
+              <OLifEExtension ExtensionCode="SystemMessage 2.9.03" VendorCode="05">
+                <SystemMessageExtension>
+                  <MsgOverrideInd tc="0">False</MsgOverrideInd>
+                  <MsgValidationType tc="90" />
+                </SystemMessageExtension>
+              </OLifEExtension>
+            </SystemMessage>
+            <SystemMessage RelatedObjectID="Holding_1" id="SystemMessage_72">
+              <MessageCode>1791</MessageCode>
+              <Sequence>0</Sequence>
+              <MessageDescription>Multiple policies being converted system cannot calculate new
+              policy rate class.</MessageDescription>
+              <MessageSeverityCode tc="1">Informational</MessageSeverityCode>
+              <MessageStartDate>2019-06-26</MessageStartDate>
+              <OLifEExtension ExtensionCode="SystemMessage 2.9.03" VendorCode="05">
+                <SystemMessageExtension>
+                  <MsgOverrideInd tc="0">False</MsgOverrideInd>
+                </SystemMessageExtension>
+              </OLifEExtension>
+            </SystemMessage>
+            <SystemMessage RelatedObjectID="Policy_3" id="SystemMessage_73">
+              <MessageCode>1784</MessageCode>
+              <Sequence>0</Sequence>
+              <MessageSeverityCode tc="2">Severe</MessageSeverityCode>
+              <MessageStartDate>2019-06-26</MessageStartDate>
+              <OLifEExtension ExtensionCode="SystemMessage 2.9.03" VendorCode="05">
+                <SystemMessageExtension>
+                  <MsgOverrideInd tc="0">False</MsgOverrideInd>
+                  <MsgValidationType tc="1">Basic</MsgValidationType>
+                  <MsgRestrictCode tc="4">Prevent Underwriter Approval</MsgRestrictCode>
+                </SystemMessageExtension>
+              </OLifEExtension>
+            </SystemMessage>
+            <SystemMessage RelatedObjectID="Coverage_1" id="SystemMessage_74">
+              <MessageCode>2763</MessageCode>
+              <Sequence>0</Sequence>
+              <MessageDescription>Loan Extension Endorsement not allowed under Definition of Life
+              Insured test.</MessageDescription>
+              <MessageSeverityCode tc="1">Informational</MessageSeverityCode>
+              <MessageStartDate>2019-06-26</MessageStartDate>
+              <OLifEExtension ExtensionCode="SystemMessage 2.9.03" VendorCode="05">
+                <SystemMessageExtension>
+                  <MsgOverrideInd tc="0">False</MsgOverrideInd>
+                  <MsgValidationType tc="2">Insurance</MsgValidationType>
+                </SystemMessageExtension>
+              </OLifEExtension>
+            </SystemMessage>
+            <SystemMessage RelatedObjectID="Policy_3" id="SystemMessage_75">
+              <MessageCode>565</MessageCode>
+              <MessageDescription>MD ALLOC RULE NOT SPECIFIC</MessageDescription>
+              <MessageSeverityCode tc="1">Informational</MessageSeverityCode>
+              <OLifEExtension ExtensionCode="SystemMessage 2.9.03" VendorCode="05">
+                <SystemMessageExtension>
+                  <MsgValidationType tc="2">Insurance</MsgValidationType>
+                </SystemMessageExtension>
+              </OLifEExtension>
+            </SystemMessage>
+            <SystemMessage RelatedObjectID="Policy_3" id="SystemMessage_76">
+              <MessageCode>566</MessageCode>
+              <MessageDescription>MD ALLOC % HAVE BEEN CHANGED FOR IUL</MessageDescription>
+              <MessageSeverityCode tc="1">Informational</MessageSeverityCode>
+              <OLifEExtension ExtensionCode="SystemMessage 2.9.03" VendorCode="05">
+                <SystemMessageExtension>
+                  <MsgValidationType tc="2">Insurance</MsgValidationType>
+                </SystemMessageExtension>
+              </OLifEExtension>
+            </SystemMessage>
+            <SystemMessage RelatedObjectID="Policy_3" id="SystemMessage_77">
+              <MessageCode>36</MessageCode>
+              <MessageDescription>COMM BAND LIMIT = 1000.00</MessageDescription>
+              <MessageSeverityCode tc="1">Informational</MessageSeverityCode>
+              <OLifEExtension ExtensionCode="SystemMessage 2.9.03" VendorCode="05">
+                <SystemMessageExtension>
+                  <MsgValidationType tc="2">Insurance</MsgValidationType>
+                </SystemMessageExtension>
+              </OLifEExtension>
+            </SystemMessage>
+            <SystemMessage RelatedObjectID="Policy_3" id="SystemMessage_78">
+              <MessageCode>657</MessageCode>
+              <MessageDescription>NO ADDRESS WAS SPECIFIED AS MAILING. PERSON 01
+              USED</MessageDescription>
+              <MessageSeverityCode tc="1">Informational</MessageSeverityCode>
+              <OLifEExtension ExtensionCode="SystemMessage 2.9.03" VendorCode="05">
+                <SystemMessageExtension>
+                  <MsgValidationType tc="2">Insurance</MsgValidationType>
+                </SystemMessageExtension>
+              </OLifEExtension>
+            </SystemMessage>
+            <SystemMessage RelatedObjectID="Policy_3" id="SystemMessage_79">
+              <MessageCode>604</MessageCode>
+              <MessageDescription>INITIAL PREMIUM REQUIRED ON DELIVERY</MessageDescription>
+              <MessageSeverityCode tc="1">Informational</MessageSeverityCode>
+              <OLifEExtension ExtensionCode="SystemMessage 2.9.03" VendorCode="05">
+                <SystemMessageExtension>
+                  <MsgValidationType tc="2">Insurance</MsgValidationType>
+                </SystemMessageExtension>
+              </OLifEExtension>
+            </SystemMessage>
+            <SystemMessage RelatedObjectID="Policy_3" id="SystemMessage_80">
+              <MessageCode>3905</MessageCode>
+              <Sequence>0</Sequence>
+              <MessageDescription>Not Authorized - AIDB</MessageDescription>
+              <MessageSeverityCode tc="1">Informational</MessageSeverityCode>
+              <MessageStartDate>2019-06-26</MessageStartDate>
+              <OLifEExtension ExtensionCode="SystemMessage 2.9.03" VendorCode="05">
+                <SystemMessageExtension>
+                  <MsgOverrideInd tc="0">False</MsgOverrideInd>
+                  <MsgValidationType tc="3">Agent</MsgValidationType>
+                </SystemMessageExtension>
+              </OLifEExtension>
+            </SystemMessage>
+            <SystemMessage RelatedObjectID="Policy_3" id="SystemMessage_81">
+              <MessageCode>5002</MessageCode>
+              <Sequence>0</Sequence>
+              <MessageDescription>Update Financial menu for overage return or shortage amount
+              greater than tolerance. Sum of Modal Premiums: $726.80, Received: $0.00, Shortage:
+              $726.80</MessageDescription>
+              <MessageSeverityCode tc="2">Severe</MessageSeverityCode>
+              <MessageStartDate>2019-06-26</MessageStartDate>
+              <OLifEExtension ExtensionCode="SystemMessage 2.9.03" VendorCode="05">
+                <SystemMessageExtension>
+                  <MsgOverrideInd tc="0">False</MsgOverrideInd>
+                  <MsgValidationType tc="5">Cash With Application</MsgValidationType>
+                </SystemMessageExtension>
+              </OLifEExtension>
+            </SystemMessage>
+            <SystemMessage RelatedObjectID="Policy_3" id="SystemMessage_82">
+              <MessageCode>5001</MessageCode>
+              <Sequence>0</Sequence>
+              <MessageDescription>Premium: $25.00, Received: $0.00, Difference:
+              $25.00</MessageDescription>
+              <MessageSeverityCode tc="1">Informational</MessageSeverityCode>
+              <MessageStartDate>2019-06-26</MessageStartDate>
+              <OLifEExtension ExtensionCode="SystemMessage 2.9.03" VendorCode="05">
+                <SystemMessageExtension>
+                  <MsgOverrideInd tc="0">False</MsgOverrideInd>
+                  <MsgValidationType tc="5">Cash With Application</MsgValidationType>
+                </SystemMessageExtension>
+              </OLifEExtension>
+            </SystemMessage>
+            <SystemMessage RelatedObjectID="Policy_3" id="SystemMessage_83">
+              <MessageCode>5903</MessageCode>
+              <Sequence>0</Sequence>
+              <MessageSeverityCode tc="2">Severe</MessageSeverityCode>
+              <MessageStartDate>2019-06-26</MessageStartDate>
+              <OLifEExtension ExtensionCode="SystemMessage 2.9.03" VendorCode="05">
+                <SystemMessageExtension>
+                  <MsgOverrideInd tc="0">False</MsgOverrideInd>
+                  <MsgValidationType tc="5">Cash With Application</MsgValidationType>
+                </SystemMessageExtension>
+              </OLifEExtension>
+            </SystemMessage>
+          </Holding>
+          <Holding id="Holding_2">
+            <HoldingTypeCode tc="2">Policy</HoldingTypeCode>
+            <Policy id="Policy_1">
+              <PolNumber>4474541526</PolNumber>
+              <LineOfBusiness tc="1">Life</LineOfBusiness>
+              <CarrierCode>-1</CarrierCode>
+              <ReplacementType tc="0">Unknown</ReplacementType>
+              <PaymentDraftDay>0</PaymentDraftDay>
+              <Life id="Life_3" />
+              <ApplicationInfo>
+                <ApplicationType tc="0">Unknown</ApplicationType>
+                <FormalAppInd tc="1">True</FormalAppInd>
+                <AgentRelatedInd tc="0">False</AgentRelatedInd>
+                <OLifEExtension ExtensionCode="ApplicationInfo 2.9.03" VendorCode="05">
+                  <ApplicationInfoExtension>
+                    <ApplicationOrigin tc="0">Unknown</ApplicationOrigin>
+                    <SubmissionType tc="0">Unknown</SubmissionType>
+                    <TermConvPurchOptInd tc="0">False</TermConvPurchOptInd>
+                    <SpecialInstructionInd tc="0">False</SpecialInstructionInd>
+                    <NIGOInd tc="0">False</NIGOInd>
+                    <AddlCoveragePlanInd tc="0">False</AddlCoveragePlanInd>
+                    <InternationalUWProgInd tc="0">False</InternationalUWProgInd>
+                    <IUPOverrideInd tc="0">False</IUPOverrideInd>
+                    <TermConvSubType tc="1009800003">Partial - Balance Continued</TermConvSubType>
+                    <ProposedInsuredInd tc="0">False</ProposedInsuredInd>
+                    <ChkInTransitInd tc="0">False</ChkInTransitInd>
+                    <LevelizedCommissionInd tc="0">False</LevelizedCommissionInd>
+                    <VarProdDisclosureInd tc="0">False</VarProdDisclosureInd>
+                    <SystematicPaymentPlanSetUpInd tc="0">False</SystematicPaymentPlanSetUpInd>
+                    <JointInsuredSameAsOwnerIndCode tc="3">Unknown</JointInsuredSameAsOwnerIndCode>
+                    <SubFirmIndicator tc="0">False</SubFirmIndicator>
+                    <PredOverrideInd tc="0">False</PredOverrideInd>
+                    <InitialPremiumPaymentForm tc="6">Personal Check</InitialPremiumPaymentForm>
+                    <JointInsuredInd tc="0">False</JointInsuredInd>
+                    <BICSignedAndDated tc="0">False</BICSignedAndDated>
+                    <BICDataRequired tc="0">False</BICDataRequired>
+                    <BICOnFileRight tc="0">False</BICOnFileRight>
+                  </ApplicationInfoExtension>
+                </OLifEExtension>
+              </ApplicationInfo>
+              <OLifEExtension ExtensionCode="Policy 2.9.03" VendorCode="05">
+                <PolicyExtension>
+                  <NewUnitInd tc="0">False</NewUnitInd>
+                  <ReplacementIndCode tc="3">Unknown</ReplacementIndCode>
+                  <ConvPolicyAttachedIndCode tc="1">Yes</ConvPolicyAttachedIndCode>
+                  <TermConvSubType tc="1000500005">Partial - Balance Continued</TermConvSubType>
+                  <TermConvFaceAmt>500000</TermConvFaceAmt>
+                  <TermConvPolicyStatus tc="1000500001" />
+                  <TermConvPlanSeries>150</TermConvPlanSeries>
+                  <TermConvRateClass>PN</TermConvRateClass>
+                  <TermConvTableRatingInd tc="0">False</TermConvTableRatingInd>
+                  <TermConvFlatExtraInd tc="0">False</TermConvFlatExtraInd>
+                  <TermConvReinsuranceInd tc="0">False</TermConvReinsuranceInd>
+                  <RemoveTermConvExclRdrInd tc="0">False</RemoveTermConvExclRdrInd>
+                  <TermConvRatingReductionInd tc="0">False</TermConvRatingReductionInd>
+                  <TermConvIncreaseUWReqrdInd tc="0">False</TermConvIncreaseUWReqrdInd>
+                  <TermConvRiderAddUWReqrdInd tc="0">False</TermConvRiderAddUWReqrdInd>
+                  <TermConvBenefitAddUWReqrdInd tc="0">False</TermConvBenefitAddUWReqrdInd>
+                  <TemporaryAdvAllowedInd tc="0">False</TemporaryAdvAllowedInd>
+                  <TermUnearnPremDisposition tc="1009800001" />
+                  <NonInsuredOwnerInd tc="0">False</NonInsuredOwnerInd>
+                  <ReplaceConvertType tc="1000500002">Term Conversion</ReplaceConvertType>
+                  <OptionOffSchedule tc="0">False</OptionOffSchedule>
+                  <NonInsuredOwnerIndCode tc="3">Unknown</NonInsuredOwnerIndCode>
+                  <TermConvRegisterDate>2019-06-26</TermConvRegisterDate>
+                  <PrintTogetherIND tc="0">False</PrintTogetherIND>
+                  <MDRConsentIND tc="0">False</MDRConsentIND>
+                  <OptionalBenefits tc="0">False</OptionalBenefits>
+                  <YearIssuedInd tc="0">False</YearIssuedInd>
+                  <LumpSumPaymentInd tc="0">False</LumpSumPaymentInd>
+                  <PartialWithdrawalInd tc="0">False</PartialWithdrawalInd>
+                  <LoanActionInd tc="0">False</LoanActionInd>
+                  <BenefitReductionInd tc="0">False</BenefitReductionInd>
+                  <PolicyFundedByDividendsInd tc="0">False</PolicyFundedByDividendsInd>
+                  <ClientRefundedDividendsInd tc="0">False</ClientRefundedDividendsInd>
+                  <PremiumStoppageInd tc="0">False</PremiumStoppageInd>
+                  <ReplOtherActionInd tc="0">False</ReplOtherActionInd>
+                  <GoldenTicketInd tc="0">False</GoldenTicketInd>
+                  <BusinessStrategiesInd tc="0">False</BusinessStrategiesInd>
+                  <Page3Ind tc="0">False</Page3Ind>
+                  <MdmRetriggerInd tc="0">False</MdmRetriggerInd>
+                </PolicyExtension>
+              </OLifEExtension>
+            </Policy>
+            <OLifEExtension ExtensionCode="Holding 2.9.03" VendorCode="05">
+              <HoldingExtension>
+                <HoldingSubType tc="1009800004">Term Conversion Holding</HoldingSubType>
+              </HoldingExtension>
+            </OLifEExtension>
+          </Holding>
+          <Holding id="Holding_3">
+            <HoldingTypeCode tc="2">Policy</HoldingTypeCode>
+            <Policy id="Policy_2">
+              <PolNumber>4474541526</PolNumber>
+              <LineOfBusiness tc="1">Life</LineOfBusiness>
+              <CarrierCode>-1</CarrierCode>
+              <ReplacementType tc="1">None</ReplacementType>
+              <PaymentDraftDay>0</PaymentDraftDay>
+              <Life id="Life_2">
+                <TotalRiskAmt>500000</TotalRiskAmt>
+                <LifeUSA>
+                  <OLifEExtension ExtensionCode="LifeUSA 2.9.03" VendorCode="05">
+                    <LifeUSAExtension>
+                      <Exch1035IndCode tc="2">No</Exch1035IndCode>
+                      <Exch1035LoanCarryoverInd tc="0">False</Exch1035LoanCarryoverInd>
+                      <Exchange1035Ind tc="0">False</Exchange1035Ind>
+                      <LoanCarryoverInd tc="0">False</LoanCarryoverInd>
+                    </LifeUSAExtension>
+                  </OLifEExtension>
+                </LifeUSA>
+                <OLifEExtension ExtensionCode="Life 2.9.03" VendorCode="05">
+                  <LifeExtension>
+                    <UnisexRateInd tc="0">False</UnisexRateInd>
+                  </LifeExtension>
+                </OLifEExtension>
+              </Life>
+              <OLifEExtension ExtensionCode="Policy 2.9.03" VendorCode="05">
+                <PolicyExtension>
+                  <NewUnitInd tc="0">False</NewUnitInd>
+                  <YearIssued>2014</YearIssued>
+                  <ReplaceContractType tc="1" />
+                  <ReplacementIndCode tc="2">No</ReplacementIndCode>
+                  <ReplaceProductType tc="1">Term</ReplaceProductType>
+                  <TermConvTableRatingInd tc="0">False</TermConvTableRatingInd>
+                  <TermConvFlatExtraInd tc="0">False</TermConvFlatExtraInd>
+                  <TermConvReinsuranceInd tc="0">False</TermConvReinsuranceInd>
+                  <RemoveTermConvExclRdrInd tc="0">False</RemoveTermConvExclRdrInd>
+                  <TermConvRatingReductionInd tc="0">False</TermConvRatingReductionInd>
+                  <TermConvIncreaseUWReqrdInd tc="0">False</TermConvIncreaseUWReqrdInd>
+                  <TermConvRiderAddUWReqrdInd tc="0">False</TermConvRiderAddUWReqrdInd>
+                  <TermConvBenefitAddUWReqrdInd tc="0">False</TermConvBenefitAddUWReqrdInd>
+                  <TemporaryAdvAllowedInd tc="0">False</TemporaryAdvAllowedInd>
+                  <NonInsuredOwnerInd tc="0">False</NonInsuredOwnerInd>
+                  <ReplaceConvertType tc="1000500001">Replacement</ReplaceConvertType>
+                  <OptionOffSchedule tc="0">False</OptionOffSchedule>
+                  <NonInsuredOwnerIndCode tc="3">Unknown</NonInsuredOwnerIndCode>
+                  <PrintTogetherIND tc="0">False</PrintTogetherIND>
+                  <MDRConsentIND tc="0">False</MDRConsentIND>
+                  <OptionalBenefits tc="0">False</OptionalBenefits>
+                  <YearIssuedInd tc="0">False</YearIssuedInd>
+                  <LumpSumPaymentInd tc="0">False</LumpSumPaymentInd>
+                  <PartialWithdrawalInd tc="0">False</PartialWithdrawalInd>
+                  <LoanActionInd tc="0">False</LoanActionInd>
+                  <BenefitReductionInd tc="0">False</BenefitReductionInd>
+                  <PolicyFundedByDividendsInd tc="0">False</PolicyFundedByDividendsInd>
+                  <ClientRefundedDividendsInd tc="0">False</ClientRefundedDividendsInd>
+                  <PremiumStoppageInd tc="0">False</PremiumStoppageInd>
+                  <ReplOtherActionInd tc="0">False</ReplOtherActionInd>
+                  <GoldenTicketInd tc="0">False</GoldenTicketInd>
+                  <BusinessStrategiesInd tc="0">False</BusinessStrategiesInd>
+                  <Page3Ind tc="0">False</Page3Ind>
+                  <MdmRetriggerInd tc="0">False</MdmRetriggerInd>
+                </PolicyExtension>
+              </OLifEExtension>
+            </Policy>
+          </Holding>
+          <Party id="Party_032_01">
+            <PartyTypeCode tc="1">Person</PartyTypeCode>
+            <FullName>Nickjunmjys, Dolajunmjys</FullName>
+            <GovtID>667244286</GovtID>
+            <GovtIDTC tc="1">Social Security Number US</GovtIDTC>
+            <ResidenceState tc="12">Florida</ResidenceState>
+            <ResidenceCountry tc="1">United States of America</ResidenceCountry>
+            <Person>
+              <FirstName>Dolajunmjys</FirstName>
+              <LastName>Nickjunmjys</LastName>
+              <MarStat tc="1">Married</MarStat>
+              <Gender tc="2">Female</Gender>
+              <BirthDate>1986-08-23</BirthDate>
+              <Age>32</Age>
+              <Citizenship tc="1">United States of America</Citizenship>
+              <SmokerStat tc="1">Never Used Tobacco</SmokerStat>
+              <OLifEExtension ExtensionCode="Person 2.9.03" VendorCode="05">
+                <PersonExtension>
+                  <RateClassAppliedFor>PE</RateClassAppliedFor>
+                  <ImpairmentInfo id="ImpairmentInfo_1">
+                    <Description>Financial Review Required</Description>
+                    <ImpairmentType>5</ImpairmentType>
+                    <ImpairmentStatus tc="1000500003">Pending</ImpairmentStatus>
+                    <ImpairmentDate>2019-06-26</ImpairmentDate>
+                    <ImpairmentClass>9</ImpairmentClass>
+                    <ImpairmentSource>FINANCIAL</ImpairmentSource>
+                    <ImpairmentMessages id="ImpairmentMessages_1">
+                      <ImpairmentMessageText>Charitable / Gifting</ImpairmentMessageText>
+                      <ImpairmentMessageDate>2019-06-26</ImpairmentMessageDate>
+                      <ImpairmentMessageUserID>NbaProcContractEvalution</ImpairmentMessageUserID>
+                    </ImpairmentMessages>
+                    <ImpWorkupInd>true</ImpWorkupInd>
+                    <RestrictApprovalInd tc="0">False</RestrictApprovalInd>
+                  </ImpairmentInfo>
+                  <ImpairmentInfo id="ImpairmentInfo_2">
+                    <Description>IAI needs to be reviewed</Description>
+                    <ImpairmentType>1009800007</ImpairmentType>
+                    <ImpairmentStatus tc="1000500003">Pending</ImpairmentStatus>
+                    <ImpairmentDate>2019-06-26</ImpairmentDate>
+                    <ImpairmentClass>5</ImpairmentClass>
+                    <ImpairmentSource>MIB</ImpairmentSource>
+                    <ImpairmentMessages id="ImpairmentMessages_2">
+                      <ImpairmentMessageText>processed 2019-06-26 08:46:02</ImpairmentMessageText>
+                      <ImpairmentMessageDate>2019-06-26</ImpairmentMessageDate>
+                      <ImpairmentMessageUserID>
+                      NbaProcRequirementEvaluation</ImpairmentMessageUserID>
+                    </ImpairmentMessages>
+                    <RestrictApprovalInd tc="0">False</RestrictApprovalInd>
+                  </ImpairmentInfo>
+                  <USCitizenInd tc="0">False</USCitizenInd>
+                  <DriversLicenseStatusIndCode tc="3">Unknown</DriversLicenseStatusIndCode>
+                  <USCitizenIndCode tc="1">Yes</USCitizenIndCode>
+                  <PermanantResidentInd tc="0">False</PermanantResidentInd>
+                  <ForeignGovRelation tc="0">False</ForeignGovRelation>
+                  <InsuranceAge>33</InsuranceAge>
+                  <GovtIDStatusIndCode tc="3">Unknown</GovtIDStatusIndCode>
+                </PersonExtension>
+              </OLifEExtension>
+            </Person>
+            <Address id="Address_1">
+              <AddressTypeCode tc="1">Residence</AddressTypeCode>
+              <Line1>main</Line1>
+              <Line2>road</Line2>
+              <City>lee</City>
+              <AddressStateTC tc="12">Florida</AddressStateTC>
+              <Zip>32059</Zip>
+              <AddressCountryTC tc="1">United States of America</AddressCountryTC>
+            </Address>
+            <Attachment id="Attachment_1">
+              <DateCreated>2019-06-26</DateCreated>
+              <AttachmentBasicType tc="1">Text Only</AttachmentBasicType>
+              <AttachmentData>&lt;?xml version="1.0" encoding="UTF-8"?&gt; &lt;TXLife
+              xmlns="http://ACORD.org/Standards/Life/2"&gt; &lt;UserAuthRequest&gt;
+              &lt;UserLoginName&gt;&lt;/UserLoginName&gt; &lt;UserPswd&gt;
+              &lt;CryptType&gt;NONE&lt;/CryptType&gt; &lt;Pswd&gt;&lt;/Pswd&gt; &lt;/UserPswd&gt;
+              &lt;UserDate&gt;2019-06-26&lt;/UserDate&gt; &lt;UserTime&gt;08:30:07&lt;/UserTime&gt;
+              &lt;VendorApp&gt; &lt;VendorName VendorCode="05"&gt;CSC&lt;/VendorName&gt;
+              &lt;AppName&gt;nbA_Life&lt;/AppName&gt; &lt;AppVer&gt;1.0&lt;/AppVer&gt;
+              &lt;/VendorApp&gt; &lt;/UserAuthRequest&gt; &lt;TXLifeRequest&gt;
+              &lt;TransRefGUID&gt;47bb4477-786b-b8ac-1105-0cadff4bedcf&lt;/TransRefGUID&gt;
+              &lt;TransType tc="203"&gt;Holding Inquiry&lt;/TransType&gt;
+              &lt;TransExeDate&gt;2019-06-26&lt;/TransExeDate&gt;
+              &lt;TransExeTime&gt;08:30:07&lt;/TransExeTime&gt; &lt;TransMode
+              tc="0"&gt;&lt;/TransMode&gt; &lt;OLifE Version="2.9.03"&gt; &lt;SourceInfo&gt;
+              &lt;SourceInfoName&gt;nbA_Life&lt;/SourceInfoName&gt;
+              &lt;FileControlID&gt;L70&lt;/FileControlID&gt; &lt;/SourceInfo&gt; &lt;Holding
+              id="Holding_1"&gt; &lt;Policy id="Policy_1" CarrierPartyID="Party_032_01"&gt;
+              &lt;CarrierAdminSystem&gt;L70&lt;/CarrierAdminSystem&gt;
+              &lt;PolNumber&gt;569352698&lt;/PolNumber&gt; &lt;ProductType tc="5"&gt;Indexed
+              Universal Life&lt;/ProductType&gt; &lt;ProductCode&gt;FWM107&lt;/ProductCode&gt;
+              &lt;CarrierCode&gt;BA&lt;/CarrierCode&gt; &lt;PolicyStatus tc="8"&gt;Pending
+              Issue&lt;/PolicyStatus&gt; &lt;IssueType tc="1"&gt;Full
+              Underwriting&lt;/IssueType&gt; &lt;RatedInd tc="0"&gt;False&lt;/RatedInd&gt;
+              &lt;Life&gt; &lt;Coverage id="Coverage_1"&gt;
+              &lt;CoverageKey&gt;1&lt;/CoverageKey&gt;
+              &lt;ProductCode&gt;FWM107&lt;/ProductCode&gt; &lt;LifeCovTypeCode tc="10"&gt;Indexed
+              Universal Life&lt;/LifeCovTypeCode&gt; &lt;IndicatorCode
+              tc="1"&gt;Base&lt;/IndicatorCode&gt; &lt;LivesType tc="1"&gt;Single
+              life&lt;/LivesType&gt; &lt;DeathBenefitOptType tc="1"&gt;Level (DB =
+              Face)&lt;/DeathBenefitOptType&gt; &lt;CurrentAmt&gt;1000000&lt;/CurrentAmt&gt;
+              &lt;EffDate&gt;2019-06-24&lt;/EffDate&gt; &lt;CovOption id="CovOption_1"&gt;
+              &lt;CovOptionKey&gt;1&lt;/CovOptionKey&gt; &lt;ShortName&gt;No Lapse Guarantee
+              Rider&lt;/ShortName&gt; &lt;PlanName&gt;No Lapse Guarantee Rider&lt;/PlanName&gt;
+              &lt;ProductCode&gt;0NLW10&lt;/ProductCode&gt; &lt;CovOptionStatus
+              tc="1"&gt;Active&lt;/CovOptionStatus&gt; &lt;LifeCovOptTypeCode tc="9"&gt;No Lapse
+              Guarantee Option&lt;/LifeCovOptTypeCode&gt; &lt;LivesType tc="1"&gt;Single
+              life&lt;/LivesType&gt; &lt;OptionAmt&gt;1000000&lt;/OptionAmt&gt;
+              &lt;OptionNumberOfUnits&gt;1000&lt;/OptionNumberOfUnits&gt;
+              &lt;EffDate&gt;2019-06-24&lt;/EffDate&gt; &lt;TermDate&gt;2029-06-24&lt;/TermDate&gt;
+              &lt;OLifEExtension VendorCode="05" ExtensionCode="CovOption 2.9.03"&gt;
+              &lt;CovOptionExtension&gt; &lt;MinPremAmt&gt;3319.68&lt;/MinPremAmt&gt;
+              &lt;SelectionRule tc="12"&gt;Inherent, No Premium&lt;/SelectionRule&gt;
+              &lt;/CovOptionExtension&gt; &lt;/OLifEExtension&gt; &lt;/CovOption&gt; &lt;CovOption
+              id="CovOption_2"&gt; &lt;CovOptionKey&gt;1&lt;/CovOptionKey&gt;
+              &lt;ShortName&gt;Alternate Loan Endorsement&lt;/ShortName&gt;
+              &lt;PlanName&gt;Alternate Loan Endorsement&lt;/PlanName&gt;
+              &lt;ProductCode&gt;ALTLOAN&lt;/ProductCode&gt; &lt;CovOptionStatus
+              tc="1"&gt;Active&lt;/CovOptionStatus&gt; &lt;LifeCovOptTypeCode
+              tc="1009800010"&gt;&lt;/LifeCovOptTypeCode&gt; &lt;LivesType tc="1"&gt;Single
+              life&lt;/LivesType&gt; &lt;OptionAmt&gt;1000000&lt;/OptionAmt&gt;
+              &lt;OptionNumberOfUnits&gt;1000&lt;/OptionNumberOfUnits&gt;
+              &lt;EffDate&gt;2019-06-24&lt;/EffDate&gt; &lt;OLifEExtension VendorCode="05"
+              ExtensionCode="CovOption 2.9.03"&gt; &lt;CovOptionExtension&gt; &lt;SelectionRule
+              tc="12"&gt;Inherent, No Premium&lt;/SelectionRule&gt; &lt;/CovOptionExtension&gt;
+              &lt;/OLifEExtension&gt; &lt;/CovOption&gt; &lt;CovOption id="CovOption_3"&gt;
+              &lt;CovOptionKey&gt;1&lt;/CovOptionKey&gt; &lt;ShortName&gt;Living Benefit
+              Rider&lt;/ShortName&gt; &lt;PlanName&gt;Living Benefit Rider&lt;/PlanName&gt;
+              &lt;ProductCode&gt;LBR&lt;/ProductCode&gt; &lt;CovOptionStatus
+              tc="1"&gt;Active&lt;/CovOptionStatus&gt; &lt;LifeCovOptTypeCode tc="1"&gt;Accelerated
+              Benefit &lt;/LifeCovOptTypeCode&gt; &lt;LivesType tc="1"&gt;Single
+              life&lt;/LivesType&gt; &lt;OptionAmt&gt;1000000&lt;/OptionAmt&gt;
+              &lt;OptionNumberOfUnits&gt;1000&lt;/OptionNumberOfUnits&gt;
+              &lt;EffDate&gt;2019-06-24&lt;/EffDate&gt; &lt;TermDate&gt;2107-06-24&lt;/TermDate&gt;
+              &lt;OLifEExtension VendorCode="05" ExtensionCode="CovOption 2.9.03"&gt;
+              &lt;CovOptionExtension&gt; &lt;SelectionRule tc="12"&gt;Inherent, No
+              Premium&lt;/SelectionRule&gt; &lt;/CovOptionExtension&gt; &lt;/OLifEExtension&gt;
+              &lt;/CovOption&gt; &lt;LifeParticipant id="LifeParticipant_1"
+              PartyID="Party_032_01"&gt; &lt;ParticipantName&gt;Dolajunmjys
+              Nickjunmjys&lt;/ParticipantName&gt; &lt;LifeParticipantRoleCode tc="1"&gt;Primary
+              Insured&lt;/LifeParticipantRoleCode&gt; &lt;IssueAge&gt;33&lt;/IssueAge&gt;
+              &lt;IssueGender tc="2"&gt;Female&lt;/IssueGender&gt; &lt;SmokerStat tc="1"&gt;Never
+              Used Tobacco&lt;/SmokerStat&gt; &lt;TobaccoPremiumBasis tc="1"&gt;Non
+              Smoker&lt;/TobaccoPremiumBasis&gt; &lt;UnderwritingClass tc="6"&gt;Standard
+              Plus&lt;/UnderwritingClass&gt; &lt;/LifeParticipant&gt; &lt;OLifEExtension
+              VendorCode="05" ExtensionCode="Coverage 2.9.03"&gt; &lt;CoverageExtension&gt;
+              &lt;UnitTypeInd tc="0"&gt;False&lt;/UnitTypeInd&gt;
+              &lt;RateClass&gt;SP&lt;/RateClass&gt; &lt;/CoverageExtension&gt;
+              &lt;/OLifEExtension&gt; &lt;/Coverage&gt; &lt;/Life&gt; &lt;ApplicationInfo&gt;
+              &lt;ApplicationType tc="4"&gt;Convert, New Contract&lt;/ApplicationType&gt;
+              &lt;AdditionalInd tc="0"&gt;False&lt;/AdditionalInd&gt; &lt;AlternateInd
+              tc="0"&gt;False&lt;/AlternateInd&gt; &lt;OLifEExtension VendorCode="05"
+              ExtensionCode="ApplicationInfo 2.9.03"&gt; &lt;ApplicationInfoExtension /&gt;
+              &lt;/OLifEExtension&gt; &lt;/ApplicationInfo&gt; &lt;OLifEExtension VendorCode="05"
+              ExtensionCode="Policy 2.9.03"&gt; &lt;PolicyExtension&gt; &lt;PendingContractStatus
+              tc="0000"&gt;Pending&lt;/PendingContractStatus&gt; &lt;/PolicyExtension&gt;
+              &lt;/OLifEExtension&gt; &lt;/Policy&gt; &lt;/Holding&gt; &lt;Party
+              id="Party_032_01"&gt; &lt;Person&gt; &lt;FirstName&gt;Dolajunmjys&lt;/FirstName&gt;
+              &lt;LastName&gt;Nickjunmjys&lt;/LastName&gt;
+              &lt;BirthDate&gt;1986-08-23&lt;/BirthDate&gt; &lt;SmokerStat tc="1"&gt;Never Used
+              Tobacco&lt;/SmokerStat&gt; &lt;OLifEExtension VendorCode="05" ExtensionCode="Person
+              2.9.03"&gt; &lt;PersonExtension&gt; &lt;RateClass&gt;SP&lt;/RateClass&gt;
+              &lt;/PersonExtension&gt; &lt;/OLifEExtension&gt; &lt;/Person&gt; &lt;/Party&gt;
+              &lt;/OLifE&gt; &lt;/TXLifeRequest&gt; &lt;/TXLife&gt;</AttachmentData>
+              <AttachmentType tc="1009800003">Prior Insurance Results</AttachmentType>
+            </Attachment>
+            <Client>
+              <NumRelations>1</NumRelations>
+              <PrimaryInvObjective tc="4">Growth</PrimaryInvObjective>
+              <OLifEExtension ExtensionCode="Client 2.9.03" VendorCode="05">
+                <ClientExtension>
+                  <FederalTaxBracket tc="2">10%</FederalTaxBracket>
+                  <OtherInsAXACompanyIndCode tc="2">No</OtherInsAXACompanyIndCode>
+                  <EffectOnExistingInsIndCode tc="2">No</EffectOnExistingInsIndCode>
+                  <OtherCarrierApplPendIndCode tc="3">Unknown</OtherCarrierApplPendIndCode>
+                  <CompensationInducementIndCode tc="3">Unknown</CompensationInducementIndCode>
+                  <AgentConfirmInsurabilityIndCode tc="3">Unknown</AgentConfirmInsurabilityIndCode>
+                  <AgentVerifiesIdentityIndCode tc="1">Yes</AgentVerifiesIdentityIndCode>
+                  <AgentVerifiesAssetsIncomeIndCode tc="1">Yes</AgentVerifiesAssetsIncomeIndCode>
+                  <AgentVerifiesMilitaryStatusIndCode tc="2">
+                  No</AgentVerifiesMilitaryStatusIndCode>
+                  <LanguageIndCode tc="3">Unknown</LanguageIndCode>
+                  <InvestHorizonLength tc="1009800002">5 - 9 years</InvestHorizonLength>
+                  <BrokerDealerIndCode tc="2">No</BrokerDealerIndCode>
+                  <FinancialPlanIndCode tc="2">No</FinancialPlanIndCode>
+                  <FinancialPlanName>AXA</FinancialPlanName>
+                  <RiskToleranceCode tc="1">Conservative</RiskToleranceCode>
+                  <ClientAcknowledgeInfo id="ClientAcknowledgeInfo_1">
+                    <ProductInfoType tc="1009800010" />
+                    <FPCompensateAckCode tc="0">False</FPCompensateAckCode>
+                    <ClientAcknowledgeCode tc="0">Unknown</ClientAcknowledgeCode>
+                  </ClientAcknowledgeInfo>
+                  <IncentiveInducementIndCode tc="3">Unknown</IncentiveInducementIndCode>
+                  <InsuredsPresentInd tc="3">Unknown</InsuredsPresentInd>
+                  <LanguageOtherThanEngIndCode tc="3">Unknown</LanguageOtherThanEngIndCode>
+                  <InvDecisionConcernCode tc="0">Unknown</InvDecisionConcernCode>
+                  <PrimaryRiskCode tc="0">Unknown</PrimaryRiskCode>
+                </ClientExtension>
+              </OLifEExtension>
+            </Client>
+            <EMailAddress id="EMailAddress_1">
+              <EMailType tc="1">Business</EMailType>
+              <AddrLine>amit.ak.kumar@capgemini.com</AddrLine>
+            </EMailAddress>
+            <Risk id="Risk_1">
+              <TotalInforceAndAppliedIns>1000000</TotalInforceAndAppliedIns>
+              <FinancialExperience id="FinancialExperience_1">
+                <InvestmentType tc="7">Cash Time Deposits</InvestmentType>
+                <YearsOfInvestmentExperience>0</YearsOfInvestmentExperience>
+                <OLifEExtension ExtensionCode="FinancialExperience 2.9.03" VendorCode="05">
+                  <FinancialExperienceExtension>
+                    <YrsOfInvesting tc="1009800002">1 - 4 years</YrsOfInvesting>
+                    <Investment id="Investment_1">
+                      <AccountValue>1</AccountValue>
+                    </Investment>
+                  </FinancialExperienceExtension>
+                </OLifEExtension>
+              </FinancialExperience>
+              <FinancialExperience id="FinancialExperience_2">
+                <InvestmentType tc="3">Stock</InvestmentType>
+                <YearsOfInvestmentExperience>0</YearsOfInvestmentExperience>
+                <OLifEExtension ExtensionCode="FinancialExperience 2.9.03" VendorCode="05">
+                  <FinancialExperienceExtension>
+                    <YrsOfInvesting tc="1009800002">1 - 4 years</YrsOfInvesting>
+                    <Investment id="Investment_2">
+                      <AccountValue>1</AccountValue>
+                    </Investment>
+                  </FinancialExperienceExtension>
+                </OLifEExtension>
+              </FinancialExperience>
+              <FinancialExperience id="FinancialExperience_3">
+                <InvestmentType tc="2">Bond</InvestmentType>
+                <YearsOfInvestmentExperience>0</YearsOfInvestmentExperience>
+                <OLifEExtension ExtensionCode="FinancialExperience 2.9.03" VendorCode="05">
+                  <FinancialExperienceExtension>
+                    <YrsOfInvesting tc="1009800002">1 - 4 years</YrsOfInvesting>
+                    <Investment id="Investment_3">
+                      <AccountValue>1</AccountValue>
+                    </Investment>
+                  </FinancialExperienceExtension>
+                </OLifEExtension>
+              </FinancialExperience>
+              <FinancialExperience id="FinancialExperience_4">
+                <InvestmentType tc="15">Variable Annuity</InvestmentType>
+                <YearsOfInvestmentExperience>0</YearsOfInvestmentExperience>
+                <OLifEExtension ExtensionCode="FinancialExperience 2.9.03" VendorCode="05">
+                  <FinancialExperienceExtension>
+                    <YrsOfInvesting tc="1009800002">1 - 4 years</YrsOfInvesting>
+                    <Investment id="Investment_4">
+                      <AccountValue>1</AccountValue>
+                    </Investment>
+                  </FinancialExperienceExtension>
+                </OLifEExtension>
+              </FinancialExperience>
+              <FinancialExperience id="FinancialExperience_5">
+                <InvestmentType tc="12">Real Estate</InvestmentType>
+                <YearsOfInvestmentExperience>0</YearsOfInvestmentExperience>
+                <OLifEExtension ExtensionCode="FinancialExperience 2.9.03" VendorCode="05">
+                  <FinancialExperienceExtension>
+                    <Investment id="Investment_5">
+                      <AccountValue>1</AccountValue>
+                    </Investment>
+                  </FinancialExperienceExtension>
+                </OLifEExtension>
+              </FinancialExperience>
+              <FinancialExperience id="FinancialExperience_6">
+                <InvestmentType tc="32">Retirement Accounts</InvestmentType>
+                <YearsOfInvestmentExperience>0</YearsOfInvestmentExperience>
+                <OLifEExtension ExtensionCode="FinancialExperience 2.9.03" VendorCode="05">
+                  <FinancialExperienceExtension>
+                    <Investment id="Investment_6">
+                      <AccountValue>11</AccountValue>
+                    </Investment>
+                  </FinancialExperienceExtension>
+                </OLifEExtension>
+              </FinancialExperience>
+              <FinancialExperience id="FinancialExperience_7">
+                <InvestmentType tc="2147483647">Other</InvestmentType>
+                <YearsOfInvestmentExperience>0</YearsOfInvestmentExperience>
+                <OLifEExtension ExtensionCode="FinancialExperience 2.9.03" VendorCode="05">
+                  <FinancialExperienceExtension>
+                    <Investment id="Investment_7">
+                      <AccountValue>1</AccountValue>
+                    </Investment>
+                  </FinancialExperienceExtension>
+                </OLifEExtension>
+              </FinancialExperience>
+              <FinancialExperience id="FinancialExperience_8">
+                <InvestmentType tc="6">Mutual Funds</InvestmentType>
+                <YearsOfInvestmentExperience>0</YearsOfInvestmentExperience>
+                <OLifEExtension ExtensionCode="FinancialExperience 2.9.03" VendorCode="05">
+                  <FinancialExperienceExtension>
+                    <YrsOfInvesting tc="1009800002">1 - 4 years</YrsOfInvesting>
+                    <Investment id="Investment_8">
+                      <SubAccount id="SubAccount_1">
+                        <ProductObjective tc="12">Income Purposes</ProductObjective>
+                        <TotValue>1</TotValue>
+                      </SubAccount>
+                      <SubAccount id="SubAccount_2">
+                        <ProductObjective tc="4">Growth</ProductObjective>
+                        <TotValue>1</TotValue>
+                      </SubAccount>
+                      <SubAccount id="SubAccount_3">
+                        <ProductObjective tc="1">Aggressive Growth</ProductObjective>
+                        <TotValue>1</TotValue>
+                      </SubAccount>
+                      <SubAccount id="SubAccount_4">
+                        <ProductObjective tc="2147483647">Other</ProductObjective>
+                        <TotValue>1</TotValue>
+                      </SubAccount>
+                    </Investment>
+                  </FinancialExperienceExtension>
+                </OLifEExtension>
+              </FinancialExperience>
+              <OLifEExtension ExtensionCode="Risk 2.9.03" VendorCode="05">
+                <RiskExtension>
+                  <TotalPending>1000000</TotalPending>
+                  <TotalAdditional>0</TotalAdditional>
+                  <HighestAlternate>0</HighestAlternate>
+                  <TotalInforce>0</TotalInforce>
+                  <TotalInforceAndAppliedIns>1000000</TotalInforceAndAppliedIns>
+                  <MilitaryActiveDutyIndCode tc="2">No</MilitaryActiveDutyIndCode>
+                  <FundingDisclosureIndCode tc="3">Unknown</FundingDisclosureIndCode>
+                  <MedCondTreatmentIndCode tc="3">Unknown</MedCondTreatmentIndCode>
+                  <MedDiseaseDisorderIndCode tc="3">Unknown</MedDiseaseDisorderIndCode>
+                  <WeightChgIndCode tc="3">Unknown</WeightChgIndCode>
+                  <AdoptionInd tc="0">False</AdoptionInd>
+                  <PersonalPhysicianIndCode tc="3">Unknown</PersonalPhysicianIndCode>
+                  <SuitabilityDetailsCC>
+                    <SuitabilityDetailsTC tc="1009800001" />
+                  </SuitabilityDetailsCC>
+                  <CurrentlyDisabledIndCode tc="2">No</CurrentlyDisabledIndCode>
+                  <MilitaryInstallationInd tc="3">Unknown</MilitaryInstallationInd>
+                  <HealthInsInd>3</HealthInsInd>
+                  <ParentsLiveAge70Ind tc="0">Unknown</ParentsLiveAge70Ind>
+                  <ParentSiblingDeathUnder60Ind tc="0">Unknown</ParentSiblingDeathUnder60Ind>
+                </RiskExtension>
+              </OLifEExtension>
+            </Risk>
+            <Employment id="Employment_1">
+              <EmploymentStatusTC tc="4" />
+            </Employment>
+            <OLifEExtension ExtensionCode="Party 2.9.03" VendorCode="05">
+              <PartyExtension>
+                <UnderwritingAnalysis>
+                  <PreferredInfo>
+                    <PrfSet>AXASET1</PrfSet>
+                    <PrfApprovedLevel>ELT</PrfApprovedLevel>
+                    <PrfCalculatedLevel>ELT</PrfCalculatedLevel>
+                    <PrfTobaccoPremiumBasis tc="1">Non Smoker</PrfTobaccoPremiumBasis>
+                    <CriteriaInfo id="CriteriaInfo_1">
+                      <PrfLevel>ELT</PrfLevel>
+                      <PrfType tc="1000500001">Age</PrfType>
+                      <PrfScore tc="1000500002">Amount</PrfScore>
+                      <PrfValue>33</PrfValue>
+                      <PrfOrder>0</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_10">
+                      <PrfLevel>ELT</PrfLevel>
+                      <PrfType tc="1009800004">Occupation</PrfType>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfOrder>9</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_11">
+                      <PrfLevel>ELT</PrfLevel>
+                      <PrfType tc="1009800005">Medication</PrfType>
+                      <PrfScore tc="1000500002">Amount</PrfScore>
+                      <PrfOrder>10</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_12">
+                      <PrfLevel>ELT</PrfLevel>
+                      <PrfType tc="1000500009">Family History Total</PrfType>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfValue>1</PrfValue>
+                      <PrfDeathCount>0</PrfDeathCount>
+                      <PrfIncidentCount>0</PrfIncidentCount>
+                      <PrfDeathCountRange>0</PrfDeathCountRange>
+                      <PrfIncidentCountRange>99</PrfIncidentCountRange>
+                      <PrfPriorAgeRange>65</PrfPriorAgeRange>
+                      <PrfOrder>11</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_13">
+                      <PrfLevel>ELT</PrfLevel>
+                      <PrfType tc="1000500010">Height &amp; Weight</PrfType>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfValue>0</PrfValue>
+                      <PrfHeightValue>0</PrfHeightValue>
+                      <PrfOrder>12</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_14">
+                      <PrfLevel>ELT</PrfLevel>
+                      <PrfType tc="1000500004">Average Systolic</PrfType>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfValue>0</PrfValue>
+                      <PrfHighRange>140</PrfHighRange>
+                      <PrfOrder>13</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_15">
+                      <PrfLevel>ELT</PrfLevel>
+                      <PrfType tc="1000500003">Average Diastolic</PrfType>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfValue>0</PrfValue>
+                      <PrfHighRange>85</PrfHighRange>
+                      <PrfOrder>14</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_16">
+                      <PrfLevel>ELT</PrfLevel>
+                      <PrfType tc="1000500013">Motor Vehicle</PrfType>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfHighRange>0</PrfHighRange>
+                      <PrfOrder>15</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_17">
+                      <PrfLevel>ELT</PrfLevel>
+                      <PrfType tc="1000500017">Impairment</PrfType>
+                      <PrfScore tc="1000500002">Amount</PrfScore>
+                      <PrfOrder>16</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_18">
+                      <PrfLevel>PRF</PrfLevel>
+                      <PrfType tc="1000500001">Age</PrfType>
+                      <PrfScore tc="1000500002">Amount</PrfScore>
+                      <PrfValue>33</PrfValue>
+                      <PrfOrder>17</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_19">
+                      <PrfLevel>PRF</PrfLevel>
+                      <PrfType tc="1000500002">Amount</PrfType>
+                      <PrfScore tc="1000500002">Amount</PrfScore>
+                      <PrfValue>1000000</PrfValue>
+                      <PrfOrder>18</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_2">
+                      <PrfLevel>ELT</PrfLevel>
+                      <PrfType tc="1000500002">Amount</PrfType>
+                      <PrfScore tc="1000500002">Amount</PrfScore>
+                      <PrfValue>1000000</PrfValue>
+                      <PrfOrder>1</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_20">
+                      <PrfLevel>PRF</PrfLevel>
+                      <PrfType tc="1000500006">Blood Test</PrfType>
+                      <PrfTestCd tc="34">Blood (for Cholesterol)</PrfTestCd>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfLowRange>0</PrfLowRange>
+                      <PrfHighRange>300</PrfHighRange>
+                      <PrfOrder>19</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_21">
+                      <PrfLevel>PRF</PrfLevel>
+                      <PrfType tc="1000500006">Blood Test</PrfType>
+                      <PrfTestCd tc="1003800706">Blood Cholesterol/HDL Cholesterol</PrfTestCd>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfLowRange>0</PrfLowRange>
+                      <PrfHighRange>5.5</PrfHighRange>
+                      <PrfOrder>20</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_22">
+                      <PrfLevel>PRF</PrfLevel>
+                      <PrfType tc="1000500006">Blood Test</PrfType>
+                      <PrfTestCd tc="543">Blood HDL</PrfTestCd>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfLowRange>30</PrfLowRange>
+                      <PrfHighRange>999</PrfHighRange>
+                      <PrfOrder>21</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_23">
+                      <PrfLevel>PRF</PrfLevel>
+                      <PrfType tc="1000500015">Tobacco</PrfType>
+                      <PrfScore tc="1000500002">Amount</PrfScore>
+                      <PrfUsageCd tc="1">Non Smoker</PrfUsageCd>
+                      <PrfCigaretteCount>0</PrfCigaretteCount>
+                      <PrfSmkQuitMonth>0</PrfSmkQuitMonth>
+                      <PrfTobMonth>0</PrfTobMonth>
+                      <PrfSmkQuitMonthRange>36</PrfSmkQuitMonthRange>
+                      <PrfTobMonthRange>36</PrfTobMonthRange>
+                      <PrfOrder>22</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_24">
+                      <PrfLevel>PRF</PrfLevel>
+                      <PrfType tc="1009800001">Substance Abuse</PrfType>
+                      <PrfScore tc="1000500002">Amount</PrfScore>
+                      <PrfOrder>23</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_25">
+                      <PrfLevel>PRF</PrfLevel>
+                      <PrfType tc="1009800002">Aviation</PrfType>
+                      <PrfScore tc="1000500002">Amount</PrfScore>
+                      <PrfOrder>24</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_26">
+                      <PrfLevel>PRF</PrfLevel>
+                      <PrfType tc="1009800003">Avocation</PrfType>
+                      <PrfScore tc="1000500002">Amount</PrfScore>
+                      <PrfOrder>25</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_27">
+                      <PrfLevel>PRF</PrfLevel>
+                      <PrfType tc="1009800004">Occupation</PrfType>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfOrder>26</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_28">
+                      <PrfLevel>PRF</PrfLevel>
+                      <PrfType tc="1009800005">Medication</PrfType>
+                      <PrfScore tc="1000500002">Amount</PrfScore>
+                      <PrfOrder>27</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_29">
+                      <PrfLevel>PRF</PrfLevel>
+                      <PrfType tc="1000500009">Family History Total</PrfType>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfValue>1</PrfValue>
+                      <PrfDeathCount>0</PrfDeathCount>
+                      <PrfIncidentCount>0</PrfIncidentCount>
+                      <PrfDeathCountRange>0</PrfDeathCountRange>
+                      <PrfIncidentCountRange>99</PrfIncidentCountRange>
+                      <PrfPriorAgeRange>60</PrfPriorAgeRange>
+                      <PrfOrder>28</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_3">
+                      <PrfLevel>ELT</PrfLevel>
+                      <PrfType tc="1000500006">Blood Test</PrfType>
+                      <PrfTestCd tc="34">Blood (for Cholesterol)</PrfTestCd>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfLowRange>0</PrfLowRange>
+                      <PrfHighRange>300</PrfHighRange>
+                      <PrfOrder>2</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_30">
+                      <PrfLevel>PRF</PrfLevel>
+                      <PrfType tc="1000500010">Height &amp; Weight</PrfType>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfValue>0</PrfValue>
+                      <PrfHeightValue>0</PrfHeightValue>
+                      <PrfOrder>29</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_31">
+                      <PrfLevel>PRF</PrfLevel>
+                      <PrfType tc="1000500004">Average Systolic</PrfType>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfValue>0</PrfValue>
+                      <PrfHighRange>145</PrfHighRange>
+                      <PrfOrder>30</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_32">
+                      <PrfLevel>PRF</PrfLevel>
+                      <PrfType tc="1000500003">Average Diastolic</PrfType>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfValue>0</PrfValue>
+                      <PrfHighRange>90</PrfHighRange>
+                      <PrfOrder>31</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_33">
+                      <PrfLevel>PRF</PrfLevel>
+                      <PrfType tc="1000500013">Motor Vehicle</PrfType>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfHighRange>0</PrfHighRange>
+                      <PrfOrder>32</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_34">
+                      <PrfLevel>PRF</PrfLevel>
+                      <PrfType tc="1000500017">Impairment</PrfType>
+                      <PrfScore tc="1000500002">Amount</PrfScore>
+                      <PrfOrder>33</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_35">
+                      <PrfLevel>STP</PrfLevel>
+                      <PrfType tc="1000500001">Age</PrfType>
+                      <PrfScore tc="1000500002">Amount</PrfScore>
+                      <PrfValue>33</PrfValue>
+                      <PrfOrder>34</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_36">
+                      <PrfLevel>STP</PrfLevel>
+                      <PrfType tc="1000500002">Amount</PrfType>
+                      <PrfScore tc="1000500002">Amount</PrfScore>
+                      <PrfValue>1000000</PrfValue>
+                      <PrfOrder>35</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_37">
+                      <PrfLevel>STP</PrfLevel>
+                      <PrfType tc="1000500006">Blood Test</PrfType>
+                      <PrfTestCd tc="34">Blood (for Cholesterol)</PrfTestCd>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfLowRange>0</PrfLowRange>
+                      <PrfHighRange>300</PrfHighRange>
+                      <PrfOrder>36</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_38">
+                      <PrfLevel>STP</PrfLevel>
+                      <PrfType tc="1000500006">Blood Test</PrfType>
+                      <PrfTestCd tc="1003800706">Blood Cholesterol/HDL Cholesterol</PrfTestCd>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfLowRange>0</PrfLowRange>
+                      <PrfHighRange>6</PrfHighRange>
+                      <PrfOrder>37</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_39">
+                      <PrfLevel>STP</PrfLevel>
+                      <PrfType tc="1000500006">Blood Test</PrfType>
+                      <PrfTestCd tc="543">Blood HDL</PrfTestCd>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfLowRange>30</PrfLowRange>
+                      <PrfHighRange>999</PrfHighRange>
+                      <PrfOrder>38</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_4">
+                      <PrfLevel>ELT</PrfLevel>
+                      <PrfType tc="1000500006">Blood Test</PrfType>
+                      <PrfTestCd tc="1003800706">Blood Cholesterol/HDL Cholesterol</PrfTestCd>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfLowRange>0</PrfLowRange>
+                      <PrfHighRange>5</PrfHighRange>
+                      <PrfOrder>3</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_40">
+                      <PrfLevel>STP</PrfLevel>
+                      <PrfType tc="1000500015">Tobacco</PrfType>
+                      <PrfScore tc="1000500002">Amount</PrfScore>
+                      <PrfUsageCd tc="1">Non Smoker</PrfUsageCd>
+                      <PrfCigaretteCount>0</PrfCigaretteCount>
+                      <PrfSmkQuitMonth>0</PrfSmkQuitMonth>
+                      <PrfTobMonth>0</PrfTobMonth>
+                      <PrfSmkQuitMonthRange>12</PrfSmkQuitMonthRange>
+                      <PrfTobMonthRange>12</PrfTobMonthRange>
+                      <PrfOrder>39</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_41">
+                      <PrfLevel>STP</PrfLevel>
+                      <PrfType tc="1009800001">Substance Abuse</PrfType>
+                      <PrfScore tc="1000500002">Amount</PrfScore>
+                      <PrfOrder>40</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_42">
+                      <PrfLevel>STP</PrfLevel>
+                      <PrfType tc="1009800002">Aviation</PrfType>
+                      <PrfScore tc="1000500002">Amount</PrfScore>
+                      <PrfOrder>41</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_43">
+                      <PrfLevel>STP</PrfLevel>
+                      <PrfType tc="1009800003">Avocation</PrfType>
+                      <PrfScore tc="1000500002">Amount</PrfScore>
+                      <PrfOrder>42</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_44">
+                      <PrfLevel>STP</PrfLevel>
+                      <PrfType tc="1009800004">Occupation</PrfType>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfOrder>43</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_45">
+                      <PrfLevel>STP</PrfLevel>
+                      <PrfType tc="1009800005">Medication</PrfType>
+                      <PrfScore tc="1000500002">Amount</PrfScore>
+                      <PrfOrder>44</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_46">
+                      <PrfLevel>STP</PrfLevel>
+                      <PrfType tc="1000500009">Family History Total</PrfType>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfValue>1</PrfValue>
+                      <PrfDeathCount>0</PrfDeathCount>
+                      <PrfIncidentCount>0</PrfIncidentCount>
+                      <PrfDeathCountRange>1</PrfDeathCountRange>
+                      <PrfIncidentCountRange>99</PrfIncidentCountRange>
+                      <PrfPriorAgeRange>60</PrfPriorAgeRange>
+                      <PrfOrder>45</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_47">
+                      <PrfLevel>STP</PrfLevel>
+                      <PrfType tc="1000500010">Height &amp; Weight</PrfType>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfValue>0</PrfValue>
+                      <PrfHeightValue>0</PrfHeightValue>
+                      <PrfOrder>46</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_48">
+                      <PrfLevel>STP</PrfLevel>
+                      <PrfType tc="1000500004">Average Systolic</PrfType>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfValue>0</PrfValue>
+                      <PrfHighRange>999</PrfHighRange>
+                      <PrfOrder>47</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_49">
+                      <PrfLevel>STP</PrfLevel>
+                      <PrfType tc="1000500003">Average Diastolic</PrfType>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfValue>0</PrfValue>
+                      <PrfHighRange>999</PrfHighRange>
+                      <PrfOrder>48</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_5">
+                      <PrfLevel>ELT</PrfLevel>
+                      <PrfType tc="1000500006">Blood Test</PrfType>
+                      <PrfTestCd tc="543">Blood HDL</PrfTestCd>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfLowRange>30</PrfLowRange>
+                      <PrfHighRange>999</PrfHighRange>
+                      <PrfOrder>4</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_50">
+                      <PrfLevel>STP</PrfLevel>
+                      <PrfType tc="1000500013">Motor Vehicle</PrfType>
+                      <PrfScore tc="0">Unknown</PrfScore>
+                      <PrfHighRange>0</PrfHighRange>
+                      <PrfOrder>49</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_51">
+                      <PrfLevel>STP</PrfLevel>
+                      <PrfType tc="1000500017">Impairment</PrfType>
+                      <PrfScore tc="1000500002">Amount</PrfScore>
+                      <PrfOrder>50</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_52">
+                      <PrfLevel>PTO</PrfLevel>
+                      <PrfType tc="1000500001">Age</PrfType>
+                      <PrfScore tc="1000500001">Age</PrfScore>
+                      <PrfValue>33</PrfValue>
+                      <PrfOrder>51</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_53">
+                      <PrfLevel>PTO</PrfLevel>
+                      <PrfType tc="1000500002">Amount</PrfType>
+                      <PrfScore tc="1000500001">Age</PrfScore>
+                      <PrfValue>1000000</PrfValue>
+                      <PrfOrder>52</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_54">
+                      <PrfLevel>PTO</PrfLevel>
+                      <PrfType tc="1000500006">Blood Test</PrfType>
+                      <PrfTestCd tc="34">Blood (for Cholesterol)</PrfTestCd>
+                      <PrfScore tc="1000500001">Age</PrfScore>
+                      <PrfLowRange>0</PrfLowRange>
+                      <PrfHighRange>300</PrfHighRange>
+                      <PrfOrder>53</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_55">
+                      <PrfLevel>PTO</PrfLevel>
+                      <PrfType tc="1000500006">Blood Test</PrfType>
+                      <PrfTestCd tc="1003800706">Blood Cholesterol/HDL Cholesterol</PrfTestCd>
+                      <PrfScore tc="1000500001">Age</PrfScore>
+                      <PrfLowRange>0</PrfLowRange>
+                      <PrfHighRange>6</PrfHighRange>
+                      <PrfOrder>54</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_56">
+                      <PrfLevel>PTO</PrfLevel>
+                      <PrfType tc="1000500006">Blood Test</PrfType>
+                      <PrfTestCd tc="543">Blood HDL</PrfTestCd>
+                      <PrfScore tc="1000500001">Age</PrfScore>
+                      <PrfLowRange>30</PrfLowRange>
+                      <PrfHighRange>999</PrfHighRange>
+                      <PrfOrder>55</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_57">
+                      <PrfLevel>PTO</PrfLevel>
+                      <PrfType tc="1000500015">Tobacco</PrfType>
+                      <PrfScore tc="1000500001">Age</PrfScore>
+                      <PrfUsageCd tc="1">Non Smoker</PrfUsageCd>
+                      <PrfCigaretteCount>0</PrfCigaretteCount>
+                      <PrfSmkQuitMonth>0</PrfSmkQuitMonth>
+                      <PrfTobMonth>0</PrfTobMonth>
+                      <PrfOrder>56</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_58">
+                      <PrfLevel>PTO</PrfLevel>
+                      <PrfType tc="1009800001">Substance Abuse</PrfType>
+                      <PrfScore tc="1000500001">Age</PrfScore>
+                      <PrfOrder>57</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_59">
+                      <PrfLevel>PTO</PrfLevel>
+                      <PrfType tc="1009800002">Aviation</PrfType>
+                      <PrfScore tc="1000500001">Age</PrfScore>
+                      <PrfOrder>58</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_6">
+                      <PrfLevel>ELT</PrfLevel>
+                      <PrfType tc="1000500015">Tobacco</PrfType>
+                      <PrfScore tc="1000500002">Amount</PrfScore>
+                      <PrfUsageCd tc="1">Non Smoker</PrfUsageCd>
+                      <PrfCigaretteCount>0</PrfCigaretteCount>
+                      <PrfSmkQuitMonth>0</PrfSmkQuitMonth>
+                      <PrfTobMonth>0</PrfTobMonth>
+                      <PrfSmkQuitMonthRange>60</PrfSmkQuitMonthRange>
+                      <PrfTobMonthRange>60</PrfTobMonthRange>
+                      <PrfOrder>5</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_60">
+                      <PrfLevel>PTO</PrfLevel>
+                      <PrfType tc="1009800003">Avocation</PrfType>
+                      <PrfScore tc="1000500001">Age</PrfScore>
+                      <PrfOrder>59</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_61">
+                      <PrfLevel>PTO</PrfLevel>
+                      <PrfType tc="1009800004">Occupation</PrfType>
+                      <PrfScore tc="1000500001">Age</PrfScore>
+                      <PrfOrder>60</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_62">
+                      <PrfLevel>PTO</PrfLevel>
+                      <PrfType tc="1009800005">Medication</PrfType>
+                      <PrfScore tc="1000500001">Age</PrfScore>
+                      <PrfOrder>61</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_63">
+                      <PrfLevel>PTO</PrfLevel>
+                      <PrfType tc="1000500009">Family History Total</PrfType>
+                      <PrfScore tc="1000500001">Age</PrfScore>
+                      <PrfValue>1</PrfValue>
+                      <PrfDeathCount>0</PrfDeathCount>
+                      <PrfIncidentCount>0</PrfIncidentCount>
+                      <PrfDeathCountRange>1</PrfDeathCountRange>
+                      <PrfIncidentCountRange>99</PrfIncidentCountRange>
+                      <PrfPriorAgeRange>60</PrfPriorAgeRange>
+                      <PrfOrder>62</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_64">
+                      <PrfLevel>PTO</PrfLevel>
+                      <PrfType tc="1000500010">Height &amp; Weight</PrfType>
+                      <PrfScore tc="1000500001">Age</PrfScore>
+                      <PrfValue>0</PrfValue>
+                      <PrfHeightValue>0</PrfHeightValue>
+                      <PrfOrder>63</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_65">
+                      <PrfLevel>PTO</PrfLevel>
+                      <PrfType tc="1000500004">Average Systolic</PrfType>
+                      <PrfScore tc="1000500001">Age</PrfScore>
+                      <PrfValue>0</PrfValue>
+                      <PrfHighRange>999</PrfHighRange>
+                      <PrfOrder>64</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_66">
+                      <PrfLevel>PTO</PrfLevel>
+                      <PrfType tc="1000500003">Average Diastolic</PrfType>
+                      <PrfScore tc="1000500001">Age</PrfScore>
+                      <PrfValue>0</PrfValue>
+                      <PrfHighRange>999</PrfHighRange>
+                      <PrfOrder>65</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_67">
+                      <PrfLevel>PTO</PrfLevel>
+                      <PrfType tc="1000500013">Motor Vehicle</PrfType>
+                      <PrfScore tc="1000500001">Age</PrfScore>
+                      <PrfHighRange>0</PrfHighRange>
+                      <PrfOrder>66</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_68">
+                      <PrfLevel>PTO</PrfLevel>
+                      <PrfType tc="1000500017">Impairment</PrfType>
+                      <PrfScore tc="1000500001">Age</PrfScore>
+                      <PrfOrder>67</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_7">
+                      <PrfLevel>ELT</PrfLevel>
+                      <PrfType tc="1009800001">Substance Abuse</PrfType>
+                      <PrfScore tc="1000500002">Amount</PrfScore>
+                      <PrfOrder>6</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_8">
+                      <PrfLevel>ELT</PrfLevel>
+                      <PrfType tc="1009800002">Aviation</PrfType>
+                      <PrfScore tc="1000500002">Amount</PrfScore>
+                      <PrfOrder>7</PrfOrder>
+                    </CriteriaInfo>
+                    <CriteriaInfo id="CriteriaInfo_9">
+                      <PrfLevel>ELT</PrfLevel>
+                      <PrfType tc="1009800003">Avocation</PrfType>
+                      <PrfScore tc="1000500002">Amount</PrfScore>
+                      <PrfOrder>8</PrfOrder>
+                    </CriteriaInfo>
+                  </PreferredInfo>
+                  <GHCPInfo>
+                    <Version>2</Version>
+                  </GHCPInfo>
+                </UnderwritingAnalysis>
+                <TotalInvestAssetAmt>1</TotalInvestAssetAmt>
+                <TotalCashAssetAmt>1</TotalCashAssetAmt>
+                <TotalInvestCashAssetAmt>1</TotalInvestCashAssetAmt>
+                <EstGrossHouseholdAnnIncomeAmt>100000</EstGrossHouseholdAnnIncomeAmt>
+                <EstLiquidNetWorthAmt>10000</EstLiquidNetWorthAmt>
+                <InsHasPowerOfAttorneyInd tc="0">False</InsHasPowerOfAttorneyInd>
+                <EstMonthIncome>10000</EstMonthIncome>
+                <EstMonthExp>100000</EstMonthExp>
+                <TransAuthInd tc="0">False</TransAuthInd>
+                <LastRequirementIndForParty tc="3">Incomplete</LastRequirementIndForParty>
+                <PayerTypePartCorpLLCInd tc="0">False</PayerTypePartCorpLLCInd>
+                <BenOwnerSameAsCtrlPersonInd tc="0">False</BenOwnerSameAsCtrlPersonInd>
+                <EntityNameMismatchInd tc="0">False</EntityNameMismatchInd>
+                <TrustedContactDeclineInd tc="0">False</TrustedContactDeclineInd>
+                <TrustedContactPrimaryOwnerInd tc="0">False</TrustedContactPrimaryOwnerInd>
+              </PartyExtension>
+            </OLifEExtension>
+          </Party>
+          <Party id="Party_034_01">
+            <PartyTypeCode tc="1">Person</PartyTypeCode>
+            <Person>
+              <FirstName>meilmeril</FirstName>
+              <LastName>rernt</LastName>
+              <OLifEExtension ExtensionCode="Person 2.9.03" VendorCode="05">
+                <PersonExtension>
+                  <USCitizenInd tc="0">False</USCitizenInd>
+                  <DriversLicenseStatusIndCode tc="3">Unknown</DriversLicenseStatusIndCode>
+                  <USCitizenIndCode tc="3">Unknown</USCitizenIndCode>
+                  <PermanantResidentInd tc="0">False</PermanantResidentInd>
+                  <ForeignGovRelation tc="0">False</ForeignGovRelation>
+                  <GovtIDStatusIndCode tc="3">Unknown</GovtIDStatusIndCode>
+                </PersonExtension>
+              </OLifEExtension>
+            </Person>
+            <OLifEExtension ExtensionCode="Party 2.9.03" VendorCode="05">
+              <PartyExtension>
+                <InsHasPowerOfAttorneyInd tc="0">False</InsHasPowerOfAttorneyInd>
+                <TransAuthInd tc="0">False</TransAuthInd>
+                <LastRequirementIndForParty tc="2">Complete</LastRequirementIndForParty>
+                <PayerTypePartCorpLLCInd tc="0">False</PayerTypePartCorpLLCInd>
+                <BenOwnerSameAsCtrlPersonInd tc="0">False</BenOwnerSameAsCtrlPersonInd>
+                <EntityNameMismatchInd tc="0">False</EntityNameMismatchInd>
+                <TrustedContactDeclineInd tc="0">False</TrustedContactDeclineInd>
+                <TrustedContactPrimaryOwnerInd tc="0">False</TrustedContactPrimaryOwnerInd>
+              </PartyExtension>
+            </OLifEExtension>
+          </Party>
+          <Party id="Party_3">
+            <PartyTypeCode tc="2">Organization</PartyTypeCode>
+            <PartyKey>AALNY002</PartyKey>
+            <FullName>AXA EQUITABLE LIFE INSURANCE COMPANY</FullName>
+            <Organization>
+              <DBA>AXA EQUITABLE LIFE INSURANCE COMPANY</DBA>
+              <OLifEExtension ExtensionCode="Organization 2.9.03" VendorCode="05">
+                <OrganizationExtension>
+                  <PermissionCode>0</PermissionCode>
+                  <BeneficialOwnerPresentInd tc="0">False</BeneficialOwnerPresentInd>
+                </OrganizationExtension>
+              </OLifEExtension>
+            </Organization>
+            <OLifEExtension ExtensionCode="Party 2.9.03" VendorCode="05">
+              <PartyExtension>
+                <InsHasPowerOfAttorneyInd tc="0">False</InsHasPowerOfAttorneyInd>
+                <TransAuthInd tc="0">False</TransAuthInd>
+                <LastRequirementIndForParty tc="2">Complete</LastRequirementIndForParty>
+                <PayerTypePartCorpLLCInd tc="0">False</PayerTypePartCorpLLCInd>
+                <BenOwnerSameAsCtrlPersonInd tc="0">False</BenOwnerSameAsCtrlPersonInd>
+                <EntityNameMismatchInd tc="0">False</EntityNameMismatchInd>
+                <TrustedContactDeclineInd tc="0">False</TrustedContactDeclineInd>
+                <TrustedContactPrimaryOwnerInd tc="0">False</TrustedContactPrimaryOwnerInd>
+              </PartyExtension>
+            </OLifEExtension>
+          </Party>
+          <Party id="Party_4">
+            <PartyTypeCode tc="1">Person</PartyTypeCode>
+            <FullName>L LEE SMITH, CHFC, CLU</FullName>
+            <GovtIDTC tc="1">Social Security Number US</GovtIDTC>
+            <Person>
+              <FirstName>L LEE</FirstName>
+              <LastName>SMITH, CHFC, CLU</LastName>
+              <OLifEExtension ExtensionCode="Person 2.9.03" VendorCode="05">
+                <PersonExtension>
+                  <USCitizenInd tc="0">False</USCitizenInd>
+                  <DriversLicenseStatusIndCode tc="3">Unknown</DriversLicenseStatusIndCode>
+                  <USCitizenIndCode tc="3">Unknown</USCitizenIndCode>
+                  <PermanantResidentInd tc="0">False</PermanantResidentInd>
+                  <ForeignGovRelation tc="0">False</ForeignGovRelation>
+                  <GovtIDStatusIndCode tc="3">Unknown</GovtIDStatusIndCode>
+                </PersonExtension>
+              </OLifEExtension>
+            </Person>
+            <Address id="Address_2">
+              <AddressTypeCode tc="2">Business</AddressTypeCode>
+              <Line1>5151 EAST BROADWAY</Line1>
+              <City>TUCSON</City>
+              <AddressStateTC tc="4">Arizona</AddressStateTC>
+              <Zip>85711</Zip>
+              <AddressCountryTC tc="1">United States of America</AddressCountryTC>
+            </Address>
+            <Address id="Address_3">
+              <AddressTypeCode tc="1">Residence</AddressTypeCode>
+              <Line1>8952 E BAKER ST</Line1>
+              <City>TUCSON</City>
+              <AddressStateTC tc="4">Arizona</AddressStateTC>
+              <Zip>85710</Zip>
+              <AddressCountryTC tc="1">United States of America</AddressCountryTC>
+            </Address>
+            <Phone id="Phone_1">
+              <PhoneTypeCode tc="2">Business</PhoneTypeCode>
+              <AreaCode>520</AreaCode>
+              <DialNumber>5125935</DialNumber>
+              <PrefPhone tc="0">False</PrefPhone>
+            </Phone>
+            <Phone id="Phone_4">
+              <PhoneTypeCode tc="1">Home</PhoneTypeCode>
+              <AreaCode>520</AreaCode>
+              <DialNumber>5125935</DialNumber>
+            </Phone>
+            <Producer>
+              <CarrierAppointment id="CarrierAppointment_1">
+                <CompanyProducerID>011928</CompanyProducerID>
+                <CarrierCode>BA</CarrierCode>
+                <CarrierApptTypeCode tc="1">Agent</CarrierApptTypeCode>
+                <CarrierApptStatus tc="1">Active</CarrierApptStatus>
+                <DistributionAgreementInfo id="DistributionAgreementInfo_1">
+                  <AdvancingAllowedInd tc="0">False</AdvancingAllowedInd>
+                  <OLifEExtension ExtensionCode="DistributionAgreementInfo 2.9.03" VendorCode="05">
+                    <DistributionAgreementInfoExtension>
+                      <PrepaymentIndCode tc="1">True</PrepaymentIndCode>
+                      <AdvancingAllowedIndCode tc="2">No</AdvancingAllowedIndCode>
+                      <InformalSuspendInd tc="0">False</InformalSuspendInd>
+                    </DistributionAgreementInfoExtension>
+                  </OLifEExtension>
+                </DistributionAgreementInfo>
+                <DistributionChannelInfo id="DistributionChannelInfo_1">
+                  <DistributionChannel tc="10">Captive Market</DistributionChannel>
+                </DistributionChannelInfo>
+                <OLifEExtension ExtensionCode="CarrierAppointment 2.9.03" VendorCode="05">
+                  <CarrierAppointmentExtension>
+                    <ASUCode>PXB</ASUCode>
+                    <ForeignUWAllowedInd tc="0">False</ForeignUWAllowedInd>
+                    <SelectAgentInd tc="0">False</SelectAgentInd>
+                    <EARCInd tc="0">False</EARCInd>
+                    <ASUCodeNum>474</ASUCodeNum>
+                    <BGATier>011928</BGATier>
+                    <AgentRank>1</AgentRank>
+                    <ContractCode>74</ContractCode>
+                    <DistrictCode>06</DistrictCode>
+                    <AgencyBranchCode>660</AgencyBranchCode>
+                    <HVTInd tc="0">False</HVTInd>
+                    <PolToWAgentInd tc="0">False</PolToWAgentInd>
+                  </CarrierAppointmentExtension>
+                </OLifEExtension>
+              </CarrierAppointment>
+            </Producer>
+            <EMailAddress id="EMailAddress_2">
+              <EMailType tc="1">Business</EMailType>
+              <AddrLine>lee.smith@axa-advisors.com</AddrLine>
+            </EMailAddress>
+            <OLifEExtension ExtensionCode="Party 2.9.03" VendorCode="05">
+              <PartyExtension>
+                <InsHasPowerOfAttorneyInd tc="0">False</InsHasPowerOfAttorneyInd>
+                <TransAuthInd tc="0">False</TransAuthInd>
+                <LastRequirementIndForParty tc="2">Complete</LastRequirementIndForParty>
+                <PayerTypePartCorpLLCInd tc="0">False</PayerTypePartCorpLLCInd>
+                <BenOwnerSameAsCtrlPersonInd tc="0">False</BenOwnerSameAsCtrlPersonInd>
+                <EntityNameMismatchInd tc="0">False</EntityNameMismatchInd>
+                <TrustedContactDeclineInd tc="0">False</TrustedContactDeclineInd>
+                <TrustedContactPrimaryOwnerInd tc="0">False</TrustedContactPrimaryOwnerInd>
+              </PartyExtension>
+            </OLifEExtension>
+          </Party>
+          <Relation OriginatingObjectID="Holding_1" RelatedObjectID="Party_032_01"
+          id="Relation_008_01">
+            <OriginatingObjectType tc="4">Holding</OriginatingObjectType>
+            <RelatedObjectType tc="6">Party</RelatedObjectType>
+            <RelationRoleCode tc="8">Owner</RelationRoleCode>
+            <RelatedRefID>01</RelatedRefID>
+            <IrrevokableInd tc="0">False</IrrevokableInd>
+          </Relation>
+          <Relation OriginatingObjectID="Holding_1" RelatedObjectID="Party_032_01"
+          id="Relation_032_01">
+            <OriginatingObjectType tc="4">Holding</OriginatingObjectType>
+            <RelatedObjectType tc="6">Party</RelatedObjectType>
+            <RelationRoleCode tc="32">Insured</RelationRoleCode>
+            <RelatedRefID>01</RelatedRefID>
+            <IrrevokableInd tc="0">False</IrrevokableInd>
+            <OLifEExtension ExtensionCode="Relation 2.9.03" VendorCode="05">
+              <RelationExtension>
+                <BeneficiaryDistributionOption tc="0">Unknown</BeneficiaryDistributionOption>
+              </RelationExtension>
+            </OLifEExtension>
+          </Relation>
+          <Relation OriginatingObjectID="Party_032_01" RelatedObjectID="Party_034_01"
+          id="Relation_034_01">
+            <OriginatingObjectType tc="6">Party</OriginatingObjectType>
+            <RelatedObjectType tc="6">Party</RelatedObjectType>
+            <RelationRoleCode tc="34">Beneficiary</RelationRoleCode>
+            <RelationDescription tc="6">Daughter</RelationDescription>
+            <InterestPercent>100</InterestPercent>
+            <RelatedRefID>1</RelatedRefID>
+            <BeneficiaryShareMethod tc="1009800004" />
+            <IrrevokableInd tc="0">False</IrrevokableInd>
+            <OLifEExtension ExtensionCode="Relation 2.9.03" VendorCode="05">
+              <RelationExtension>
+                <BeneficiaryDistributionOption tc="2">Percent</BeneficiaryDistributionOption>
+              </RelationExtension>
+            </OLifEExtension>
+          </Relation>
+          <Relation OriginatingObjectID="Holding_1" RelatedObjectID="Holding_2" id="Relation_1">
+            <OriginatingObjectType tc="4">Holding</OriginatingObjectType>
+            <RelatedObjectType tc="4">Holding</RelatedObjectType>
+            <RelationRoleCode tc="166">Converted</RelationRoleCode>
+          </Relation>
+          <Relation OriginatingObjectID="Holding_3" RelatedObjectID="Party_032_01" id="Relation_5">
+            <OriginatingObjectType tc="4">Holding</OriginatingObjectType>
+            <RelatedObjectType tc="6">Party</RelatedObjectType>
+            <RelationRoleCode tc="32">Insured</RelationRoleCode>
+            <RelatedRefID>01</RelatedRefID>
+            <OLifEExtension ExtensionCode="Relation 2.9.03" VendorCode="05">
+              <RelationExtension>
+                <BeneficiaryDistributionOption tc="0">Unknown</BeneficiaryDistributionOption>
+              </RelationExtension>
+            </OLifEExtension>
+          </Relation>
+          <Relation OriginatingObjectID="Holding_3" RelatedObjectID="Party_3" id="Relation_6">
+            <OriginatingObjectType tc="4">Holding</OriginatingObjectType>
+            <RelatedObjectType tc="6">Party</RelatedObjectType>
+            <RelationRoleCode tc="88">Holding Company</RelationRoleCode>
+          </Relation>
+          <Relation OriginatingObjectID="Holding_1" RelatedObjectID="Party_4" id="Relation_7">
+            <OriginatingObjectType tc="4">Holding</OriginatingObjectType>
+            <RelatedObjectType tc="6">Party</RelatedObjectType>
+            <RelationRoleCode tc="37">Primary Writing Agent</RelationRoleCode>
+            <InterestPercent>100</InterestPercent>
+            <VolumeSharePct>100</VolumeSharePct>
+            <IrrevokableInd tc="0">False</IrrevokableInd>
+            <OLifEExtension ExtensionCode="RelationProducer 2.9.03" VendorCode="05">
+              <RelationProducerExtension>
+                <SituationCode>85</SituationCode>
+                <ExistingInsReplaceIndCode tc="2">No</ExistingInsReplaceIndCode>
+                <EffectOnInsAccurateIndCode tc="3">Unknown</EffectOnInsAccurateIndCode>
+                <OtherInsInd tc="0">False</OtherInsInd>
+              </RelationProducerExtension>
+            </OLifEExtension>
+          </Relation>
+        </OLifE>
+      </TXLifeRequest>
+    </TXLife>
+  </soapenv:Body>
+</soapenv:Envelope>
