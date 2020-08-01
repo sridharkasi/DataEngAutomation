@@ -81,12 +81,16 @@ def executecase(Action, SourceFormat, SourceFilePath, TargetFilePath, TargetForm
 @allure.step
 def function1(df):
     # df.show(10)
-    allure.attach(df.show(10))
+    # allure.attach(df.show(10))
+    allure.step("--->Data Frame --->")
+    allure.description(df.show(10))
     return df
 @allure.step
 def function2(df):
     # df.show(10)
-    allure.attach(df.show(10))
+    allure.step("--->Data Frame --->")
+    allure.description(df.show(10))
+    # allure.attach(df.show(10))
     return df
 @allure.step
 def function3(df):
