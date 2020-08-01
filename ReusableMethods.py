@@ -2,11 +2,15 @@ import openpyxl
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType, StructField, StringType, IntegerType
 import allure
+from allure_commons._core import plugin_manager
+from allure_pytest.listener import AllureListener
 global executionDict
 global spark
 global srcdict
 global trgdict
-global sqlq
+global SrcCount
+global TrgCount
+
 # def test_main():
 def executecase(Action, SourceFormat, SourceFilePath, TargetFilePath, TargetFormat, SQL, TestcaseName ):
 
@@ -31,15 +35,19 @@ def executecase(Action, SourceFormat, SourceFilePath, TargetFilePath, TargetForm
         if (Action != 'Schema'):
             df = loadsparkdata(spark, Format, TargetFilePath)
     if (Action == 'RowCount'):
-       function1(df)
-       df.show()
+       print("-----" + TestcaseName + "----------"+ Action + "----")
+       function1(df, TestcaseName)
+       # df.show()
        # print(df.count())
     elif(Action == 'ColCount'):
-       function2(df)
+       print("-----" + TestcaseName + "----------" + Action + "----")
+       function2(df, TestcaseName)
        df.printSchema()
     elif (Action == 'DupCount'):
-       function3(df)
+       print("-----" + TestcaseName + "----------" + Action + "----")
+       function3(df, TestcaseName)
     elif (Action == 'Schema'):
+       print("-----" + TestcaseName + "----------" + Action + "----")
        function4(spark, Format, SourceFilePath, TargetFilePath,TestcaseName)
     else:
      print("specify action")
@@ -79,27 +87,29 @@ def executecase(Action, SourceFormat, SourceFilePath, TargetFilePath, TargetForm
     assert (targetcount==sourcecount)
 
 @allure.step
-@allure.description("Test case")
-def function1(df):
-    # df.show(10)
+def function1(df,TestcaseName):
+    print ("-----"+TestcaseName+"----------")
+    df.show(10)
     # allure.attach(df.show(10))
-    allure.dynamic(df.show(10))
-    allure.description(df.show(10))
-    allure.title(df.show(10))
+    # allure.dynamic.description(df.show(10))
+    # allure.description(df.show(10))
+    # allure.title(df.show(10))
     return df
 @allure.step
-def function2(df):
-    # df.show(10)
-    allure.step("--->Data Frame --->")
-    allure.description(df.show(10))
+def function2(df,TestcaseName):
+    df.show(10)
+    # allure.step("--->Data Frame --->")
+    # allure.description(df.show(10))
     # allure.attach(df.show(10))
     return df
 @allure.step
-def function3(df):
+def function3(df, TestcaseName):
+    print("-----" + TestcaseName + "----------")
     df.show(10)
     return df
 @allure.step
 def function4(spark, Format, SourceFilePath, TargetFilePath,TestcaseName):
+    print("-----" + TestcaseName + "----------")
     srcdict = dict()
     trgdict = dict()
     df = loadsparkdata(spark, Format, TargetFilePath)
