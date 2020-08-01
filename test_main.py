@@ -4,7 +4,10 @@ import ReusableMethods
 from pyspark.sql.types import StructType, StructField, StringType, IntegerType
 global executionDict
 global spark
+import allure
 # def test_main():
+@allure.parent_suite("Data Engg Automation Suite")
+@allure.suite("Test Data Quality")
 def test_ReadExecXl():
     # global spark
     filename="./Data/Execution.xlsx"

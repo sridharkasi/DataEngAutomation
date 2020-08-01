@@ -6,10 +6,10 @@ global executionDict
 global spark
 global srcdict
 global trgdict
-
+global sqlq
 # def test_main():
 def executecase(Action, SourceFormat, SourceFilePath, TargetFilePath, TargetFormat, SQL, TestcaseName ):
-
+  sqlq= SQL
   for i in (1,2):
     spark = SparkSession.builder \
         .appName("Automation") \
@@ -31,7 +31,7 @@ def executecase(Action, SourceFormat, SourceFilePath, TargetFilePath, TargetForm
         if (Action != 'Schema'):
             df = loadsparkdata(spark, Format, TargetFilePath)
     if (Action == 'RowCount'):
-       function1(df)
+       function1(df, SQL)
        df.show()
        # print(df.count())
     elif(Action == 'ColCount'):
@@ -79,7 +79,7 @@ def executecase(Action, SourceFormat, SourceFilePath, TargetFilePath, TargetForm
     assert (targetcount==sourcecount)
 
 
-@allure.sub_suite
+@allure.sub_suite(sqlq)
 def function1(df):
     df.show(10)
     return df
