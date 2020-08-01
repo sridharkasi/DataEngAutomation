@@ -1,6 +1,7 @@
 import openpyxl
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType, StructField, StringType, IntegerType
+import allure
 global executionDict
 global spark
 global srcdict
@@ -78,13 +79,16 @@ def executecase(Action, SourceFormat, SourceFilePath, TargetFilePath, TargetForm
     assert (targetcount==sourcecount)
 
 
-
+@allure.step
 def function1(df):
     return df
+@allure.step
 def function2(df):
     return df
+@allure.step
 def function3(df):
     return df
+@allure.step
 def function4(spark, Format, SourceFilePath, TargetFilePath,TestcaseName):
     srcdict = dict()
     trgdict = dict()
@@ -95,7 +99,7 @@ def function4(spark, Format, SourceFilePath, TargetFilePath,TestcaseName):
     # sourceschema(SourceFilePath)
     # targetschema(TargetFilePath)
 
-
+@allure.step
 def createsparksession():
     spark = SparkSession.builder \
         .appName("Automation") \
@@ -106,6 +110,7 @@ def createsparksession():
         .config("spark.driver.extraClassPath", "file:///C://spark3//jars//spark-xml_2.12-0.9.0.jar") \
         .getOrCreate()
     # return spark
+@allure.step
 def loadsparkdata(spark, Format,filepath):
     schema = StructType([
         StructField('PolNumber', StringType(), True),
@@ -133,7 +138,7 @@ def loadsparkdata(spark, Format,filepath):
 # def sourceschema(SourceFilePath):
 
 # def targetschema(TargetFilePath):
-
+@allure.step
 def gettargetschema(df, trgdict):
     for item in df.schema.fields:
          # print(item)
@@ -147,6 +152,7 @@ def gettargetschema(df, trgdict):
          # print(z[1])
          # print("***********")
          trgdict[str(key)]= [value]
+@allure.step
 def getsourceschema(srcdict,SourceFilePath,TestcaseName):
     filename = SourceFilePath
     wb = openpyxl.load_workbook(filename)
@@ -158,6 +164,7 @@ def getsourceschema(srcdict,SourceFilePath,TestcaseName):
         Keyname = ws.cell(row=i, column=1)
         Keyvalue = ws.cell(row=i, column=2)
         srcdict[Keyname.value] = Keyvalue.value
+@allure.step
 def compareschema(srcdict, trgdict):
     x = len(srcdict)
     y = len(trgdict)
