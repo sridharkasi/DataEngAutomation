@@ -79,11 +79,13 @@ def executecase(Action, SourceFormat, SourceFilePath, TargetFilePath, TargetForm
     assert (targetcount==sourcecount)
 
 @allure.step
+@allure.description("Test case")
 def function1(df):
     # df.show(10)
     # allure.attach(df.show(10))
-    allure.step("--->Data Frame --->")
+    allure.dynamic(df.show(10))
     allure.description(df.show(10))
+    allure.title(df.show(10))
     return df
 @allure.step
 def function2(df):
