@@ -7,7 +7,7 @@ global spark
 import allure
 # def test_main():
 @allure.parent_suite("Data Engg Automation Suite")
-@allure.suite("Test Data Quality")
+@allure.suite("Main test Suite")
 def test_ReadExecXl():
     # global spark
     filename="./Data/Execution.xlsx"

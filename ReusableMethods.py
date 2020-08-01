@@ -78,8 +78,7 @@ def executecase(Action, SourceFormat, SourceFilePath, TargetFilePath, TargetForm
   if (Action != 'Schema'):
     assert (targetcount==sourcecount)
 
-@allure.parent_suite("Data Engg Automation Suite")
-@allure.suite("SQL Verfication")
+@allure.step
 def function1(df):
     df.show(10)
     return df
