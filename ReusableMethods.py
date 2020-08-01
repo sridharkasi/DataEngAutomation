@@ -79,14 +79,17 @@ def executecase(Action, SourceFormat, SourceFilePath, TargetFilePath, TargetForm
     assert (targetcount==sourcecount)
 
 
-@allure.step
+@allure.epic
 def function1(df):
+    df.show(10)
     return df
 @allure.step
 def function2(df):
+    df.show(10)
     return df
 @allure.step
 def function3(df):
+    df.show(10)
     return df
 @allure.step
 def function4(spark, Format, SourceFilePath, TargetFilePath,TestcaseName):
