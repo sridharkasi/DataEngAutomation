@@ -9,7 +9,7 @@ global trgdict
 global sqlq
 # def test_main():
 def executecase(Action, SourceFormat, SourceFilePath, TargetFilePath, TargetFormat, SQL, TestcaseName ):
-  sqlq= SQL
+
   for i in (1,2):
     spark = SparkSession.builder \
         .appName("Automation") \
@@ -19,7 +19,7 @@ def executecase(Action, SourceFormat, SourceFilePath, TargetFilePath, TargetForm
         .config("spark.executor.extraLibrary", "./jars/spark-xml_2.12-0.9.0.jar") \
         .config("spark.driver.extraClassPath", "./jars/spark-xml_2.12-0.9.0.jar") \
         .getOrCreate()
-
+    sqlq = SQL
     if (i==1):
         Format = SourceFormat
         Path=SourceFilePath
@@ -31,7 +31,7 @@ def executecase(Action, SourceFormat, SourceFilePath, TargetFilePath, TargetForm
         if (Action != 'Schema'):
             df = loadsparkdata(spark, Format, TargetFilePath)
     if (Action == 'RowCount'):
-       function1(df, SQL)
+       function1(df)
        df.show()
        # print(df.count())
     elif(Action == 'ColCount'):
@@ -79,7 +79,7 @@ def executecase(Action, SourceFormat, SourceFilePath, TargetFilePath, TargetForm
     assert (targetcount==sourcecount)
 
 
-@allure.sub_suite(sqlq)
+@allure.sub_suite("Sql verification")
 def function1(df):
     df.show(10)
     return df
