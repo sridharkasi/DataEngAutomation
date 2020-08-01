@@ -79,7 +79,7 @@ def executecase(Action, SourceFormat, SourceFilePath, TargetFilePath, TargetForm
     assert (targetcount==sourcecount)
 
 
-@allure.epic
+@allure.sub_suite
 def function1(df):
     df.show(10)
     return df
