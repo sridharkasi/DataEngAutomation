@@ -1,6 +1,7 @@
 import openpyxl
 from pyspark.sql import SparkSession
-import ReusableMethods
+# import ReusableMethods
+import ReusableFunctions
 from pyspark.sql.types import StructType, StructField, StringType, IntegerType
 global executionDict
 global spark
@@ -33,7 +34,7 @@ def test_ReadExecXl():
                 break
 
         if(flag==0):
-            ReusableMethods.executecase(executionDict["Action"], executionDict["SourceFormat"], executionDict["SourceFilePath"], executionDict["TargetFilePath"], executionDict["TargetFormat"], executionDict["SQL"], executionDict["TestcaseName"])
+            ReusableFunctions.executecase(executionDict["Action"], executionDict["SourceFormat"], executionDict["SourceFilePath"], executionDict["TargetFilePath"], executionDict["TargetFormat"], executionDict["SQL"], executionDict["TestcaseName"])
 
 
 
