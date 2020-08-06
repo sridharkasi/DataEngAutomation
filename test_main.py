@@ -17,7 +17,9 @@ def test_ReadExecXl():
     rw = ws.max_row
     max_column=ws.max_column
     executionDict = dict()
+    passflag = True
     for i in range(2, rw + 1):
+        returnflag = True
         for j in range(1, max_column+1 ):
             flag = 0
             execution = ws.cell(row=i, column=1)
@@ -34,7 +36,13 @@ def test_ReadExecXl():
                 break
 
         if(flag==0):
-            ReusableFunctions.executecase(executionDict["Action"], executionDict["SourceFormat"], executionDict["SourceFilePath"], executionDict["TargetFilePath"], executionDict["TargetFormat"], executionDict["SQL"], executionDict["TestcaseName"])
+           returnflag=ReusableFunctions.executecase(executionDict["Action"], executionDict["SourceFormat"], executionDict["SourceFilePath"], executionDict["TargetFilePath"], executionDict["TargetFormat"], executionDict["SQL"], executionDict["TestcaseName"])
+        if(returnflag==True or returnflag==None):
+            print("")
+        else:
+            passflag=False
+    assert passflag
+
 
 
 

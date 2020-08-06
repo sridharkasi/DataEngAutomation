@@ -1,10 +1,13 @@
 import openpyxl
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType, StructField, StringType, IntegerType
-from pyspark.sql.functions import _lit_doc
+# from pyspark.sql.functions import iloc
 import allure
+import pytest_expect
 from allure_commons._core import plugin_manager
 from allure_pytest.listener import AllureListener
+# from pytest_expect import expect
+
 global executionDict
 global spark
 global srcdict
@@ -16,6 +19,7 @@ global targetDf
 
 # def test_main():
 def executecase(Action, SourceFormat, SourceFilePath, TargetFilePath, TargetFormat, SQL, TestcaseName ):
+  ret = ""
   if (SourceFilePath!=None) and (TargetFilePath!=None):
         spark=CreateSparkSession()
         if(Action!="Schema"):
@@ -39,12 +43,12 @@ def executecase(Action, SourceFormat, SourceFilePath, TargetFilePath, TargetForm
       DuplicateCount(sourceDf, targetDf, TestcaseName, SQL, spark)
   elif (Action == 'Schema'):
       print("")
-      ComapreSchema(targetDf, SourceFilePath, TestcaseName )
+      ret= ComapreSchema(targetDf, SourceFilePath, TestcaseName )
   elif (Action == 'SchemaDF'):
       SchemaDifference(targetDf, sourceDf)
   elif (Action == 'CompareTable'):
-      ComapareDatatable_EachRow(targetDf, sourceDf)
-
+      ComapareDatatable_EachRow(targetDf, sourceDf, SQL, spark, TestcaseName)
+  return ret
 # create spark Session for the tests
 def CreateSparkSession():
     spark = SparkSession.builder \
@@ -76,49 +80,51 @@ def loadsparkdata(spark, Format,filepath):
         return df
 @allure.step
 def RowcountTest(sourceDf, targetDf, TestcaseName,SQL, spark):
-    print("--------------------------------------------------------------------------")
+    print("--------------RFL Insurance TB Vs CFL Insurance-----------------")
     print("Testcase: [" + TestcaseName + "]")
     if (SQL == None):
-        print("------------Source Table----------------------------------------------")
-        print(sourceDf.count())
-        print("------------Target Table----------------------------------------------")
-        print(targetDf.count())
+        print("------------Source Table-----RFL Insurance------------------------------------")
+        print("Record Count: "+ sourceDf.count())
+        print("------------Target Table-----CFL Insurance----------------------------------------")
+        print("Record Count: "+ targetDf.count())
         srccou = sourceDf.count()
         trgcou = targetDf.count()
     else:
         sourceDf.createOrReplaceTempView("table")
         sqldt = spark.sql(SQL)
-        sqldt.show()
+        # sqldt.show()
         srccou = sqldt.first()['count(1)']
 
         targetDf.createOrReplaceTempView("table")
         sqlTarg = spark.sql(SQL)
-        sqlTarg.show()
+        # sqlTarg.show()
         trgcou = sqlTarg.first()['count(1)']
 
     if (srccou == trgcou):
-        sourceDf.show()
+        sourceDf.select(sourceDf.columns[0:5]).show(10)
+        # dif.select(dif.columns[0:5]).show()
         print("Source Vs Target Count: Pass :[" + str(sourceDf.count()) + "]Vs[" + str(targetDf.count())+"]")
         print("Source Vs Target Count: Pass :[" + str(srccou) + "]Vs[" + str(trgcou) + "]")
         print("-----------------------------------------------------------------------")
         # targetDf.show()
     else:
-        targetDf.show()
+        # targetDf.show()
+        targetDf.select(sourceDf.columns[0:5]).show(10)
         # print("Source Vs Target Count: Fail " + str(sourceDf.count()) + "Vs" + str(targetDf.count())
         print("Source Vs Target Count: Fail :[" + str(srccou) + "]Vs[" + str(trgcou) + "]")
 @allure.step
 def ColcountTest(sourceDf, targetDf, TestcaseName,SQL, spark):
-    print("------------------------------------------------------")
+    print("---------------RBenefits Table---------------------------------------")
     print("Testcase: [" + TestcaseName + "]")
     print("Source Data Columns: ["+str (sourceDf.columns)+"]")
     print("Target Data Columns: [" +str(targetDf.columns) + "]")
     if(len(sourceDf.columns)==len(targetDf.columns)):
         print("Source Data Columns : Pass: ["+str (len(sourceDf.columns))+"] Vs Target Data Columns: [" +str(len(targetDf.columns)) + "] Matching")
     else:
-        print("Source Data Columns: Fail: [" + str(sourceDf.columns.count()) + "] Vs Target Data Columns: [" + str(targetDf.columns.count()) + "] Not Matching")
+        print("Source Data Columns: Fail: [" + str(sourceDf.columns.count()) + "] Vs Target Data Columns: [" + str(targetDf.columns.count()) + "] Not Matching > --Fail")
 @allure.step
 def DuplicateCount(sourceDf, targetDf, TestcaseName,SQL, spark):
-    print("------------------------------------------------------")
+    print("----------------RBenefits Table--------------------------------------")
     print("Testcase: [" + TestcaseName + "]")
     print("------------------------------------------------------")
     if (SQL==None):
@@ -133,11 +139,11 @@ def DuplicateCount(sourceDf, targetDf, TestcaseName,SQL, spark):
         targetDf.createOrReplaceTempView("table")
         TrgDup = spark.sql(SQL)
         TrgDupcount = TrgDup.count()
-        print("---TargetDB Duplicate Records Found :" + str(TrgDupcount))
-        TrgDup.show()
+        # print("---TargetDB Duplicate Records Found :" + str(TrgDupcount) )
+        # TrgDup.show()
 @allure.step
 def ComapreSchema(targetDf, SourceFilePath, TestcaseName ):
-    print("------------------------------------------------------")
+    print("---------------RBenefits Table-----------------------------------")
     print("Testcase: [" + TestcaseName + "]")
     print("------------------------------------------------------")
     targetDf.printSchema()
@@ -147,14 +153,15 @@ def ComapreSchema(targetDf, SourceFilePath, TestcaseName ):
     dictionary2= gettargetschema(targetDf, trgdict)
     print("---Compare Source Vs Target Schema-------------------------------------")
     # compareschema(srcdict, trgdict)
-    compareschema(dictionary1, dictionary2)
+    returnval = compareschema(dictionary1, dictionary2)
+    return returnval
 
 def gettargetschema(df, trgdict):
         for item in df.schema.fields:
             x = str(item)
             y = x.split("(")
             z = y[1].split(",")
-            print(z[0])
+            # print(z[0])
             key = z[0]
             value = z[1]
             trgdict[str(key)] = [value]
@@ -173,25 +180,32 @@ def getsourceschema(srcdict,SourceFilePath,TestcaseName):
 def compareschema(srcdict, trgdict):
     x = len(srcdict)
     y = len(trgdict)
-    print(len(srcdict))
-    print(len(trgdict))
-    print("Length of the schema in both tables")
+
     for key in srcdict.keys():
         # print(key)
         if key in trgdict.keys():
             # str1 = srcdict[key]
             str1 = str(srcdict[key]).split("(")
-            print (str1[0])
+            # print (str1[0])
             # if(trgdict[key]==srcdict[key]):
             if(str(trgdict[key]).find(str1[0])):
                 # print("Data Type matches")
-                print(key+ " " +str(trgdict[key]) + "Vs" + str(srcdict[key])+ " matches")
+                print(key+ " " +str(trgdict[key]) + "Vs [" + str(srcdict[key])+ "] matches")
                 print ("---------------------------------------------------------------")
             else:
                 # print("Data Type not matches")
-                print(key+ " " +str(trgdict[key]) + "Vs" + str(srcdict[key])+ " Not matches")
+                print(key+ " " +str(trgdict[key]) + "Vs [" + str(srcdict[key])+ "] Not matches")
                 print ("-------------------------------------------------------------------")
-    assert (x == y)
+    if (x == y):
+        print("Length of the schema in both tables matching > Pass")
+        print(len(srcdict))
+        print(len(trgdict))
+        return True
+    else:
+        print("Length of the schema in both tables not matching > Fail")
+        print(len(srcdict))
+        print(len(trgdict))
+        return False
 @allure.step
 def SchemaDifference(targetDf, sourceDf):
     df_schema = sourceDf.schema.fields
@@ -213,15 +227,28 @@ def SchemaDifference(targetDf, sourceDf):
         print("Nothing to do")
 
 @allure.step
-def ComapareDatatable_EachRow(targetDf, sourceDf):
-    print(sourceDf.exceptAll(targetDf))
-    # print(targetDf.exceptAll(sourceDf))
-    # targetDf.exceptAll(sourceDf).show(1)
-    if(int(sourceDf.exceptAll(targetDf).count()) > 0):
-        print("--Below Record found not matching with source data--")
-        sourceDf.exceptAll(targetDf).show()
+def ComapareDatatable_EachRow(targetDf, sourceDf, SQL, spark, TestcaseName):
+    print("-------------------TestCase: "+ TestcaseName + "---------RFL Insurance----------")
+    if(SQL==None):
+        print(sourceDf.exceptAll(targetDf))
+        # print(targetDf.exceptAll(sourceDf))
+        # targetDf.exceptAll(sourceDf).show(1)
+        if(int(sourceDf.exceptAll(targetDf).count()) > 0):
+            print("Below Record found not matching with source data-- Fail")
+            dif= sourceDf.exceptAll(targetDf)
+            dif.select(dif.columns[0:5]).show()
+        else:
+            print("--All the Records from target table matching with source data-- pass")
     else:
-        print("--All the Records from target table matching with source data--")
+        sourceDf.createOrReplaceTempView("table1")
+        targetDf.createOrReplaceTempView("table")
+        Dif= spark.sql(SQL)
+        if (int(Dif.count()) > 0):
+            print("--Below Record found not matching with source data--> Fail")
+            Dif.select(Dif.columns[0:5]).show()
+            # Dif.show()
+        else:
+            print("All the Records from target table matching with source data-->pass")
     # x = 0
     # flag=0
     # # print(sdf.head(2)[0])
