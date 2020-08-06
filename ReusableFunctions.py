@@ -3,10 +3,8 @@ from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType, StructField, StringType, IntegerType
 # from pyspark.sql.functions import iloc
 import allure
-import pytest_expect
 from allure_commons._core import plugin_manager
 from allure_pytest.listener import AllureListener
-# from pytest_expect import expect
 
 global executionDict
 global spark
